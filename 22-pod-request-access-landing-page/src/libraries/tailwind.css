@@ -24,20 +24,21 @@
 
 @layer base {
     body {
-        @apply font-chivo tracking-0;
+        @apply font-chivo tracking-0 bg-blue-950 flex items-center justify-center min-h-screen;
     }
 }
 
 @layer components {
+
     .text-preset-1 {
-        @apply font-light text-5xl/120% uppercase;
+        @apply font-light text-[2rem] leading-120% md:text-5xl uppercase;
     }
 
     .text-preset-2 {
-        @apply font-light text-lg/150%;
+        @apply font-light text-sm md:text-lg leading-150%;
     }
 
     .text-preset-3 {
-        @apply font-bold text-sm/200%;
+        @apply font-bold text-xs/200%;
     }
 }
