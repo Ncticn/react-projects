@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+    /* Colors */
+    --color-blue-950: #121725;
+    --color-blue-900: #2C344B;
+    --color-blue-600: #5A668A;
+    --color-blue-300: #C2CBE5;
+    --color-red-base: #FB3E3E;
+    --color-green-base: #54E6AF;
+
+    /* Font Family */
+    --font-chivo: "Chivo", sans-serif;
+
+    /* Line Height */
+    --leading-120\%: 120%;
+    --leading-150\%: 150%;
+    --leading-200\%: 200%;
+
+    /* Letter Spacing */
+    --tracking-0: 0px;
+}
+
+@layer base {
+    body {
+        @apply font-chivo tracking-0 bg-blue-950 flex items-center justify-center min-h-screen;
+    }
+}
+
+@layer components {
+
+    .text-preset-1 {
+        @apply font-light text-[2rem] leading-120% md:text-5xl uppercase;
+    }
+
+    .text-preset-2 {
+        @apply font-light text-sm md:text-lg leading-150%;
+    }
+
+    .text-preset-3 {
+        @apply font-bold text-xs/200%;
+    }
+}
