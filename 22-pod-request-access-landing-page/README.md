@@ -56,10 +56,10 @@ To run this project locally, follow these steps:
 
 ```bash
 # Clone the repository
-git clone https://github.com/ncticn/pod-request-access-landing-page
+git clone https://github.com/Ncticn/react-projects.git
 
 # Navigate to the project directory
-cd pod-request-access-landing-page
+cd 22-pod-request-access-landing-page
 
 # Install dependencies
 npm install
