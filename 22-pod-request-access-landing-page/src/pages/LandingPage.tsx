@@ -10,7 +10,9 @@ function LandingPage() {
       <div className="max-w-76 md:max-w-2xl lg:max-w-6xl mx-auto">
         <div className="flex items-center justify-between">
           <div className="section-main flex flex-col items-center justify-center gap-14 md:items-start md:justify-start md:gap-26  md:max-w-148 lg:max-w-184 z-50">
-            <LogoBrand />
+            <header>
+              <LogoBrand />
+            </header>
             <div className="section-main-content flex flex-col items-center md:items-start justify-center gap-10 md:pe-16 md:pt-22 md:bg-blue-950 w-full transition">
               <div className="section-main-content-head space-y-4 md:space-y-6 text-center md:text-start">
                 <h1 className="text-preset-1 text-green-base">
@@ -48,6 +50,7 @@ function LandingPage() {
             <img
               src="assets/images/image-host-desktop.jpg"
               className="object-cover not-md:h-screen not-md:w-screen 2xl:scale-110"
+              alt="Hero Image"
             />
           </picture>
         </div>
