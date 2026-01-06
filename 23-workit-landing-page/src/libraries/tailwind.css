@@ -1,1 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&display=swap');
 @import "tailwindcss";
+
+@theme {
+
+    /* Colors */
+    --color-green-base: #44FFA1;
+
+    --color-purple-900: #24053E;
+    --color-purple-500: #584D62;
+    --color-purple-100: #FCF8FF;
+
+    /* Font Family */
+    --font-fraunces: "Fraunces", serif;
+    --font-manrope: "Manrope", sans-serif;
+
+    /* Font Size */
+    --text-7\.5xl: 5rem;
+    --text-5\.5xl: 3.5rem;
+    --text-3\.5xl: 2rem;
+
+
+    /* Line Height */
+    --leading-100\%: 100%;
+    --leading-120\%: 120%;
+    --leading-150\%: 150%;
+    --leading-180\%: 180%;
+
+    /* Letter Spacing */
+    --tracking-0: 0px;
+
+}
+
+@layer base {
+    body {
+        @apply flex items-center justify-center min-h-screen min-w-screen relative overflow-hidden tracking-0;
+    }
+}
+
+@layer components {
+
+    .text-preset-1,
+    .text-preset-2,
+    .text-preset-3 {
+        @apply font-fraunces font-semibold;
+    }
+
+    .text-preset-4,
+    .text-preset-5 {
+        @apply font-manrope text-lg;
+    }
+
+    .text-preset-1 {
+        @apply text-7.5xl leading-100%;
+    }
+
+    .text-preset-2 {
+        @apply text-5.5xl leading-120%;
+    }
+
+    .text-preset-3 {
+        @apply text-3.5xl leading-120%;
+    }
+
+    .text-preset-4 {
+        @apply font-normal leading-180%;
+    }
+
+    .text-preset-5 {
+        @apply font-bold leading-150%;
+    }
+}
