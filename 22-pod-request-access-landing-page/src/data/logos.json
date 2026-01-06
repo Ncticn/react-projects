@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "name": "Spotify",
+        "url": "src/assets/logos/spotify.svg"
+    },
+    {
+        "id": "2",
+        "name": "Apple Podcast",
+        "url": "src/assets/logos/apple-podcast.svg"
+    },
+    {
+        "id": "3",
+        "name": "Google Podcasts",
+        "url": "src/assets/logos/google-podcasts.svg"
+    },
+    {
+        "id": "4",
+        "name": "Pocket Casts",
+        "url": "src/assets/logos/pocket-casts.svg"
+    }
+]

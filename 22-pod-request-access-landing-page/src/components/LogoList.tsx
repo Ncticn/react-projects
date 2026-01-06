@@ -20,7 +20,7 @@ function LogoList({ logoItems, className }: LogoListProps) {
           <img
             src={logo.url}
             alt="Sponsor Brand Logo"
-            className="object-contain max-w-14 md:max-w-full"
+            className="object-contain max-w-14 md:max-w-full opacity-50"
           />
         </li>
       ))}

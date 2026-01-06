@@ -22,9 +22,17 @@ function InputWithButton() {
           placeholder="Email address"
           onValidityChange={handleInputChange}
         />
-        <ButtonBase type="submit">Request Access</ButtonBase>
+        <ButtonBase
+          type="submit"
+          className="not-md:w-full md:absolute not-md:inset-x-0 md:right-1.5 md:top-1 md:bottom-1"
+        >
+          Request Access
+        </ButtonBase>
       </div>
-      {!isValid && <MessageError message={errMessage} />}
+      <MessageError
+        message={errMessage}
+        className={!isValid ? "opacity-100" : "opacity-0"}
+      />
     </div>
   );
 }
