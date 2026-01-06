@@ -24,7 +24,7 @@ function InputWithButton() {
         />
         <ButtonBase
           type="submit"
-          className="not-md:w-full md:absolute not-md:inset-x-0 md:right-1.5 md:top-1 md:bottom-1"
+          className="not-md:w-full md:absolute not-md:inset-x-0 md:right-1 md:top-1 md:bottom-1"
         >
           Request Access
         </ButtonBase>
