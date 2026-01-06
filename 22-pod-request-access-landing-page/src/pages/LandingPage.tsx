@@ -32,21 +32,21 @@ function LandingPage() {
               <LogoList logoItems={logos} className="order-0 md:order-1" />
             </div>
           </div>
-          <picture className="absolute not-md:inset-0 md:top-0 md:right-0 lg:right-0 lg:top-38 2xl:right-60 not-md:after:absolute not-md:after:inset-0 not-md:after:bg-blue-950 not-md:after:opacity-80 md:before:bg-[url('src/assets/patterns/bg-pattern-dots.svg')] md:before:absolute md:before:inline-block md:before:w-58 md:before:h-26 md:before:right-0 md:before:-bottom-14 2xl:md:before:-bottom-22 md:before:bg-no-repeat md:before:bg-contain md:before:z-40">
+          <picture className="absolute not-md:inset-0 md:top-0 md:right-0 lg:right-0 lg:top-38 2xl:right-60 not-md:after:absolute not-md:after:inset-0 not-md:after:bg-blue-950 not-md:after:opacity-80 md:before:bg-[url('assets/patterns/bg-pattern-dots.svg')] md:before:absolute md:before:inline-block md:before:w-58 md:before:h-26 md:before:right-0 md:before:-bottom-14 2xl:md:before:-bottom-22 md:before:bg-no-repeat md:before:bg-contain md:before:z-40">
             <source
-              srcSet="src/assets/images/image-host-desktop.jpg"
+              srcSet="assets/images/image-host-desktop.jpg"
               media="(width > 768px)"
             />
             <source
-              srcSet="src/assets/images/image-host-tablet.jpg"
+              srcSet="assets/images/image-host-tablet.jpg"
               media="(width > 375px)"
             />
             <source
-              srcSet="src/assets/images/image-host-mobile.jpg"
+              srcSet="assets/images/image-host-mobile.jpg"
               media="(width >= 0px)"
             />
             <img
-              src="src/assets/images/image-host-desktop.jpg"
+              src="assets/images/image-host-desktop.jpg"
               className="object-cover not-md:h-screen not-md:w-screen 2xl:scale-110"
             />
           </picture>
