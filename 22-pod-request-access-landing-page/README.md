@@ -45,8 +45,8 @@ During this project, I focused on:
 
 ## 🔗 Links
 
-- 💻 **Live Demo:** https://your-live-site.com
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/your-solution
+- 💻 **Live Demo:** https://22-pod-request-access-landing-page.vercel.app/
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/pod-request-access-landing-page-react-tailwindcss-components-5Xwye9Kldj
 
 ---
 
