@@ -1,73 +1,87 @@
-# React + TypeScript + Vite
+# 📌 Pod Request Access Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a solution to the "Pod Request Access Landing Page" challenge on Frontend Mentor.  
+The main objective of this challenge is to build an early access landing page that closely matches the provided design while implementing custom client-side form validation.
 
-Currently, two official plugins are available:
+## 🖼️ Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Project Preview](src/preview/preview.jpg)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎯 Overview
 
-## Expanding the ESLint configuration
+During the development of this project, the following requirements were taken into account:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Displaying an error message when the form is submitted if:
+  - The email address field is empty, showing **"Oops! Please add your email"**
+  - The email address is not formatted correctly, showing **"Oops! Please check your email"**
+- Viewing the optimal layout based on the user’s device screen size
+- Seeing hover states for interactive elements
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🧠 What I Learned
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+During this project, I focused on:
+
+- Structuring React components for better readability
+- Implementing form validation without external libraries
+- Managing UI states such as error and default states
+- Building responsive layouts using Tailwind CSS
+- Applying semantic HTML principles
+
+---
+
+## 🛠️ Tech Stack & Concepts
+
+- **Framework / Library:** React
+- **Styling:** Tailwind CSS
+- **Architecture:** Component-Based Structure
+- **Markup:** Semantic HTML
+- **Version Control:** Git & GitHub
+
+---
+
+## 🔗 Links
+
+- 💻 **Live Demo:** https://your-live-site.com
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/your-solution
+
+---
+
+## ⚙️ Installation & Running the Project
+
+To run this project locally, follow these steps:
+
+```bash
+# Clone the repository
+git clone https://github.com/ncticn/pod-request-access-landing-page
+
+# Navigate to the project directory
+cd pod-request-access-landing-page
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 👤 Author
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+**Ncticn**  
+Front-End Developer
+
+- GitHub: https://github.com/Ncticn
+- LinkedIn: https://www.linkedin.com/in/ncticn/
+- Frontend Mentor: https://www.frontendmentor.io/profile/Ncticn
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License.  
+© 2026 Ncticn.
