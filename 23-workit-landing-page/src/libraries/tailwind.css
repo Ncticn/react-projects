@@ -18,6 +18,7 @@
     --text-7\.5xl: 5rem;
     --text-5\.5xl: 3.5rem;
     --text-3\.5xl: 2rem;
+    --text-2\.5xl: 1.75rem;
 
 
     /* Line Height */
@@ -33,11 +34,12 @@
 
 @layer base {
     body {
-        @apply flex items-center justify-center min-h-screen min-w-screen relative overflow-hidden tracking-0;
+        @apply flex items-center justify-center min-h-screen min-w-screen relative tracking-0;
     }
 }
 
 @layer components {
+
 
     .text-preset-1,
     .text-preset-2,
@@ -47,26 +49,26 @@
 
     .text-preset-4,
     .text-preset-5 {
-        @apply font-manrope text-lg;
+        @apply font-manrope;
     }
 
     .text-preset-1 {
-        @apply text-7.5xl leading-100%;
+        @apply text-5xl md:text-6xl lg:text-7.5xl leading-100%;
     }
 
     .text-preset-2 {
-        @apply text-5.5xl leading-120%;
+        @apply text-3.5xl md:text-5xl lg:text-5.5xl leading-120%;
     }
 
     .text-preset-3 {
-        @apply text-3.5xl leading-120%;
+        @apply text-2xl md:text-2.5xl lg:text-3.5xl leading-120%;
     }
 
     .text-preset-4 {
-        @apply font-normal leading-180%;
+        @apply text-base lg:text-lg font-normal leading-180%;
     }
 
     .text-preset-5 {
-        @apply font-bold leading-150%;
+        @apply text-lg font-bold leading-150%;
     }
 }
