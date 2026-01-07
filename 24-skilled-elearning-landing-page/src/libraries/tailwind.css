@@ -1,1 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import "tailwindcss";
+
+@theme {
+
+    /* Colors */
+    --color-blue-900: #13183F;
+    --color-blue-600: #666CA3;
+    --color-pink-600: #F74780;
+    --color-pink-300: #FFA7C3;
+    --color-grey: #83869A;
+
+    /* Font Family */
+    --font-plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+
+    /* Font Size */
+    --text-5\.5xl: 3.5rem;
+    --text-4\.5xl: 2.5rem;
+    --text-3\.5xl: 2rem;
+
+    /* Line Height */
+    --leading-150\%: 150%;
+    --leading-120\%: 120%;
+
+    /* Letter Spacing */
+    --tracking-0px: 0px;
+}
+
+@layer base {
+    body {
+        @apply font-plus-jakarta-sans tracking-0px;
+    }
+}
+
+@layer components {
+    .text-preset-1 {
+        @apply font-extrabold text-4.5xl md:text-5.5xl leading-120%;
+    }
+
+    .text-preset-2 {
+        @apply font-extrabold text-3.5xl md:text-4.5xl leading-120%;
+    }
+
+    .text-preset-3 {
+        @apply font-extrabold text-2xl md:text-3.5xl leading-120%;
+    }
+
+    .text-preset-4 {
+        @apply font-extrabold text-xl md:text-2xl leading-120%;
+    }
+
+    .text-preset-5 {
+        @apply font-medium text-lg leading-150%;
+    }
+
+    .text-preset-6 {
+        @apply font-bold text-sm md:text-base leading-120% md:leading-150%;
+    }
+
+    .text-preset-7 {
+        @apply font-bold text-lg leading-150%;
+    }
+
+    .gradient-preset-1 {
+        @apply bg-linear-to-b from-0% from-[#FF6F48] to-100% to-[#F02AA6];
+    }
+
+    .gradient-preset-2 {
+        @apply bg-linear-to-b from-0% from-[#4851FF] to-100% to-[#F02AA6];
+    }
+}
