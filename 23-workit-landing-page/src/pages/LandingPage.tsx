@@ -10,14 +10,14 @@ export default function LandingPage() {
         <HeaderBase />
         <SectionHero />
         <img
-          src="src/assets/patterns/ornamental.svg"
+          src="../patterns/ornamental.svg"
           alt="Background Pattern Image"
           className="w-full min-h-10 object-cover"
         />
       </div>
       <div className="relative h-20 md:h-50">
         <img
-          src="src/assets/images/image-hero.webp"
+          src="../images/image-hero.webp"
           alt="Section Hero Image"
           className="object-contain max-w-75 md:max-w-lg lg:max-w-2xl absolute -top-24 right-1/12  md:-top-32 md:right-1/6 lg:-top-62 lg:right-1/3"
         />

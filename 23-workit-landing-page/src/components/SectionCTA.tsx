@@ -9,7 +9,7 @@ function SectionCTA() {
             <div className="col-span-1 lg:col-span-1 ">
               <figure className="w-70 lg:w-119.25 mx-auto">
                 <img
-                  src="src/assets/images/image-founder.webp"
+                  src="../images/image-founder.webp"
                   alt="Image Founder"
                   className="object-contain"
                 />
@@ -28,9 +28,9 @@ function SectionCTA() {
                 </p>
                 <ButtonPrimary>Apply for access</ButtonPrimary>
                 <img
-                  src="src/assets/patterns/bg-pattern-3.svg"
+                  src="../patterns/bg-pattern-3.svg"
                   alt="Background Pattern Image"
-                  className="object-contain hidden md:absolute md:right-2 lg:right-26 md:top-70 lg:top-66"
+                  className="object-contain not-md:hidden md:absolute md:right-2 lg:right-26 md:top-70 lg:top-66"
                 />
               </div>
             </div>

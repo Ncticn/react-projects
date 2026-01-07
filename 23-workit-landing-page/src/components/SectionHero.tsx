@@ -12,12 +12,12 @@ function SectionHero() {
           <ButtonPrimary>Learn More</ButtonPrimary>
         </div>
         <img
-          src="src/assets/patterns/bg-pattern-1.svg"
+          src="../patterns/bg-pattern-1.svg"
           alt="Background Pattern Image"
           className="object-contain not-md:hidden absolute md:top-14 lg:top-12 md:-left-56 lg:-left-26"
         />
         <img
-          src="src/assets/patterns/bg-pattern-2.svg"
+          src="../patterns/bg-pattern-2.svg"
           alt="Backround Pattern Image"
           className="object-contain not-md:hidden absolute md:top-50 lg:top-62 md:-right-24 lg:-right-12"
         />
