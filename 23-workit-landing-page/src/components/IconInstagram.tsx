@@ -3,7 +3,7 @@ type IconInstagramProps = {
 };
 function IconInstagram({ className }: IconInstagramProps) {
   return (
-    <a href="#" className="inline-block group">
+    <a href="#" className="inline-block group" aria-label="Instagram">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"

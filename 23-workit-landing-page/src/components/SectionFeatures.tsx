@@ -25,13 +25,13 @@ function SectionFeature() {
         <div className="grid grid-cols-1 grid-rows-3 lg:grid-cols-3 lg:grid-rows-1 gap-8">
           {items.map((item) => (
             <div className="feature-item flex flex-col items-center justify-start gap-6 md:gap-14 md:flex-row lg:flex-col">
-              <div className="feature-item-count shrink-0 rounded-full border border-purple-500 w-12 h-12 flex items-center justify-center">
+              <div className="feature-item-count shrink-0 rounded-full border border-purple-500 w-12 h-12 lg:w-14 lg:h-14 flex items-center justify-center">
                 <span className="text-purple-900 font-fraunces font-semibold md:text-xl lg:text-2xl leading-none tracking-0">
                   {item.id}
                 </span>
               </div>
               <div className="feature-item-content text-purple-900 not-md:text-center md:text-start lg:text-center space-y-4 md:space-y-7">
-                <h3 className="text-preset-3">{item.title}</h3>
+                <h2 className="text-preset-3">{item.title}</h2>
                 <p className="text-preset-4">{item.description}</p>
               </div>
             </div>

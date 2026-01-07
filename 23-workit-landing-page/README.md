@@ -44,7 +44,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://23-workit-landing-page.vercel.app/
-- 🧠 **Challenge:**
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/workit-landing-page-react-tailwindcss-component-structure-CSbImc_hUw
 
 ---
 

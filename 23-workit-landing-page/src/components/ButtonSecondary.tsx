@@ -14,7 +14,9 @@ function ButtonSecondary({
   return (
     <a
       href={link}
-      className={`${className} cursor-pointer inline-block text-white text-preset-5 border-b-4 border-green-base pb-2 transition-colors delay-75 ease-linear hover:text-green-base`}
+      className={`cursor-pointer inline-block text-white text-preset-5 border-b-4 border-green-base pb-2 transition-colors delay-75 ease-linear hover:text-green-base ${
+        className ? className : ""
+      }`}
     >
       {children}
     </a>
