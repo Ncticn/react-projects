@@ -1,12 +1,16 @@
+import FooterBase from "./components/FooterBase";
+import HeaderBase from "./components/HeaderBase";
+import LandingPage from "./pages/LandingPage";
+
 function App() {
   return (
-    <main>
-      <h1>Hello World !</h1>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit quia
-        ducimus, cumque eveniet itaque eligendi nam hic odio ab earum.
-      </p>
-    </main>
+    <div className="relative overflow-hidden">
+      <HeaderBase />
+      <main>
+        <LandingPage />
+      </main>
+      <FooterBase />
+    </div>
   );
 }
 
