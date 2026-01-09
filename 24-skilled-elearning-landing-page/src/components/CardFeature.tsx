@@ -9,13 +9,13 @@ type CardFeatureProps = {
 function CardFeature({ title, description, iconUrl }: CardFeatureProps) {
   return (
     <div className="card-feature">
-      <div className="w-full flex items-stretch justify-start md:max-w-82 lg:max-w-88 h-full md:min-h-80.5 bg-white px-8 pt-16 pb-10 rounded-[15px] drop-shadow-[0_25px_50px_rgba(6,22,141,4.42%)] relative">
+      <div className="relative flex h-full w-full items-stretch justify-start rounded-[15px] bg-white px-8 pt-16 pb-10 drop-shadow-[0_25px_50px_rgba(6,22,141,4.42%)] md:min-h-80.5 md:max-w-82 lg:max-w-88">
         <div className="card-feature-icon absolute -top-6 mb-8">
-          <div className="size-14 inline-block ">
+          <div className="inline-block size-14">
             <img
               src={iconUrl}
               alt="Feature Icon"
-              className="object-contain w-full h-auto"
+              className="h-auto w-full object-contain"
             />
           </div>
         </div>

@@ -40,8 +40,8 @@ const featuresData = [
 
 function CardTitle() {
   return (
-    <div className="gradient-preset-1 px-8 pt-8 pb-8 md:pt-16 md:pb-10 rounded-[15px] drop-shadow-[0_25px_50px_rgba(6,22,141,4.42%)] md:max-w-82 lg:max-w-88 w-full md:min-h-80.5 h-full">
-      <p className="text-preset-3 text-white h-full">
+    <div className="gradient-preset-1 h-full w-full rounded-[15px] px-8 pt-8 pb-8 drop-shadow-[0_25px_50px_rgba(6,22,141,4.42%)] md:min-h-80.5 md:max-w-82 md:pt-16 md:pb-10 lg:max-w-88">
+      <p className="text-preset-3 h-full text-white">
         Check out our most popular courses!
       </p>
     </div>
@@ -51,9 +51,9 @@ function CardTitle() {
 function SectionFeatures() {
   return (
     <section aria-label="Section Features">
-      <div className="px-5 pb-20 md:px-10 lg:px-20 pt-16 md:pb-36 w-full">
-        <div className="max-w-full lg:max-w-280 lg:mx-auto">
-          <div className="flex items-center justify-center flex-wrap gap-y-14 gap-x-6 md:gap-y-14 lg:gap-x-8">
+      <div className="w-full px-5 pt-16 pb-20 md:px-10 md:pb-36 lg:px-20">
+        <div className="max-w-full lg:mx-auto lg:max-w-280">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-14 md:gap-y-14 lg:gap-x-8">
             <CardTitle />
             {featuresData.map((feature) => (
               <CardFeature

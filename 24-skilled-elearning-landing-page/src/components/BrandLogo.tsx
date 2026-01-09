@@ -15,7 +15,7 @@ function BrandLogo({ logoType }: BrandLogoProps) {
       <img
         src={logoUrl}
         alt="Brand Logo"
-        className="object-contain w-full h-auto"
+        className="h-auto w-full object-contain"
       />
     </div>
   );

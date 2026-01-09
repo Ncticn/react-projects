@@ -1,71 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 @import "tailwindcss";
 
 @theme {
+  /* Colors */
+  --color-blue-900: #13183f;
+  --color-blue-600: #666ca3;
+  --color-pink-600: #f74780;
+  --color-pink-300: #ffa7c3;
+  --color-grey: #83869a;
 
-    /* Colors */
-    --color-blue-900: #13183F;
-    --color-blue-600: #666CA3;
-    --color-pink-600: #F74780;
-    --color-pink-300: #FFA7C3;
-    --color-grey: #83869A;
+  /* Font Family */
+  --font-plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
 
-    /* Font Family */
-    --font-plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+  /* Font Size */
+  --text-5\.5xl: 3.5rem;
+  --text-4\.5xl: 2.5rem;
+  --text-3\.5xl: 2rem;
 
-    /* Font Size */
-    --text-5\.5xl: 3.5rem;
-    --text-4\.5xl: 2.5rem;
-    --text-3\.5xl: 2rem;
+  /* Line Height */
+  --leading-150\%: 150%;
+  --leading-120\%: 120%;
 
-    /* Line Height */
-    --leading-150\%: 150%;
-    --leading-120\%: 120%;
-
-    /* Letter Spacing */
-    --tracking-0px: 0px;
+  /* Letter Spacing */
+  --tracking-0px: 0px;
 }
 
 @layer base {
-    body {
-        @apply font-plus-jakarta-sans tracking-0px;
-    }
+  body {
+    @apply font-plus-jakarta-sans tracking-0px;
+  }
 }
 
 @layer components {
-    .text-preset-1 {
-        @apply font-extrabold text-4.5xl lg:text-5.5xl leading-120%;
-    }
+  .text-preset-1 {
+    @apply text-4.5xl lg:text-5.5xl leading-120% font-extrabold;
+  }
 
-    .text-preset-2 {
-        @apply font-extrabold text-3.5xl lg:text-4.5xl leading-120%;
-    }
+  .text-preset-2 {
+    @apply text-3.5xl lg:text-4.5xl leading-120% font-extrabold;
+  }
 
-    .text-preset-3 {
-        @apply font-extrabold text-2xl lg:text-3.5xl leading-120%;
-    }
+  .text-preset-3 {
+    @apply lg:text-3.5xl leading-120% text-2xl font-extrabold;
+  }
 
-    .text-preset-4 {
-        @apply font-extrabold text-xl lg:text-2xl leading-120%;
-    }
+  .text-preset-4 {
+    @apply leading-120% text-xl font-extrabold lg:text-2xl;
+  }
 
-    .text-preset-5 {
-        @apply font-medium text-lg leading-150%;
-    }
+  .text-preset-5 {
+    @apply leading-150% text-lg font-medium;
+  }
 
-    .text-preset-6 {
-        @apply font-bold text-sm lg:text-base leading-120% md:leading-150%;
-    }
+  .text-preset-6 {
+    @apply leading-120% md:leading-150% text-sm font-bold lg:text-base;
+  }
 
-    .text-preset-7 {
-        @apply font-bold text-lg leading-7 lg:leading-150%;
-    }
+  .text-preset-7 {
+    @apply lg:leading-150% text-lg leading-7 font-bold;
+  }
 
-    .gradient-preset-1 {
-        @apply bg-linear-to-b from-0% from-[#FF6F48] to-100% to-[#F02AA6];
-    }
+  .gradient-preset-1 {
+    @apply bg-linear-to-b from-[#FF6F48] from-0% to-[#F02AA6] to-100%;
+  }
 
-    .gradient-preset-2 {
-        @apply bg-linear-to-b from-0% from-[#4851FF] to-100% to-[#F02AA6];
-    }
+  .gradient-preset-2 {
+    @apply bg-linear-to-b from-[#4851FF] from-0% to-[#F02AA6] to-100%;
+  }
 }
