@@ -34,19 +34,19 @@
 
 @layer components {
     .text-preset-1 {
-        @apply font-extrabold text-4.5xl md:text-5.5xl leading-120%;
+        @apply font-extrabold text-4.5xl lg:text-5.5xl leading-120%;
     }
 
     .text-preset-2 {
-        @apply font-extrabold text-3.5xl md:text-4.5xl leading-120%;
+        @apply font-extrabold text-3.5xl lg:text-4.5xl leading-120%;
     }
 
     .text-preset-3 {
-        @apply font-extrabold text-2xl md:text-3.5xl leading-120%;
+        @apply font-extrabold text-2xl lg:text-3.5xl leading-120%;
     }
 
     .text-preset-4 {
-        @apply font-extrabold text-xl md:text-2xl leading-120%;
+        @apply font-extrabold text-xl lg:text-2xl leading-120%;
     }
 
     .text-preset-5 {
@@ -54,11 +54,11 @@
     }
 
     .text-preset-6 {
-        @apply font-bold text-sm md:text-base leading-120% md:leading-150%;
+        @apply font-bold text-sm lg:text-base leading-120% md:leading-150%;
     }
 
     .text-preset-7 {
-        @apply font-bold text-lg leading-150%;
+        @apply font-bold text-lg leading-7 lg:leading-150%;
     }
 
     .gradient-preset-1 {
