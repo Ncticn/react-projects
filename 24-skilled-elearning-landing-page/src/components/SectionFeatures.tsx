@@ -51,7 +51,7 @@ function CardTitle() {
 function SectionFeatures() {
   return (
     <section aria-label="Section Features">
-      <div className="w-full px-5 pt-16 pb-20 md:px-10 md:pb-36 lg:px-20">
+      <div className="w-full bg-linear-to-b from-white from-0% to-[#F0F1FF] to-100% px-5 pt-16 pb-20 md:px-10 md:pb-36 lg:px-20">
         <div className="max-w-full lg:mx-auto lg:max-w-280">
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-14 md:gap-y-14 lg:gap-x-8">
             <CardTitle />
