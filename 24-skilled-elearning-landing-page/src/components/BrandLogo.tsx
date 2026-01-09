@@ -5,9 +5,9 @@ type BrandLogoProps = {
 function BrandLogo({ logoType }: BrandLogoProps) {
   let logoUrl: string = "";
   if (logoType === "dark") {
-    logoUrl = "/logo-dark.svg";
+    logoUrl = "../logo-dark.svg";
   } else {
-    logoUrl = "/logo-light.svg";
+    logoUrl = "../logo-light.svg";
   }
 
   return (

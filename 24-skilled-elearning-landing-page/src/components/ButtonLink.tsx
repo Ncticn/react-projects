@@ -1,14 +1,14 @@
 type ButtonLinkProps = {
   content: string;
-  clasName?: string;
+  buttonClass?: string;
 };
 
-function ButtonLink({ content, clasName }: ButtonLinkProps) {
+function ButtonLink({ content, buttonClass }: ButtonLinkProps) {
   return (
     <a
       href="#"
       className={`inline-block text-preset-7 transition-all delay-100 ease-linear text-pink-600 hover:text-pink-300 ${
-        clasName ? clasName : ""
+        buttonClass ? buttonClass : ""
       }`}
       aria-label={content}
     >
