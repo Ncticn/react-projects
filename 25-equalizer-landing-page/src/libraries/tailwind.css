@@ -1,1 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 @import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-cyan-base: #66e2dc;
+  --color-orange-base: #fa7453;
+  --color-yellow-base: #ffb964;
+  --color-white-base: #fcfaf9;
+  --color-slate-base: #191826;
+
+  /* Font Family */
+  --font-ibm-plex-sans: "IBM Plex Sans", sans-serif;
+
+  /* Font Size */
+  --text-4\.5xl: 2.5rem;
+  --text-6\.5xl: 4rem;
+  --text-7\.5xl: 5.5rem;
+
+  /* Line Height */
+  --leading-100\%: 100%;
+  --leading-110\%: 110%;
+  --leading-150\%: 150%;
+  --leading-180\%: 180%;
+
+  /* Letter Spacing */
+  --tracking-0px: 0px;
+  --tracking-1px: 1px;
+}
+
+@layer base {
+  body {
+    @apply font-ibm-plex-sans;
+  }
+}
+
+@layer components {
+  .text-preset-1 {
+    @apply text-4.5xl md:text-6.5xl lg:text-7.5xl leading-100% -tracking-1px font-bold;
+  }
+
+  .text-preset-2 {
+    @apply text-6.5xl leading-110% tracking-0px font-bold;
+  }
+
+  .text-preset-3 {
+    @apply text-4.5xl leading-110% tracking-0px font-bold;
+  }
+
+  .text-preset-4 {
+    @apply leading-150% tracking-0px text-base font-normal md:text-lg lg:text-xl;
+  }
+
+  .text-preset-5 {
+    @apply leading-150% tracking-0px text-base font-normal;
+  }
+
+  .text-preset-6 {
+    @apply leading-180% tracking-0px text-lg font-bold;
+  }
+}
