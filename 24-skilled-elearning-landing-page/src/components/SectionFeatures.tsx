@@ -41,9 +41,9 @@ const featuresData = [
 function CardTitle() {
   return (
     <div className="gradient-preset-1 h-full w-full rounded-[15px] px-8 pt-8 pb-8 drop-shadow-[0_25px_50px_rgba(6,22,141,4.42%)] md:min-h-80.5 md:max-w-82 md:pt-16 md:pb-10 lg:max-w-88">
-      <p className="text-preset-3 h-full text-white">
+      <h2 className="text-preset-3 h-full text-white">
         Check out our most popular courses!
-      </p>
+      </h2>
     </div>
   );
 }

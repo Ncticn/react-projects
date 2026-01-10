@@ -44,7 +44,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://24-skilled-elearning-landing-page.vercel.app/
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/pod-request-access-landing-page-react-tailwindcss-components-5Xwye9Kldj
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/skilled-e-learning-landing-page-react-tailwindcss-components-CoyiW4cAF8
 
 ---
 

@@ -19,7 +19,7 @@ function ButtonBase({ buttonType, content }: ButtonBaseProps) {
       className={`text-preset-7 z-20 inline-flex items-center justify-center gap-2 rounded-[28px] px-8 py-4 text-white transition-all delay-100 ease-linear md:px-6 md:py-3 lg:px-8 lg:py-4 ${
         buttonClass ? buttonClass : ""
       }`}
-      aria-label={content}
+      aria-label="Get started with learning"
     >
       {content}
     </a>

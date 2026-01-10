@@ -10,7 +10,7 @@ function ButtonLink({ content, buttonClass }: ButtonLinkProps) {
       className={`text-preset-7 inline-block text-pink-600 transition-all delay-100 ease-linear hover:text-pink-300 ${
         buttonClass ? buttonClass : ""
       }`}
-      aria-label={content}
+      aria-label="Get started with learning"
     >
       {content}
     </a>
