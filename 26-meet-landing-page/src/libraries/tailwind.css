@@ -1,1 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 @import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-cyan-600: #4d96a9;
+  --color-cyan-300: #8fe3f9;
+  --color-purple-600: #855fb1;
+  --color-purple-300: #d9b8ff;
+  --color-slate-900: #28283d;
+  --color-slate-600: #87879d;
+  --color-white-base: #fafafa;
+
+  /* Font Family */
+  --font-red-hat-display: "Red Hat Display", sans-serif;
+
+  /* Font Size */
+  --text-6\.5xl: 4rem;
+  --text-4\.5xl: 2.5rem;
+  --text-3\.5xl: 2rem;
+
+  /* Line Height */
+  --leading-110\%: 110%;
+  --leading-150\%: 150%;
+
+  /* Letter Spacing */
+  --tracking-0px: 0px;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-red-hat-display);
+    letter-spacing: var(--tracking-0px);
+  }
+}
+
+@layer components {
+  .text-preset-1 {
+    @apply text-4.5xl lg:text-6.5xl leading-110% font-black md:text-5xl;
+  }
+
+  .text-preset-2 {
+    @apply text-3.5xl lg:text-4.5xl leading-110% font-black md:text-4xl;
+  }
+
+  .text-preset-3 {
+    @apply leading-110% text-xs font-black md:text-sm lg:text-base;
+  }
+
+  .text-preset-4 {
+    @apply leading-150% text-base font-medium lg:text-lg;
+  }
+
+  .text-preset-5 {
+    @apply leading-150% text-base font-black;
+  }
+}
