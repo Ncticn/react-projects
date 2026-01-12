@@ -30,7 +30,7 @@
 
 @layer base {
   body {
-    @apply font-ibm-plex-sans;
+    @apply font-ibm-plex-sans relative overflow-x-hidden bg-[url(src/assets/patterns/bg-main-mobile.png)] bg-cover bg-top-right bg-no-repeat md:bg-[url(src/assets/patterns/bg-main-tablet.png)] lg:bg-[url(src/assets/patterns/bg-main-desktop.png)] lg:bg-top;
   }
 }
 

@@ -1,12 +1,21 @@
+import FooterBase from "./components/FooterBase";
+import HeaderBase from "./components/HeaderBase";
+import LandingPage from "./pages/LandingPage";
+
 function App() {
   return (
-    <section>
-      <h1>Hello World !</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-        perspiciatis numquam sunt ab ipsa et illo dolore illum cumque eligendi.
-      </p>
-    </section>
+    <>
+      <HeaderBase />
+      <main>
+        <img
+          src="src/assets/patterns/bg-pattern-1.svg"
+          alt="Background Pattern Image"
+          className="absolute top-0 -right-10 z-20 not-md:hidden lg:right-0"
+        />
+        <LandingPage />
+      </main>
+      <FooterBase />
+    </>
   );
 }
 
