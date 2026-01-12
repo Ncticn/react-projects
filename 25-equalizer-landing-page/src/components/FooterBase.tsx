@@ -12,9 +12,11 @@ export default function FooterBase() {
             </div>
             <div className="brand-content col-span-1 md:col-span-3 md:row-span-1 lg:col-span-2">
               <p className="text-preset-5 text-slate-base">
-                All rights reserved © Equalizer <br /> 2021 Have any problems?
-                Contact us via social media or email us at{" "}
+                All rights reserved © Equalizer 2021
               </p>
+              <address className="not-italic">
+                Have any problems? Contact us via social media or email us at
+              </address>
               <a
                 href="mailto:equalizer@example.com"
                 className="text-preset-5 text-slate-base font-bold!"
@@ -23,22 +25,31 @@ export default function FooterBase() {
                 equalizer@example.com
               </a>
             </div>
-            <div className="social-media col-span-1 row-span-1 self-center md:justify-self-end">
-              <div className="flex flex-row items-stretch justify-start gap-8">
-                <SocialMediaLink
-                  mediaType="facebook"
-                  ariaLabel="Facebook Profile Page"
-                />
-                <SocialMediaLink
-                  mediaType="instagram"
-                  ariaLabel="Instagram Profile Page"
-                />
-                <SocialMediaLink
-                  mediaType="twitter"
-                  ariaLabel="Twitter Profile Page"
-                />
-              </div>
-            </div>
+            <nav
+              aria-label="Social Media Links"
+              className="social-media col-span-1 row-span-1 self-center md:justify-self-end"
+            >
+              <ul className="flex flex-row items-stretch justify-start gap-8">
+                <li>
+                  <SocialMediaLink
+                    mediaType="facebook"
+                    ariaLabel="Facebook Profile Page"
+                  />
+                </li>
+                <li>
+                  <SocialMediaLink
+                    mediaType="instagram"
+                    ariaLabel="Instagram Profile Page"
+                  />
+                </li>
+                <li>
+                  <SocialMediaLink
+                    mediaType="twitter"
+                    ariaLabel="Twitter Profile Page"
+                  />
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>

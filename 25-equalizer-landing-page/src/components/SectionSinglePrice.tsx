@@ -11,6 +11,7 @@ export default function SectionSinglePrice() {
                 <img
                   src="/assets/images/illustration-app.png"
                   className="max-h-160.5 max-w-67.5 lg:max-w-92.25"
+                  alt="Illustration App Phone Image"
                 />
               </div>
               <div className="card-single-price relative z-20 md:top-20 md:right-10">
@@ -47,11 +48,15 @@ export default function SectionSinglePrice() {
                 </div>
               </div>
             </div>
-            <img
-              src="/assets/patterns/bg-pattern-2.svg"
-              alt=""
+            <figure
+              aria-hidden="true"
               className="absolute top-24 right-0 left-0 z-10 object-contain not-md:w-full md:top-0 lg:left-[31%]"
-            />
+            >
+              <img
+                src="/assets/patterns/bg-pattern-2.svg"
+                alt="Background Pattern Second Image"
+              />
+            </figure>
           </div>
         </div>
       </div>
