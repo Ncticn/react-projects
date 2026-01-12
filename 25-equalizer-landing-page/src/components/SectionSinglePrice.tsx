@@ -9,7 +9,7 @@ export default function SectionSinglePrice() {
             <div className="z-20 flex flex-col items-center justify-center md:flex-row lg:gap-32">
               <div className="section-single-price-image relative bottom-30 z-20 md:left-3">
                 <img
-                  src="src/assets/images/illustration-app.png"
+                  src="/assets/images/illustration-app.png"
                   className="max-h-160.5 max-w-67.5 lg:max-w-92.25"
                 />
               </div>
@@ -48,7 +48,7 @@ export default function SectionSinglePrice() {
               </div>
             </div>
             <img
-              src="src/assets/patterns/bg-pattern-2.svg"
+              src="/assets/patterns/bg-pattern-2.svg"
               alt=""
               className="absolute top-24 right-0 left-0 z-10 object-contain not-md:w-full md:top-0 lg:left-[31%]"
             />

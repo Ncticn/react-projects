@@ -8,7 +8,7 @@ function App() {
       <HeaderBase />
       <main>
         <img
-          src="src/assets/patterns/bg-pattern-1.svg"
+          src="/assets/patterns/bg-pattern-1.svg"
           alt="Background Pattern Image"
           className="absolute top-0 -right-10 z-20 not-md:hidden lg:right-0"
         />
