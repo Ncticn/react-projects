@@ -1,1 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-black-base: #121212;
+  --color-dark-blue: #19202d;
+  --color-grey-100: #e7eaee;
+  --color-grey-200: #cfcfcf;
+  --color-grey-400: #676d7e;
+  --color-grey-500: #48556a;
+  --color-purple-50: #ede4ff;
+  --color-purple-300: #a775f1;
+  --color-purple-500: #733fc8;
+
+  /* Font Family */
+  --font-barlow-semi-condensed: "Barlow Semi Condensed", sans-serif;
+
+  /* Line Height */
+  --leading-110\%: 110%;
+  --leading-120\%: 120%;
+  --leading-140\%: 140%;
+
+  /* Letter Spacing */
+  --tracking-0px: 0px;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-barlow-semi-condensed);
+    letter-spacing: var(--tracking-0px);
+    background-color: #f6f5f6;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@layer components {
+  .text-preset-1 {
+    @apply leading-120% text-xl font-semibold;
+  }
+
+  .text-preset-2 {
+    @apply leading-110% text-[13px] font-medium;
+  }
+
+  .text-preset-3 {
+    @apply leading-140% text-[13px] font-medium;
+  }
+
+  .text-preset-4 {
+    @apply leading-110% text-[11px] font-medium;
+  }
+}
