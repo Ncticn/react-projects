@@ -9,22 +9,22 @@ export default function SectionFeatures() {
           <div className="image-gallery">
             <div className="flex flex-row flex-wrap items-center justify-center gap-4 md:gap-6 lg:gap-8">
               <img
-                src="src/assets/images/image-woman-in-videocall.jpg"
+                src="../images/image-woman-in-videocall.jpg"
                 alt=""
                 className="max-w-36 rounded-lg md:max-w-38 lg:max-w-3xs"
               />
               <img
-                src="src/assets/images/image-women-videochatting.jpg"
+                src="../images/image-women-videochatting.jpg"
                 alt=""
                 className="max-w-36 rounded-lg md:max-w-38 lg:max-w-3xs"
               />
               <img
-                src="src/assets/images/image-men-in-meeting.jpg"
+                src="../images/image-men-in-meeting.jpg"
                 alt=""
                 className="max-w-36 rounded-lg md:max-w-38 lg:max-w-3xs"
               />
               <img
-                src="src/assets/images/image-man-texting.jpg"
+                src="../images/image-man-texting.jpg"
                 alt=""
                 className="max-w-36 rounded-lg md:max-w-38 lg:max-w-3xs"
               />

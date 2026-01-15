@@ -7,13 +7,13 @@ export default function SectionHero() {
         <div className="flex flex-col items-center justify-center gap-8 lg:flex-row">
           <figure className="md:-ms-7">
             <img
-              src="src/assets/images/image-hero-left.png"
+              src="../images/image-hero-left.png"
               alt="Hero Left Image"
               className="not-lg:hidden"
             />
             <img
-              src="src/assets/images/image-hero-tablet.png"
-              alt=""
+              src="../images/image-hero-tablet.png"
+              alt="Hero Tablet Image"
               className="not-sm:scale-[115%] lg:hidden"
             />
           </figure>
@@ -32,10 +32,7 @@ export default function SectionHero() {
             </div>
           </div>
           <figure className="not-lg:hidden md:-me-7">
-            <img
-              src="src/assets/images/image-hero-right.png"
-              alt="Hero Left Image"
-            />
+            <img src="../images/image-hero-right.png" alt="Hero Left Image" />
           </figure>
         </div>
       </div>
