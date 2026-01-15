@@ -1,16 +1,22 @@
+import FooterBase from "./components/FooterBase";
+import HeaderBase from "./components/HeaderBase";
+import LandingPage from "./pages/LandingPage";
+import PageCounter from "./components/PageCounter";
+
 function App() {
   return (
-    <section>
-      <div>
-        <h1>Hello World !</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas corrupti
-          magnam, soluta ratione ut fuga at eos debitis eligendi beatae
-          aspernatur sint officia alias delectus? Non sapiente optio architecto
-          quia.
-        </p>
+    <>
+      <HeaderBase />
+      <main>
+        <LandingPage />
+      </main>
+      <div className="relative z-50 h-full w-full">
+        <div className="relative top-7 right-0 left-0">
+          <PageCounter count="2" />
+        </div>
       </div>
-    </section>
+      <FooterBase />
+    </>
   );
 }
 
