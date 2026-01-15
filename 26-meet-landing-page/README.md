@@ -44,7 +44,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://26-meet-landing-page.vercel.app/
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/equalizer-landing-page-react-tailwindcss-typescript-components-F7KKlB4znH
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/meet-landing-page-react-tailwindcss-typescript-components-deIJrH-r2l
 
 ---
 

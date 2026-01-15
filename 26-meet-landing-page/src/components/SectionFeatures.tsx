@@ -5,7 +5,7 @@ export default function SectionFeatures() {
     <section aria-label="Section Features">
       <div className="px-8 pt-8 pb-16 md:pt-14 lg:px-20 lg:pb-18">
         <div className="flex flex-col items-center justify-start gap-16">
-          <PageCounter count="1" />
+          <PageCounter count="01" />
           <div className="image-gallery">
             <div className="flex flex-row flex-wrap items-center justify-center gap-4 md:gap-6 lg:gap-8">
               <img
