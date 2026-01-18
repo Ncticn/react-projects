@@ -69,7 +69,7 @@ export default function CardTestimonial({
   return (
     <article className="card-testimonials card-testimonials-shadow relative">
       <div
-        className={`h-full rounded-lg p-8 ${clientQueue === "1" ? "after:absolute after:top-0 after:right-15 after:z-10 after:size-26 after:bg-[url(src/assets/patterns/bg-pattern-quotation.svg)] after:bg-contain after:bg-center after:bg-no-repeat" : ""} ${cardStyles?.backgroundColor} `}
+        className={`h-full rounded-lg p-8 ${clientQueue === "1" ? "after:absolute after:top-0 after:right-15 after:z-10 after:size-26 after:bg-[url(../patterns/bg-pattern-quotation.svg)] after:bg-contain after:bg-center after:bg-no-repeat" : ""} ${cardStyles?.backgroundColor} `}
       >
         <div className="relative z-20 flex flex-col items-start justify-center gap-4">
           <div className="card-testimonial-profile flex items-center justify-start gap-4">
