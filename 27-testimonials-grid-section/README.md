@@ -44,7 +44,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://27-testimonials-grid-section.vercel.app/
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/meet-landing-page-react-tailwindcss-typescript-components-deIJrH-r2l
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/testimonials-grid-section-react-typescript-tailwindcss-t5wy7Ftbn1
 
 ---
 
