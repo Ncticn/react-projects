@@ -89,35 +89,23 @@
     }
   }
 
-  .grid-wrapper> :first-child {
+  .grid-wrapper > :first-child {
     grid-area: first;
   }
 
-  .grid-wrapper> :nth-child(2) {
+  .grid-wrapper > :nth-child(2) {
     grid-area: second;
   }
 
-  .grid-wrapper> :nth-child(3) {
+  .grid-wrapper > :nth-child(3) {
     grid-area: third;
   }
 
-  .grid-wrapper> :nth-child(4) {
+  .grid-wrapper > :nth-child(4) {
     grid-area: fourth;
   }
 
-  .grid-wrapper> :nth-child(5) {
+  .grid-wrapper > :nth-child(5) {
     grid-area: fifth;
   }
 }
-
-/* @media screen and (width <=768px) {
-  .grid-wrapper {
-    display: grid;
-    grid-template-areas:
-      "first first"
-      "second fourth"
-      "fifth fifth"
-      "third third"
-    ;
-  }
-} */
