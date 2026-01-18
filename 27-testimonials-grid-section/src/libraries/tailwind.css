@@ -30,8 +30,11 @@
     font-family: var(--font-barlow-semi-condensed);
     letter-spacing: var(--tracking-0px);
     background-color: #f6f5f6;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -51,4 +54,70 @@
   .text-preset-4 {
     @apply leading-110% text-[11px] font-medium;
   }
+
+  .card-testimonials-shadow {
+    filter: drop-shadow(40px 60px 50px rgba(72, 85, 106, 0.2474));
+  }
+
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "first first second third"
+      "fourth fifth fifth third";
+    column-gap: 2rem;
+    row-gap: 1.5rem;
+
+    @media screen and (width <=768px) {
+      grid-template-columns: repeat(2, 1fr);
+
+      grid-template-areas:
+        "first first"
+        "second fourth"
+        "fifth fifth"
+        "third third";
+    }
+
+    @media screen and (width <=375px) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-areas:
+        "first"
+        "second"
+        "fourth"
+        "fifth"
+        "third";
+    }
+  }
+
+  .grid-wrapper> :first-child {
+    grid-area: first;
+  }
+
+  .grid-wrapper> :nth-child(2) {
+    grid-area: second;
+  }
+
+  .grid-wrapper> :nth-child(3) {
+    grid-area: third;
+  }
+
+  .grid-wrapper> :nth-child(4) {
+    grid-area: fourth;
+  }
+
+  .grid-wrapper> :nth-child(5) {
+    grid-area: fifth;
+  }
 }
+
+/* @media screen and (width <=768px) {
+  .grid-wrapper {
+    display: grid;
+    grid-template-areas:
+      "first first"
+      "second fourth"
+      "fifth fifth"
+      "third third"
+    ;
+  }
+} */
