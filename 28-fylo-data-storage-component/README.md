@@ -44,7 +44,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://28-fylo-data-storage-component.vercel.app/
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/testimonials-grid-section-react-typescript-tailwindcss-t5wy7Ftbn1
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/fylo-data-storage-component-react-tailwindcss-prettier-2UT4pP1NMx
 
 ---
 
