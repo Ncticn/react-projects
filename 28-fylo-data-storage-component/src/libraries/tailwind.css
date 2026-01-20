@@ -34,7 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @apply bg-[url(src/assets/images/bg-mobile.png)] bg-cover md:bg-[url(src/assets/images/bg-desktop.png)] md:bg-contain;
+    @apply bg-[url(../images/bg-mobile.png)] bg-cover md:bg-[url(../images/bg-desktop.png)] md:bg-contain;
   }
 }
 
