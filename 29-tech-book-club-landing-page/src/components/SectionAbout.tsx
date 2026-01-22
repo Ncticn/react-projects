@@ -24,8 +24,11 @@ function SectionAbout() {
             </h2>
 
             <ul className="space-y-4 text-neutral-700 md:space-y-6 lg:max-w-4/5">
-              {listItem.map((item) => (
-                <li className="flex h-full w-full items-center justify-start gap-3.5">
+              {listItem.map((item, index) => (
+                <li
+                  className="flex h-full w-full items-center justify-start gap-3.5"
+                  key={index}
+                >
                   <div className="max-w-8">
                     <IconCheck />
                   </div>
