@@ -9,7 +9,7 @@ function SectionAbout() {
   ];
 
   return (
-    <section>
+    <section aria-label="Section About">
       <div className="mx-auto max-w-full px-4 md:px-8 lg:max-w-6xl lg:px-0">
         <div className="flex flex-col-reverse items-start justify-start gap-10 lg:flex-row lg:items-center lg:gap-20">
           <figure className="max-w-full overflow-hidden rounded-xl md:rounded-[25px] lg:max-w-140 lg:rounded-[20px]">
