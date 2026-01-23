@@ -25,7 +25,7 @@ function CardPricing({
   return (
     <article aria-label="Card Pricing">
       <div
-        className={`w-full min-w-85 rounded-lg border border-neutral-200 px-6 ${primary ? "relative overflow-hidden bg-neutral-100 py-6 after:absolute after:top-10 after:-right-80 after:z-10 after:size-171 after:bg-[url(src/assets/patterns/pattern-glow.svg)] after:bg-cover after:bg-center after:bg-no-repeat lg:min-w-87.5 lg:py-10" : "bg-white py-6 md:min-w-71.5"}`}
+        className={`w-full min-w-85 rounded-lg border border-neutral-200 px-6 ${primary ? "relative overflow-hidden bg-neutral-100 py-6 after:absolute after:top-10 after:-right-80 after:z-10 after:size-171 after:bg-[url(src/assets/patterns/pattern-glow.svg)] after:bg-cover after:bg-center after:bg-no-repeat lg:min-w-87.5 lg:py-10" : "bg-white py-6 lg:min-w-71.5"}`}
       >
         <div className="relative z-20 flex flex-col items-start justify-center gap-8">
           <div className="card-pricing-details w-full space-y-6">
