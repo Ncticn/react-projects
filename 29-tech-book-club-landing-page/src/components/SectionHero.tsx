@@ -18,7 +18,7 @@ function SectionHero() {
           </div>
           <div className="section-main-cta flex flex-col items-stretch gap-5">
             <ButtonWithArrowDown text="REVIEW MEMBERSHIP OPTIONS" />
-            <TestimonialTotal />
+            <TestimonialTotal theme="light" />
           </div>
         </div>
         <div className="section-image">
