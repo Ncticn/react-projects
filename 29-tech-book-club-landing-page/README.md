@@ -52,7 +52,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://29-tech-book-club-landing-page.vercel.app/
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/fylo-data-storage-component-react-tailwindcss-prettier-2UT4pP1NMx
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/tech-book-club-landing-page-react-typescript-tailwindcss-U2yN_8jUNu
 
 ---
 
