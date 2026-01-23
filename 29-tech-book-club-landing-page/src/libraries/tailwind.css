@@ -83,6 +83,6 @@
   }
 
   .btn-secondary {
-    @apply inline-flex flex-row items-center justify-center gap-4 rounded-lg border-4 border-white bg-transparent px-5 py-4 text-white transition-colors delay-100 ease-linear hover:bg-linear-to-r hover:from-neutral-700 hover:from-0% hover:to-neutral-900 hover:to-100% md:px-6 md:py-5;
+    @apply inline-flex flex-row items-center justify-center gap-4 rounded-lg border-2 border-white px-5 py-4 text-white transition-colors delay-100 ease-linear hover:bg-linear-to-r hover:from-neutral-700 hover:from-0% hover:to-neutral-900 hover:to-100% md:border-4 md:px-6 md:py-5;
   }
 }
