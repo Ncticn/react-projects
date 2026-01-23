@@ -14,7 +14,7 @@ function SectionAbout() {
         <div className="flex flex-col-reverse items-start justify-start gap-10 lg:flex-row lg:items-center lg:gap-20">
           <figure className="max-w-full overflow-hidden rounded-xl md:rounded-[25px] lg:max-w-140 lg:rounded-[20px]">
             <img
-              src="src/assets/images/image-read-together-desktop.webp"
+              src="../images/image-read-together-desktop.webp"
               alt="Image Read Together"
             />
           </figure>

@@ -24,14 +24,14 @@ function SectionHero() {
         <div className="section-image">
           <div className="overflow-hidden rounded-lg lg:min-w-135">
             <img
-              src="src/assets/images/image-hero-desktop.webp"
+              src="../images/image-hero-desktop.webp"
               alt=""
               className="h-auto w-full"
             />
           </div>
         </div>
         <img
-          src="src/assets/patterns/pattern-glow.svg"
+          src="../patterns/pattern-glow.svg"
           alt="Background Pattern Circle Image"
           className="absolute -right-60 -bottom-60 size-171 object-contain"
         />
