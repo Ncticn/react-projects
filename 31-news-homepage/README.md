@@ -47,7 +47,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://31-news-homepage.vercel.app/
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/tech-book-club-landing-page-react-typescript-tailwindcss-U2yN_8jUNu
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/news-homepage-react-typescript-tailwindcss-components-Eez3KEUmlo
 
 ---
 

@@ -58,10 +58,7 @@ export default function HeaderBase() {
             className="cursor-pointer lg:hidden"
             onClick={handleButtonMenu}
           >
-            <img
-              src="src/assets/icons/icon-menu.svg"
-              alt="Icon Hamburger Menu"
-            />
+            <img src="/icons/icon-menu.svg" alt="Icon Hamburger Menu" />
           </button>
           {isActive && (
             <div className="fixed inset-0 flex flex-row">
@@ -74,7 +71,7 @@ export default function HeaderBase() {
                     onClick={handleButtonMenu}
                   >
                     <img
-                      src="src/assets/icons/icon-menu-close.svg"
+                      src="/icons/icon-menu-close.svg"
                       alt="Icon Hamburger Close Menu"
                       className="object-contain"
                     />
