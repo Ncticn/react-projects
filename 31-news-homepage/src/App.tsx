@@ -1,11 +1,7 @@
+import LayoutBase from "./layout/LayoutBase";
+
 function App() {
-  return (
-    <main>
-      <section>
-        <h1>Lorem, ipsum.</h1>
-      </section>
-    </main>
-  );
+  return <LayoutBase />;
 }
 
 export default App;
