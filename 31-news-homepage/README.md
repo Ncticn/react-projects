@@ -1,73 +1,88 @@
-# React + TypeScript + Vite
+# 📌 News Homepage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a solution to the "News Homepage" challenge on Frontend Mentor.  
+The challenge focuses on building a responsive news homepage using modern layout techniques, with particular emphasis on CSS Grid and layout decision-making.
 
-Currently, two official plugins are available:
+## 🖼️ Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Project Preview](src/preview/preview.jpg)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎯 Overview
 
-## Expanding the ESLint configuration
+During the development of this project, the following aspects were implemented:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Creating a responsive layout that adapts correctly across different screen sizes
+- Building the page structure using CSS Grid for complex layout sections
+- Applying hover and focus states to all interactive elements
+- Reproducing the design as closely as possible based on the provided layout
 
-```js
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🧠 What I Learned
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+Through this project, I practiced:
+
+- Building complex page layouts using CSS Grid
+- Making layout decisions for content-heavy interfaces
+- Managing hover and focus states for better accessibility and usability
+- Implementing a mobile hamburger menu for responsive navigation
+- Improving responsive design strategies for multi-section pages
+- Paying close attention to spacing, hierarchy, and visual balance
+
+---
+
+## 🛠️ Tech Stack & Concepts
+
+- **Framework / Library:** React
+- **Styling:** Tailwind CSS
+- **Architecture:** Component-Based Structure
+- **Markup:** Semantic HTML
+- **Code Formatting:** Prettier
+- **Version Control:** Git & GitHub
+
+---
+
+## 🔗 Links
+
+- 💻 **Live Demo:** https://31-news-homepage.vercel.app/
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/tech-book-club-landing-page-react-typescript-tailwindcss-U2yN_8jUNu
+
+---
+
+## ⚙️ Installation & Running the Project
+
+To run this project locally, follow these steps:
+
+```bash
+# Clone the repository
+git clone https://github.com/Ncticn/react-projects.git
+
+# Navigate to the project directory
+cd 29-tech-book-club-landing-page
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+## 👤 Author
 
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+**Ncticn**  
+Front-End Developer
+
+- GitHub: https://github.com/Ncticn
+- LinkedIn: https://www.linkedin.com/in/ncticn/
+- Frontend Mentor: https://www.frontendmentor.io/profile/Ncticn
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License.  
+© 2026 Ncticn.
