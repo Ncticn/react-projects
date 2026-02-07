@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-grey-300: #c5c6ce;
+  --color-grey-200: #d8d8d8;
+  --color-navy-950: #00001a;
+  --color-navy-600: #5e607a;
+  --color-gold-400: #e9aa52;
+  --color-red-500: #f15d51;
+
+  /* Font Family */
+  --font-inter: "Inter", sans-serif;
+
+  /* Font Size */
+  --text-5\.5xl: 3.5rem;
+  --text-4\.5xl: 2.5rem;
+  --text-3\.5xl: 2rem;
+}
+
+@layer base {
+  body {
+    @apply font-inter relative bg-white px-4 py-7 tracking-[0px] md:px-20 lg:px-42 lg:py-22.5;
+  }
+
+  #root {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "main main aside"
+      "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3;
+    gap: 64px 32px;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  aside {
+    grid-area: aside;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  @media screen and (max-width: 768px) {
+    #root {
+      grid-template-areas:
+        "header"
+        "main"
+        "aside"
+        "footer";
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@layer components {
+  .text-preset-1 {
+    @apply text-4.5xl lg:text-5.5xl leading-10 font-extrabold lg:leading-14;
+  }
+
+  .text-preset-2 {
+    @apply text-4.5xl leading-10 font-extrabold;
+  }
+
+  .text-preset-3 {
+    @apply text-3.5xl leading-8 font-bold;
+  }
+
+  .text-preset-4 {
+    @apply text-xl leading-6 font-extrabold;
+  }
+
+  .text-preset-5 {
+    @apply text-lg leading-6 font-extrabold;
+  }
+
+  .text-preset-6 {
+    @apply text-[0.938rem] leading-6.5 font-normal;
+  }
+
+  .text-preset-7 {
+    @apply text-sm leading-6 font-bold tracking-[4.38px];
+  }
+}
