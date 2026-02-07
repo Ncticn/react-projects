@@ -21,13 +21,53 @@
 
 @layer base {
   body {
-    @apply font-inter bg-white tracking-[0px];
+    @apply font-inter bg-white tracking-[0px] px-4 py-7 md:px-20 lg:px-42 lg:py-22.5 relative;
+  }
+
+  #root {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "main main aside"
+      "footer footer footer"
+    ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 3;
+    gap: 64px 32px;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  aside {
+    grid-area: aside;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+
+  @media screen and (max-width: 768px) {
+    #root {
+      grid-template-areas:
+        "header"
+        "main"
+        "aside"
+        "footer"
+      ;
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
 
 @layer components {
   .text-preset-1 {
-    @apply text-5.5xl leading-14 font-extrabold;
+    @apply text-4.5xl leading-10 lg:text-5.5xl lg:leading-14 font-extrabold;
   }
 
   .text-preset-2 {
@@ -47,7 +87,7 @@
   }
 
   .text-preset-6 {
-    @apply text-[15px] leading-6.5 font-normal;
+    @apply text-[0.938rem] leading-6.5 font-normal;
   }
 
   .text-preset-7 {
