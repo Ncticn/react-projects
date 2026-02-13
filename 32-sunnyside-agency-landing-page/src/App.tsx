@@ -1,9 +1,7 @@
+import LayoutBase from "./layouts/LayoutBase";
+
 function App() {
-  return (
-    <section>
-      <h1 className="text-preset-1">Lorem ipsum dolor sit.</h1>
-    </section>
-  );
+  return <LayoutBase />;
 }
 
 export default App;
