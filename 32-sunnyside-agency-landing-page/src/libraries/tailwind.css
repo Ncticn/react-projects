@@ -43,7 +43,7 @@
 
 @layer utilities {
   .text-preset-1 {
-    @apply font-fraunces text-5.5xl leading-125% tracking-9px font-black;
+    @apply font-fraunces text-4.5xl tracking-6px md:text-5.5xl leading-125% md:tracking-9px font-black;
   }
 
   .text-preset-2 {
@@ -51,7 +51,7 @@
   }
 
   .text-preset-3 {
-    @apply font-fraunces text-4.25xl leading-125% tracking-0px font-black;
+    @apply font-fraunces text-3.5xl md:text-4.25xl leading-125% tracking-0px font-black;
   }
 
   .text-preset-4 {
@@ -88,5 +88,25 @@
 
   .text-preset-12 {
     @apply font-barlow leading-180% tracking-0px text-sm font-semibold;
+  }
+}
+
+@layer components {
+  .mobile-menu {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 80px;
+  }
+
+  .mobile-menu > div::after {
+    content: "";
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -7.5%;
+    right: 0px;
+    background-color: white;
   }
 }
