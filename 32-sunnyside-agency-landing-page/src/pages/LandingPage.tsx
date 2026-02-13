@@ -38,14 +38,14 @@ export default function LandingPage() {
   return (
     <>
       <section aria-label="Section Hero">
-        <div className="flex h-200 flex-col items-center justify-center bg-[url(src/assets/images/mobile/image-header.jpg)] bg-cover bg-center bg-no-repeat lg:bg-[url(src/assets/images/desktop/image-header.jpg)] lg:bg-cover">
+        <div className="flex h-200 flex-col items-center justify-center bg-[url(/images/mobile/image-header.jpg)] bg-cover bg-center bg-no-repeat lg:bg-[url(/images/desktop/image-header.jpg)] lg:bg-cover">
           <div className="mx-auto max-w-full md:max-w-md lg:max-w-182">
             <div className="flex flex-col items-center justify-center gap-24">
               <h1 className="text-preset-1 text-center text-white uppercase">
                 We are creatives
               </h1>
               <img
-                src="src/assets/icons/icon-arrow-down.svg"
+                src="/icons/icon-arrow-down.svg"
                 alt="Icon Arrow Down"
                 className="animate-bounce object-contain"
               />
@@ -71,7 +71,7 @@ export default function LandingPage() {
           </div>
           <div className="order-1 lg:order-2 lg:w-1/2">
             <img
-              src="src/assets/images/desktop/image-transform.jpg"
+              src="/images/desktop/image-transform.jpg"
               alt="Image Transform"
               className="w-full object-contain"
             />
@@ -93,7 +93,7 @@ export default function LandingPage() {
           </div>
           <div className="order-1 lg:w-1/2">
             <img
-              src="src/assets/images/desktop/image-stand-out.jpg"
+              src="/images/desktop/image-stand-out.jpg"
               alt="Image Transform"
               className="w-full object-contain"
             />
@@ -103,7 +103,7 @@ export default function LandingPage() {
 
       <section>
         <div className="grid grid-cols-1 grid-rows-[600px_600px] lg:grid-cols-2 lg:grid-rows-[600px]">
-          <div className="flex bg-[url(src/assets/images/mobile/image-graphic-design.jpg)] bg-contain bg-center bg-no-repeat md:bg-[url(src/assets/images/desktop/image-graphic-design.jpg)] md:bg-cover">
+          <div className="flex bg-[url(/images/mobile/image-graphic-design.jpg)] bg-contain bg-center bg-no-repeat md:bg-[url(/images/desktop/image-graphic-design.jpg)] md:bg-cover">
             <div className="mx-auto flex max-w-84 flex-col items-center justify-start gap-8 self-end py-14">
               <h3 className="text-preset-5 text-green-800">Graphic Design</h3>
               <p className="text-preset-11 text-center text-green-600">
@@ -114,7 +114,7 @@ export default function LandingPage() {
             </div>
           </div>
 
-          <div className="flex bg-[url(src/assets/images/mobile/image-photography.jpg)] bg-contain bg-center bg-no-repeat md:bg-[url(src/assets/images/desktop/image-photography.jpg)] md:bg-cover">
+          <div className="flex bg-[url(/images/mobile/image-photography.jpg)] bg-contain bg-center bg-no-repeat md:bg-[url(/images/desktop/image-photography.jpg)] md:bg-cover">
             <div className="mx-auto flex max-w-84 flex-col items-center justify-start gap-8 self-end py-14">
               <h3 className="text-preset-5 text-blue-950">Photography</h3>
               <p className="text-preset-11 text-center text-blue-800">
@@ -146,22 +146,22 @@ export default function LandingPage() {
       <section aria-label="Section Gallery">
         <div className="grid grid-cols-2 lg:grid-cols-4">
           <img
-            src="src/assets/images/desktop/image-gallery-milkbottles.jpg"
+            src="/images/desktop/image-gallery-milkbottles.jpg"
             alt="Image Gallery Milkbottles"
             className="object-contain"
           />
           <img
-            src="src/assets/images/desktop/image-gallery-orange.jpg"
+            src="/images/desktop/image-gallery-orange.jpg"
             alt="Image Gallery Orange"
             className="object-contain"
           />
           <img
-            src="src/assets/images/desktop/image-gallery-cone.jpg"
+            src="/images/desktop/image-gallery-cone.jpg"
             alt="Image Gallery Cone"
             className="object-contain"
           />
           <img
-            src="src/assets/images/desktop/image-gallery-sugarcubes.jpg"
+            src="/images/desktop/image-gallery-sugarcubes.jpg"
             alt="Image Gallery Sugarcubes"
             className="object-contain"
           />
