@@ -1,73 +1,88 @@
-# React + TypeScript + Vite
+# 📌 Agency Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a solution to the "Agency Landing Page" challenge on Frontend Mentor.  
+The challenge focuses on building a responsive landing page using mainly HTML and CSS, with a small amount of JavaScript used for the mobile navigation toggle.
 
-Currently, two official plugins are available:
+## 🖼️ Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Project Preview](src/preview/preview.jpg)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎯 Overview
 
-## Expanding the ESLint configuration
+During the development of this project, the following aspects were implemented:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Creating a responsive layout that adapts correctly across different screen sizes
+- Building the layout using modern HTML and CSS layout techniques
+- Implementing a mobile navigation toggle using TypeScript
+- Applying hover states to all interactive elements
+- Reproducing the design as closely as possible based on the provided layout
 
-```js
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🧠 What I Learned
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+Through this project, I practiced:
+
+- Building responsive layouts using HTML and CSS
+- Implementing a mobile navigation menu using basic TypeScript
+- Managing hover states to improve user interaction
+- Improving layout structuring for landing page designs
+- Paying close attention to spacing, alignment, and visual hierarchy
+
+---
+
+## 🛠️ Tech Stack & Concepts
+
+- **Framework / Library:** React
+- **Styling:** Tailwind CSS
+- **Architecture:** Component-Based Structure
+- **Markup:** Semantic HTML
+- **Code Formatting:** Prettier
+- **Version Control:** Git & GitHub
+
+---
+
+## 🔗 Links
+
+- 💻 **Live Demo:** https://32-sunnyside-agency-landing-page.vercel.app/
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/agency-landing-page-react-typescript-tailwindcss-web-component-wbD7uM-iSr
+
+---
+
+## ⚙️ Installation & Running the Project
+
+To run this project locally, follow these steps:
+
+```bash
+# Clone the repository
+git clone https://github.com/Ncticn/react-projects.git
+
+# Navigate to the project directory
+cd 32-sunnyside-agency-landing-page
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+## 👤 Author
 
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+**Ncticn**  
+Front-End Developer
+
+- GitHub: https://github.com/Ncticn
+- LinkedIn: https://www.linkedin.com/in/ncticn/
+- Frontend Mentor: https://www.frontendmentor.io/profile/Ncticn
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License.  
+© 2026 Ncticn.

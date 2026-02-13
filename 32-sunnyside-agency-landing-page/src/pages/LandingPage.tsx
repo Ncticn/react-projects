@@ -39,7 +39,7 @@ export default function LandingPage() {
     <>
       <section aria-label="Section Hero">
         <div className="flex h-200 flex-col items-center justify-center bg-[url(/images/mobile/image-header.jpg)] bg-cover bg-center bg-no-repeat lg:bg-[url(/images/desktop/image-header.jpg)] lg:bg-cover">
-          <div className="mx-auto max-w-full md:max-w-md lg:max-w-182">
+          <div className="mx-auto max-w-full md:max-w-md lg:max-w-186">
             <div className="flex flex-col items-center justify-center gap-24">
               <h1 className="text-preset-1 text-center text-white uppercase">
                 We are creatives
@@ -58,10 +58,10 @@ export default function LandingPage() {
         <div className="flex flex-col lg:flex-row">
           <div className="order-2 flex items-center overflow-hidden lg:order-1 lg:w-1/2">
             <div className="mx-auto max-w-xs py-18 text-center md:max-w-111.25 lg:text-start">
-              <h2 className="text-preset-3 text-grey-950 mb-6 text-center md:mb-8">
+              <h2 className="text-preset-3 text-grey-950 mb-6 md:mb-8">
                 Transform your brand
               </h2>
-              <p className="text-preset-10 text-grey-550 mb-6 text-center md:mb-8 lg:mb-4 lg:text-start">
+              <p className="text-preset-10 text-grey-550 mb-6 md:mb-8 lg:mb-4">
                 We are a full-service creative agency specializing in helping
                 brands grow fast. Engage your clients through compelling visuals
                 that do most of the marketing for you.
@@ -80,10 +80,10 @@ export default function LandingPage() {
         <div className="flex flex-col lg:flex-row">
           <div className="order-2 flex items-center overflow-hidden lg:w-1/2">
             <div className="mx-auto max-w-xs py-18 text-center md:max-w-111.25 lg:text-start">
-              <h2 className="text-preset-3 text-grey-950 mb-6 text-center md:mb-8">
+              <h2 className="text-preset-3 text-grey-950 mb-6 md:mb-8">
                 Stand out to the right audience
               </h2>
-              <p className="text-preset-10 text-grey-550 mb-6 text-center md:mb-8 lg:mb-4 lg:text-start">
+              <p className="text-preset-10 text-grey-550 mb-6 md:mb-8 lg:mb-4">
                 Using a collaborative formula of designers, researchers,
                 photographers, videographers, and copywriters, we’ll build and
                 extend your brand in digital places.
