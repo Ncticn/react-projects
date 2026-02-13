@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-green-800: #24554a;
+  --color-green-600: #3e7467;
+  --color-green-500: #458d7e;
+  --color-green-300: #90d4c6;
+  --color-grey-950: #24303e;
+  --color-grey-600: #5b636d;
+  --color-grey-550: #808397;
+  --color-grey-400: #a7aaad;
+  --color-blue-950: #052c3b;
+  --color-blue-800: #19536c;
+  --color-red-400: #fe7766;
+  --color-yellow-500: #fad400;
+
+  /* Font Family */
+  --font-fraunces: "Fraunces", serif;
+  --font-barlow: "Barlow", sans-serif;
+
+  /* Font Size */
+  --text-5\.5xl: 3.5rem;
+  --text-4\.5xl: 2.625rem;
+  --text-4\.25xl: 2.5rem;
+  --text-3\.5xl: 2rem;
+  --text-2\.5xl: 1.75rem;
+
+  /* Line Height */
+  --leading-125\%: 125%;
+  --leading-165\%: 165%;
+  --leading-170\%: 170%;
+  --leading-180\%: 180%;
+
+  /* Letter Spacing */
+  --tracking-9px: 9px;
+  --tracking-6px: 6px;
+  --tracking-4px: 4px;
+  --tracking-1px: 1px;
+  --tracking-0px: 0px;
+}
+
+@layer utilities {
+  .text-preset-1 {
+    @apply font-fraunces text-4.5xl tracking-6px md:text-5.5xl leading-125% md:tracking-9px font-black;
+  }
+
+  .text-preset-2 {
+    @apply font-fraunces text-4.5xl leading-125% tracking-6px font-black;
+  }
+
+  .text-preset-3 {
+    @apply font-fraunces text-3.5xl md:text-4.25xl leading-125% tracking-0px font-black;
+  }
+
+  .text-preset-4 {
+    @apply font-fraunces text-3.5xl leading-125% tracking-0px font-black;
+  }
+
+  .text-preset-5 {
+    @apply font-fraunces text-2.5xl leading-125% tracking-0px font-black;
+  }
+
+  .text-preset-6 {
+    @apply font-fraunces leading-125% tracking-4px text-xl font-black;
+  }
+
+  .text-preset-7 {
+    @apply font-fraunces leading-125% tracking-0px text-lg font-black;
+  }
+
+  .text-preset-8 {
+    @apply font-fraunces leading-165% tracking-1px text-[15px] font-black;
+  }
+
+  .text-preset-9 {
+    @apply font-barlow leading-125% tracking-0px text-xl font-semibold;
+  }
+
+  .text-preset-10 {
+    @apply font-barlow leading-165% tracking-0px text-lg font-semibold;
+  }
+
+  .text-preset-11 {
+    @apply font-barlow leading-170% tracking-0px text-base font-semibold;
+  }
+
+  .text-preset-12 {
+    @apply font-barlow leading-180% tracking-0px text-sm font-semibold;
+  }
+}
+
+@layer components {
+  .mobile-menu {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 80px;
+  }
+
+  .mobile-menu > div::after {
+    content: "";
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -7.5%;
+    right: 0px;
+    background-color: white;
+  }
+}
