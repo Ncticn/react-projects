@@ -5,7 +5,7 @@ export default function LandingPage() {
   const clientTestimonials = [
     {
       id: "1",
-      imgUrl: "src/assets/images/image-emily.jpg",
+      imgUrl: "/images/image-emily.jpg",
       comment:
         "We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.",
       author: {
@@ -15,7 +15,7 @@ export default function LandingPage() {
     },
     {
       id: "2",
-      imgUrl: "src/assets/images/image-thomas.jpg",
+      imgUrl: "/images/image-thomas.jpg",
       comment:
         "Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.",
       author: {
@@ -25,7 +25,7 @@ export default function LandingPage() {
     },
     {
       id: "3",
-      imgUrl: "src/assets/images/image-jennie.jpg",
+      imgUrl: "/images/image-jennie.jpg",
       comment:
         "Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!",
       author: {
@@ -79,7 +79,7 @@ export default function LandingPage() {
         </div>
         <div className="flex flex-col lg:flex-row">
           <div className="order-2 flex items-center overflow-hidden lg:w-1/2">
-            <div className="mx-auto max-w-xs py-18 text-center md:max-w-111.25">
+            <div className="mx-auto max-w-xs py-18 text-center md:max-w-111.25 lg:text-start">
               <h2 className="text-preset-3 text-grey-950 mb-6 text-center md:mb-8">
                 Stand out to the right audience
               </h2>
