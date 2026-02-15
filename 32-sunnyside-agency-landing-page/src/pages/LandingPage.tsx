@@ -103,7 +103,7 @@ export default function LandingPage() {
 
       <section>
         <div className="grid grid-cols-1 grid-rows-[600px_600px] lg:grid-cols-2 lg:grid-rows-[600px]">
-          <div className="flex bg-[url(/images/mobile/image-graphic-design.jpg)] bg-contain bg-center bg-no-repeat md:bg-[url(/images/desktop/image-graphic-design.jpg)] md:bg-cover">
+          <div className="flex bg-[url(/images/mobile/image-graphic-design.jpg)] bg-cover bg-center bg-no-repeat md:bg-[url(/images/desktop/image-graphic-design.jpg)]">
             <div className="mx-auto flex max-w-84 flex-col items-center justify-start gap-8 self-end py-14">
               <h3 className="text-preset-5 text-green-800">Graphic Design</h3>
               <p className="text-preset-11 text-center text-green-600">
@@ -114,7 +114,7 @@ export default function LandingPage() {
             </div>
           </div>
 
-          <div className="flex bg-[url(/images/mobile/image-photography.jpg)] bg-contain bg-center bg-no-repeat md:bg-[url(/images/desktop/image-photography.jpg)] md:bg-cover">
+          <div className="flex bg-[url(/images/mobile/image-photography.jpg)] bg-cover bg-center bg-no-repeat md:bg-[url(/images/desktop/image-photography.jpg)]">
             <div className="mx-auto flex max-w-84 flex-col items-center justify-start gap-8 self-end py-14">
               <h3 className="text-preset-5 text-blue-950">Photography</h3>
               <p className="text-preset-11 text-center text-blue-800">
