@@ -48,7 +48,7 @@ export default function HeaderBase() {
               onClick={handleMobileMenu}
             >
               <img
-                src="src/assets/icons/icon-hamburger.svg"
+                src="/icons/icon-hamburger.svg"
                 alt="Icon Hamburger Menu"
                 className="block object-contain"
               />
