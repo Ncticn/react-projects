@@ -38,7 +38,7 @@
 
 @layer utilities {
   .text-preset-1 {
-    @apply text-4.75xl leading-125% -tracking-0.75px font-semibold;
+    @apply text-3.25xl md:text-4.5xl lg:text-4.75xl leading-125% -tracking-0.5px md:-tracking-0.75px font-semibold;
   }
 
   .text-preset-2 {
@@ -46,7 +46,7 @@
   }
 
   .text-preset-3 {
-    @apply leading-125% -tracking-0.6px text-4xl font-semibold;
+    @apply leading-125% -tracking-0.5px md:-tracking-0.6px text-2.5xl font-semibold md:text-4xl;
   }
 
   .text-preset-4 {
@@ -66,7 +66,7 @@
   }
 
   .text-preset-7-regular {
-    @apply leading-150% tracking-0.15px text-xl font-normal;
+    @apply leading-150% tracking-0.15px text-base font-normal md:text-xl;
   }
 
   .text-preset-8 {
