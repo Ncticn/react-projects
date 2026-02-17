@@ -1,1 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-navy-950: #0b1524;
+  --color-navy-900: #181f2b;
+  --color-navy-850: #1b2330;
+  --color-navy-800: #202a3c;
+  --color-navy-50: #dfe4f0;
+  --color-blue-300: #62e0d9;
+  --color-blue-250: #8adae3;
+  --color-red-500: #ff4242;
+  --color-gray-400: #c0c0c0;
+
+  /* Font Family */
+  --font-raleway: "Raleway", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+
+  /* Font Size */
+  --text-4\.5xl: 2.5rem;
+  --text-2xs: 0.625rem;
+
+  /* Line Height */
+  --leading-180\%: 180%;
+  --leading-150\%: 150%;
+  --leading-120\%: 120%;
+
+  /* Letter Spacing */
+  --tracking-0\.5px: 0.5px;
+  --tracking-0px: 0px;
+}
+
+@layer utilities {
+  .text-preset-1 {
+    @apply font-raleway text-4.5xl leading-120% tracking-0px font-bold;
+  }
+
+  .text-preset-2 {
+    @apply font-raleway leading-120% tracking-0px text-xl font-bold;
+  }
+
+  .text-preset-3-bold {
+    @apply font-raleway leading-120% tracking-0px text-base font-bold;
+  }
+
+  .text-preset-3-regular {
+    @apply font-raleway leading-120% tracking-0px text-base font-normal;
+  }
+
+  .text-preset-4 {
+    @apply font-raleway leading-120% tracking-0px text-sm font-bold;
+  }
+
+  .text-preset-5 {
+    @apply font-raleway leading-120% tracking-0px text-xs font-normal;
+  }
+
+  .text-preset-6 {
+    @apply font-open-sans leading-150% tracking-0px text-xl font-normal;
+  }
+
+  .text-preset-7-bold {
+    @apply font-open-sans leading-150% tracking-0px text-base font-bold;
+  }
+
+  .text-preset-7-regular {
+    @apply font-open-sans leading-150% tracking-0px text-base font-normal;
+  }
+
+  .text-preset-8 {
+    @apply font-open-sans leading-150% tracking-0px text-sm font-normal;
+  }
+
+  .text-preset-9-bold {
+    @apply font-open-sans text-2xs leading-150% tracking-0.5px font-bold;
+  }
+
+  .text-preset-9-regular {
+    @apply font-open-sans text-2xs leading-180% tracking-0.5px font-normal;
+  }
+
+  .text-preset-10 {
+    @apply font-open-sans leading-150% tracking-0.5px text-[7px] font-normal;
+  }
+
+  .gradient-1 {
+    @apply bg-linear-to-br from-[#63E1D9] from-0% to-[#34A0CD] to-100%;
+  }
+}
