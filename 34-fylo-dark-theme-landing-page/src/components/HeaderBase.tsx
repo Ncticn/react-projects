@@ -1,7 +1,7 @@
 export default function HeaderBase() {
   return (
     <header>
-      <div className="bg-navy-950">
+      <div className="bg-navy-850 py-6 md:py-10 lg:py-14">
         <div className="mx-auto max-w-xs md:max-w-2xl lg:max-w-7xl">
           <div className="flex flex-row items-center justify-between">
             <a
