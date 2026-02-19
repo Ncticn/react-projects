@@ -1,73 +1,75 @@
-# React + TypeScript + Vite
+# 📌 Fylo Dark Theme Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a solution to the "Fylo Dark Theme Landing Page" challenge on Frontend Mentor.  
+The challenge focuses on building a responsive dark-themed landing page while practicing modern layout techniques such as Flexbox and CSS Grid.
 
-Currently, two official plugins are available:
+## 🖼️ Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Project Preview](src/preview/preview.jpg)
 
-## React Compiler
+## 🎯 Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+During the development of this project, the following aspects were implemented:
 
-## Expanding the ESLint configuration
+- Creating a responsive layout that adapts correctly across different screen sizes
+- Building structured layout sections using Flexbox and/or CSS Grid
+- Applying hover and focus states to all interactive elements
+- Reproducing the dark-themed design as closely as possible based on the provided layout
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧠 What I Learned
 
-```js
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+Through this project, I practiced:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Building responsive layouts using Flexbox and CSS Grid
+- Managing layout structures in a dark-themed interface
+- Implementing hover and focus states for better accessibility and usability
+- Writing a reusable global email validation utility function
+- Improving visual hierarchy and spacing in complex sections
+- Paying close attention to contrast and readability in dark UI designs
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+## 🛠️ Tech Stack & Concepts
+
+- **Framework / Library:** React
+- **Styling:** Tailwind CSS
+- **Architecture:** Component-Based Structure
+- **Markup:** Semantic HTML
+- **Code Formatting:** Prettier
+- **Version Control:** Git & GitHub
+- **Icon Package:** FontAwesome
+
+## 🔗 Links
+
+- 💻 **Live Demo:** https://34-fylo-dark-theme-landing-page.vercel.app/
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/agency-landing-page-react-typescript-tailwindcss-web-component-wbD7uM-iSr
+
+## ⚙️ Installation & Running the Project
+
+To run this project locally, follow these steps:
+
+```bash
+# Clone the repository
+git clone https://github.com/Ncticn/react-projects.git
+
+# Navigate to the project directory
+cd 34-fylo-dark-theme-landing-page
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 👤 Author
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+**Ncticn**  
+Front-End Developer
 
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+- GitHub: https://github.com/Ncticn
+- LinkedIn: https://www.linkedin.com/in/ncticn/
+- Frontend Mentor: https://www.frontendmentor.io/profile/Ncticn
+
+## 📝 License
+
+This project is licensed under the MIT License.  
+© 2026 Ncticn.
