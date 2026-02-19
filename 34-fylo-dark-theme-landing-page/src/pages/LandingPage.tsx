@@ -39,25 +39,25 @@ export default function LandingPage() {
 
   const features = [
     {
-      imgUrl: "src/assets/icons/icon-access-anywhere.svg",
+      imgUrl: "/icons/icon-access-anywhere.svg",
       title: "Access your files, anywhere",
       description:
         "The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.",
     },
     {
-      imgUrl: "src/assets/icons/icon-security.svg",
+      imgUrl: "/icons/icon-security.svg",
       title: "Security you can trust",
       description:
         "2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.",
     },
     {
-      imgUrl: "src/assets/icons/icon-collaboration.svg",
+      imgUrl: "/icons/icon-collaboration.svg",
       title: "Real-time collaboration",
       description:
         "Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.",
     },
     {
-      imgUrl: "src/assets/icons/icon-any-file.svg",
+      imgUrl: "/icons/icon-any-file.svg",
       title: "Store any type of file",
       description:
         "Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.",
@@ -67,11 +67,11 @@ export default function LandingPage() {
   return (
     <>
       <section aria-label="Section Hero">
-        <div className="relative py-16 after:absolute after:inset-x-0 after:-bottom-40 after:-z-20 after:h-112.25 after:bg-[url(src/assets/images/bg-curvy-mobile.svg)] after:bg-contain after:bg-center after:bg-no-repeat md:after:-bottom-28 md:after:bg-[url(src/assets/images/bg-curvy-desktop.svg)] lg:after:bottom-0">
+        <div className="relative py-16 after:absolute after:inset-x-0 after:-bottom-40 after:-z-20 after:h-112.25 after:bg-[url(/images/bg-curvy-mobile.svg)] after:bg-contain after:bg-center after:bg-no-repeat md:after:-bottom-28 md:after:bg-[url(/images/bg-curvy-desktop.svg)] lg:after:bottom-0">
           <div className="mx-auto max-w-75 md:max-w-165 lg:max-w-3xl">
             <div className="flex flex-col gap-14">
               <img
-                src="src/assets/images/illustration-intro.png"
+                src="/images/illustration-intro.png"
                 alt="Image Illustration Intro"
                 className="object-contain"
               />
@@ -133,7 +133,7 @@ export default function LandingPage() {
           <div className="mx-auto max-w-75 md:max-w-165 lg:max-w-296.5">
             <div className="flex flex-col gap-12 md:gap-18 lg:flex-row lg:gap-14">
               <img
-                src="src/assets/images/illustration-stay-productive.png"
+                src="/images/illustration-stay-productive.png"
                 alt="Image Illustration Stay Productive"
                 className="object-contain"
               />

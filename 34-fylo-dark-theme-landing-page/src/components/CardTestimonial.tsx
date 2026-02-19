@@ -12,7 +12,7 @@ export default function CardTestimonial(props: CardTestimonialProps) {
   return (
     <article aria-label="Card Testimonial">
       <div
-        className={`bg-navy-800 relative rounded-sm px-6 py-8 ${props.id === "1" ? "before:absolute before:-top-12 before:-left-6 before:size-20 before:bg-[url(src/assets/images/bg-quotes.png)] before:bg-auto before:bg-center before:bg-no-repeat" : ""}`}
+        className={`bg-navy-800 relative rounded-sm px-6 py-8 ${props.id === "1" ? "before:absolute before:-top-12 before:-left-6 before:size-20 before:bg-[url(/images/bg-quotes.png)] before:bg-auto before:bg-center before:bg-no-repeat" : ""}`}
       >
         <div className="flex flex-col items-start justify-start gap-6">
           <p className="text-preset-8 text-white">{props.comment}</p>

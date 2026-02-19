@@ -27,7 +27,7 @@ export default function FooterBase() {
               <div className="footer-content inline-flex flex-col items-start gap-4 md:flex-row md:gap-20">
                 <div className="footer-address flex max-w-95 flex-row items-start gap-4">
                   <img
-                    src="src/assets/icons/icon-location.svg"
+                    src="/icons/icon-location.svg"
                     alt="Icon Location"
                     className="object-contain"
                   />
@@ -40,7 +40,7 @@ export default function FooterBase() {
                 <div className="footer-contact-info flex flex-col items-start gap-4">
                   <a href="tel:+1-543-123-4567" className="space-x-4">
                     <img
-                      src="src/assets/icons/icon-phone.svg"
+                      src="/icons/icon-phone.svg"
                       alt="Icon Phone"
                       className="inline-block object-contain"
                     />
@@ -50,7 +50,7 @@ export default function FooterBase() {
                   </a>
                   <a href="mailto:example@fylo.com" className="space-x-4">
                     <img
-                      src="src/assets/icons/icon-email.svg"
+                      src="/icons/icon-email.svg"
                       alt="Icon Phone"
                       className="inline-block object-contain"
                     />
