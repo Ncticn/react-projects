@@ -31,9 +31,15 @@
   --tracking-0px: 0px;
 }
 
+@layer base {
+  body {
+    @apply bg-navy-850 relative;
+  }
+}
+
 @layer utilities {
   .text-preset-1 {
-    @apply font-raleway text-4.5xl leading-120% tracking-0px font-bold;
+    @apply font-raleway md:text-4.5xl leading-120% tracking-0px text-xl font-bold;
   }
 
   .text-preset-2 {
@@ -45,7 +51,7 @@
   }
 
   .text-preset-3-regular {
-    @apply font-raleway leading-120% tracking-0px text-base font-normal;
+    @apply font-raleway leading-120% tracking-0px text-xs font-normal md:text-base;
   }
 
   .text-preset-4 {
@@ -57,7 +63,7 @@
   }
 
   .text-preset-6 {
-    @apply font-open-sans leading-150% tracking-0px text-xl font-normal;
+    @apply font-open-sans leading-150% tracking-0px text-sm font-normal md:text-xl;
   }
 
   .text-preset-7-bold {
@@ -65,11 +71,11 @@
   }
 
   .text-preset-7-regular {
-    @apply font-open-sans leading-150% tracking-0px text-base font-normal;
+    @apply font-open-sans leading-150% tracking-0px text-sm font-normal md:text-base;
   }
 
   .text-preset-8 {
-    @apply font-open-sans leading-150% tracking-0px text-sm font-normal;
+    @apply font-open-sans leading-150% tracking-0.5px md:tracking-0px text-2xs font-bold md:text-sm md:font-normal;
   }
 
   .text-preset-9-bold {
