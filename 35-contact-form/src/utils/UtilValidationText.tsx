@@ -1,4 +1,4 @@
-function UtilsValidationText(value: string) {
+function UtilValidationText(value: string) {
   const errors: string[] = [];
   const inputValue = value.trim();
 
@@ -12,4 +12,4 @@ function UtilsValidationText(value: string) {
   };
 }
 
-export default UtilsValidationText;
+export default UtilValidationText;
