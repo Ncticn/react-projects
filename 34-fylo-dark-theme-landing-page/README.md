@@ -39,8 +39,8 @@ Through this project, I practiced:
 
 ## 🔗 Links
 
-- 💻 **Live Demo:** https://34-fylo-dark-theme-landing-page.vercel.app/
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/agency-landing-page-react-typescript-tailwindcss-web-component-wbD7uM-iSr
+- 💻 **Live Demo:** https://ncticn.vercel.app/projects/34-fylo-dark-theme-landing-page
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/fylo-dark-theme-landing-page-react-typescript-tailwindcss-woLyxWx7iH
 
 ## ⚙️ Installation & Running the Project
 

@@ -45,8 +45,8 @@ Through this project, I practiced:
 
 ## 🔗 Links
 
-- 💻 **Live Demo:** https://33-clipboard-landing-page.vercel.app/
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/agency-landing-page-react-typescript-tailwindcss-web-component-wbD7uM-iSr
+- 💻 **Live Demo:** https://ncticn.vercel.app/projects/33-clipboard-landing-page
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/clipboard-landing-page-react-typescript-tailwindcss-components-WhP899ftiF
 
 ---
 
