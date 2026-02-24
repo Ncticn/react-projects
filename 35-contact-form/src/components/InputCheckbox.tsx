@@ -10,7 +10,7 @@ interface InputCheckbox {
 export default function InputCheckbox(props: InputCheckbox) {
   return (
     <div className="input-checkbox">
-      <div className="flex items-center justify-center gap-4">
+      <div className="flex items-center justify-start gap-4">
         <input
           type="checkbox"
           name={props.inputName}
