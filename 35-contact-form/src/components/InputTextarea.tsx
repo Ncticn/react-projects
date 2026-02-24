@@ -7,9 +7,10 @@ import UtilValidationText from "../utils/UtilValidationText";
 interface InputTextarea {
   inputID: string;
   inputName: string;
-  inputRequired?: boolean;
+  inputRequired: boolean;
   inputPlaceholder?: string;
   labelContent: string;
+  onValidityChange?: (isValid: boolean) => void;
 }
 
 export default function InputTextarea(props: InputTextarea) {
@@ -22,6 +23,8 @@ export default function InputTextarea(props: InputTextarea) {
 
     setError(!isValid);
     setMessage(result.error);
+
+    props.onValidityChange?.(isValid);
   }
 
   return (
@@ -32,11 +35,11 @@ export default function InputTextarea(props: InputTextarea) {
         </label>
         <textarea
           name={props.inputName}
-          rows={3}
+          rows={window.screen.width >= 768 ? 3 : 8}
           id={props.inputID}
           placeholder={props.inputPlaceholder}
-          required={props?.inputRequired}
-          className={`text-body-md text-grey-900 rounded-lg border bg-white px-6 py-3 outline-0 transition-all delay-75 ease-linear ${error ? "border-red-400 hover:border-red-400 focus:border-red-400 active:border-red-400" : "border-grey-500 hover:border-green-600 focus:border-green-600 active:border-green-600"}`}
+          required={props.inputRequired}
+          className={`text-body-md text-grey-900 resize-none rounded-lg border bg-white px-6 py-3 outline-0 transition-all delay-75 ease-linear ${error ? "border-red-400 hover:border-red-400 focus:border-red-400 active:border-red-400" : "border-grey-500 hover:border-green-600 focus:border-green-600 active:border-green-600"}`}
           onBlur={(e) => handleOnBlur(e.target.value)}
         ></textarea>
         {error && <span className="text-body-sm text-red-400">{message}</span>}

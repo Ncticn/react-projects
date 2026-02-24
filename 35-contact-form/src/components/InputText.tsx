@@ -9,6 +9,7 @@ interface InputText {
   inputRequired: boolean;
   inputPlaceholder?: string;
   labelContent?: string;
+  onValidityChange?: (isValid: boolean) => void;
 }
 
 export default function InputText(props: InputText) {
@@ -21,6 +22,8 @@ export default function InputText(props: InputText) {
 
     setError(!isValid);
     setMessage(result.error);
+
+    props.onValidityChange?.(isValid);
   }
 
   return (
@@ -35,7 +38,7 @@ export default function InputText(props: InputText) {
             name={props.inputName}
             id={props.inputID}
             placeholder={props.inputPlaceholder}
-            required={props?.inputRequired}
+            required={props.inputRequired}
             className={`border-grey-500 text-body-md text-grey-900 rounded-lg border bg-white px-6 py-3 outline-0 transition-all delay-75 ease-linear hover:border-green-600 focus:border-green-600 active:border-green-600 ${error ? "border-red-400 hover:border-red-400 focus:border-red-400 active:border-red-400" : ""}`}
             onBlur={(e) => handleOnBlur(e.target.value)}
           />

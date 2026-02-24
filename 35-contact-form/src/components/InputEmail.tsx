@@ -6,9 +6,10 @@ import UtilValidationEmail from "../utils/UtilValitadionEmail";
 interface InputEmail {
   inputID: string;
   inputName: string;
-  inputRequired?: boolean;
+  inputRequired: boolean;
   inputPlaceholder?: string;
   labelContent: string;
+  onValidityChange?: (isValid: boolean) => void;
 }
 
 export default function InputEmail(props: InputEmail) {
@@ -16,13 +17,13 @@ export default function InputEmail(props: InputEmail) {
   const [message, setMessage] = useState("");
 
   function handleOnBlur(value: string) {
-    console.log(value);
-
     const result = UtilValidationEmail(value);
     const isValid = result.isValid;
 
     setError(!isValid);
     setMessage(result.error);
+
+    props.onValidityChange?.(isValid);
   }
 
   return (
@@ -36,7 +37,7 @@ export default function InputEmail(props: InputEmail) {
           name={props.inputName}
           id={props.inputID}
           placeholder={props.inputPlaceholder}
-          required={props?.inputRequired}
+          required={props.inputRequired}
           className={`text-body-md text-grey-900 rounded-lg border bg-white px-6 py-3 outline-0 transition-all delay-75 ease-linear ${error ? "border-red-400 hover:border-red-400 focus:border-red-400 active:border-red-400" : "border-grey-500 hover:border-green-600 focus:border-green-600 active:border-green-600"}`}
           onBlur={(e) => handleOnBlur(e.target.value)}
         />

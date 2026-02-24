@@ -6,7 +6,7 @@ interface InputCheckbox {
   inputId: string;
   inputName: string;
   inputText: string;
-  inputRequired?: boolean;
+  inputRequired: boolean;
   onValidityChange?: (isValid: boolean) => void;
 }
 
@@ -14,7 +14,7 @@ export default function InputCheckbox(props: InputCheckbox) {
   const [message, setMessage] = useState("");
   const [error, setError] = useState(false);
 
-  function handleOnChange(value: boolean) {
+  function handleOnBlur(value: boolean) {
     const result = UtilValidationCheckbox(value);
     const isValid = result.isValid;
 
@@ -32,9 +32,9 @@ export default function InputCheckbox(props: InputCheckbox) {
             type="checkbox"
             name={props.inputName}
             id={props.inputId}
-            required={props?.inputRequired}
+            required={props.inputRequired}
             className="border-grey-500 size-4.5 appearance-none rounded-[1px] border bg-white text-green-600 transition delay-75 ease-linear checked:border-green-600 checked:bg-[url(src/assets/icons/icon-checkbox-check.svg)] checked:bg-auto checked:bg-center checked:bg-no-repeat"
-            onChange={(e) => handleOnChange(e.target.checked)}
+            onBlur={(e) => handleOnBlur(e.target.checked)}
           />
           <label htmlFor={props.inputId} className="text-grey-900 text-body-sm">
             {props.inputText} {props?.inputRequired && <InputRequired />}
