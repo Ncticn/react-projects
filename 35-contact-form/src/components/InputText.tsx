@@ -18,7 +18,6 @@ export default function InputText(props: InputText) {
   function handleOnBlur(value: string) {
     const result = UtilValidationText(value);
     const isValid = result.isValid;
-    console.log(result);
 
     setError(!isValid);
     setMessage(result.error);
@@ -36,6 +35,7 @@ export default function InputText(props: InputText) {
             name={props.inputName}
             id={props.inputID}
             placeholder={props.inputPlaceholder}
+            required={props?.inputRequired}
             className={`border-grey-500 text-body-md text-grey-900 rounded-lg border bg-white px-6 py-3 outline-0 transition-all delay-75 ease-linear hover:border-green-600 focus:border-green-600 active:border-green-600 ${error ? "border-red-400 hover:border-red-400 focus:border-red-400 active:border-red-400" : ""}`}
             onBlur={(e) => handleOnBlur(e.target.value)}
           />
