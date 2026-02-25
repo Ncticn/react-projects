@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-grey-900: #2a4144;
+  --color-grey-500: #86a2a5;
+  --color-green-600: #0c7d69;
+  --color-green-200: #e0f1e8;
+  --color-red-400: #d73c3c;
+
+  /* Font Family */
+  --font-karla: "Karla", sans-serif;
+
+  /* Font Size */
+  --text-3\.5xl: 2rem;
+
+  /* Line Height */
+  --leading-100\%: 100%;
+  --leading-150\%: 150%;
+
+  /* Letter Spacing */
+  --tracking-0px: 0px;
+  --tracking-1px: 1px;
+}
+
+@layer base {
+  body {
+    @apply font-karla bg-green-200;
+  }
+}
+
+@layer utilities {
+  .text-heading {
+    @apply text-3.5xl leading-100% -tracking-1px font-bold;
+  }
+
+  .text-body-md {
+    @apply leading-150% tracking-0px text-lg;
+  }
+
+  .text-body-sm {
+    @apply leading-150% tracking-0px text-base font-normal;
+  }
+}
