@@ -23,7 +23,7 @@ export default function ToastSuccess() {
           <div className="flex flex-col items-start justify-start gap-2">
             <div className="flex flex-row items-center justify-start gap-2">
               <img
-                src="src/assets/icons/icon-success-check.svg"
+                src="/icons/icon-success-check.svg"
                 alt="Icon Success Check"
                 className="size-6 object-contain"
               />
