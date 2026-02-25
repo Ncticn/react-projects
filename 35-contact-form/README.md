@@ -43,7 +43,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://ncticn.vercel.app/projects/35-contact-form
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/fylo-dark-theme-landing-page-react-typescript-tailwindcss-woLyxWx7iH
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/contact-form-react-typescript-tailwindcss-components-PqSbrtbBPb
 
 ## ⚙️ Installation & Running the Project
 
