@@ -1,1 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import "tailwindcss";
+
+@theme {
+
+    /* Colors */
+    --color-red-500: #EC755D;
+    --color-red-300: #FFA896;
+    --color-red-100: #F9ECE2;
+    --color-brown-950: #382314;
+    --color-brown-400: #92857A;
+    --color-blue-300: #88BFC5;
+    --color-blue-200: #BEE4E8;
+
+    /* Font Family */
+    --font-DM-sans: "DM Sans", sans-serif;
+
+    /* Font Size */
+    --text-3\.5xl: 2rem;
+
+    /* Line Height */
+    --leading-135\%: 135%;
+    --leading-130\%: 130%;
+    --leading-125\%: 125%;
+
+    /* Letter Spacing */
+    --tracking-0: 0px;
+
+}
+
+@layer {
+    body {
+        @apply font-DM-sans tracking-0;
+    }
+}
+
+@layer utilities {
+    .text-preset-1 {
+        @apply text-5xl leading-130% font-bold;
+    }
+
+    .text-preset-2 {
+        @apply text-3.5xl font-bold leading-130%;
+    }
+
+    .text-preset-3 {
+        @apply text-2xl leading-130% font-bold;
+    }
+
+    .text-preset-4 {
+        @apply text-lg leading-125%;
+    }
+
+    .text-preset-5 {
+        @apply text-[0.938rem] leading-135%;
+    }
+
+    .text-preset-6 {
+        @apply text-xs leading-135% font-normal;
+    }
+}
