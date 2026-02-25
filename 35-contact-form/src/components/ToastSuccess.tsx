@@ -17,8 +17,8 @@ export default function ToastSuccess() {
   if (!visible) return null;
 
   return (
-    <div className="toast-success absolute top-0 z-10 w-full p-6">
-      <div className="mx-auto max-w-112.5">
+    <div className="toast-success absolute inset-x-0 top-0 z-10 p-6">
+      <div className="mx-auto md:max-w-112.5">
         <div className="bg-grey-900 w-full rounded-xl p-6">
           <div className="flex flex-col items-start justify-start gap-2">
             <div className="flex flex-row items-center justify-start gap-2">
