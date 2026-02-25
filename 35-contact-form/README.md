@@ -1,73 +1,78 @@
-# React + TypeScript + Vite
+# 📌 Contact Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a solution to a contact form challenge focused on accessibility and form validation.  
+The goal was to build a fully accessible and responsive contact form that closely matches the provided design while ensuring proper validation and user feedback.
 
-Currently, two official plugins are available:
+## 🖼️ Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Project Preview](src/preview/preview.jpg)
 
-## React Compiler
+## 🎯 Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+During the development of this project, the following aspects were implemented:
 
-## Expanding the ESLint configuration
+- Building a fully responsive contact form layout
+- Implementing client-side form validation for required fields and email format
+- Displaying a success toast message upon successful submission
+- Ensuring the form can be completed using only keyboard navigation
+- Making inputs, validation messages, and success feedback accessible to screen readers
+- Applying hover and focus states to all interactive elements
+- Reproducing the design as closely as possible based on the provided layout
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧠 What I Learned
 
-```js
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+Through this project, I practiced:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Building accessible forms with proper semantic HTML structure
+- Implementing client-side validation logic for multiple input types
+- Managing success and error states within form components
+- Ensuring full keyboard accessibility for form interactions
+- Improving screen reader support using accessible markup techniques
+- Strengthening responsive layout techniques for form-based interfaces
+- Paying close attention to user feedback and accessibility standards
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+## 🛠️ Tech Stack & Concepts
+
+- **Framework / Library:** React
+- **Styling:** Tailwind CSS
+- **Architecture:** Component-Based Structure
+- **Markup:** Semantic HTML
+- **Code Formatting:** Prettier
+- **Version Control:** Git & GitHub
+
+## 🔗 Links
+
+- 💻 **Live Demo:** https://ncticn.vercel.app/projects/35-contact-form
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/fylo-dark-theme-landing-page-react-typescript-tailwindcss-woLyxWx7iH
+
+## ⚙️ Installation & Running the Project
+
+To run this project locally, follow these steps:
+
+```bash
+# Clone the repository
+git clone https://github.com/Ncticn/react-projects.git
+
+# Navigate to the project directory
+cd 35-contact-form
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 👤 Author
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+**Ncticn**  
+Front-End Developer
 
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+- GitHub: https://github.com/Ncticn
+- LinkedIn: https://www.linkedin.com/in/ncticn/
+- Frontend Mentor: https://www.frontendmentor.io/profile/Ncticn
+
+## 📝 License
+
+This project is licensed under the MIT License.  
+© 2026 Ncticn.
