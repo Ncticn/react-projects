@@ -28,7 +28,7 @@
 
 @layer {
   body {
-    @apply font-DM-sans tracking-0;
+    @apply font-DM-sans tracking-0 bg-red-100;
   }
 }
 
