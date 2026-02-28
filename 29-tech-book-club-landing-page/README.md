@@ -51,7 +51,7 @@ Through this project, I practiced:
 
 ## 🔗 Links
 
-- 💻 **Live Demo:** https://29-tech-book-club-landing-page.vercel.app/
+- 💻 **Live Demo:** https://ncticn.vercel.app/projects/29-tech-book-club-landing-page
 - 🧠 **Challenge:** https://www.frontendmentor.io/solutions/tech-book-club-landing-page-react-typescript-tailwindcss-U2yN_8jUNu
 
 ---

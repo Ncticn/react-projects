@@ -43,7 +43,7 @@ Through this project, I practiced:
 
 ## 🔗 Links
 
-- 💻 **Live Demo:** https://23-workit-landing-page.vercel.app/
+- 💻 **Live Demo:** https://ncticn.vercel.app/projects/23-workit-landing-page
 - 🧠 **Challenge:** https://www.frontendmentor.io/solutions/workit-landing-page-react-tailwindcss-component-structure-CSbImc_hUw
 
 ---
