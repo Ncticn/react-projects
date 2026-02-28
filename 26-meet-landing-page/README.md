@@ -43,7 +43,7 @@ Through this project, I practiced:
 
 ## 🔗 Links
 
-- 💻 **Live Demo:** https://26-meet-landing-page.vercel.app/
+- 💻 **Live Demo:** https://ncticn.vercel.app/projects/26-meet-landing-page
 - 🧠 **Challenge:** https://www.frontendmentor.io/solutions/meet-landing-page-react-tailwindcss-typescript-components-deIJrH-r2l
 
 ---

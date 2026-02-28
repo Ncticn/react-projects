@@ -43,7 +43,7 @@ Through this project, I practiced:
 
 ## 🔗 Links
 
-- 💻 **Live Demo:** https://28-fylo-data-storage-component.vercel.app/
+- 💻 **Live Demo:** https://ncticn.vercel.app/projects/28-fylo-data-storage-component
 - 🧠 **Challenge:** https://www.frontendmentor.io/solutions/fylo-data-storage-component-react-tailwindcss-prettier-2UT4pP1NMx
 
 ---

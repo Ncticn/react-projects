@@ -43,7 +43,7 @@ Through this project, I practiced:
 
 ## 🔗 Links
 
-- 💻 **Live Demo:** https://24-skilled-elearning-landing-page.vercel.app/
+- 💻 **Live Demo:** https://ncticn.vercel.app/projects/24-skilled-elearning-landing-page
 - 🧠 **Challenge:** https://www.frontendmentor.io/solutions/skilled-e-learning-landing-page-react-tailwindcss-components-CoyiW4cAF8
 
 ---

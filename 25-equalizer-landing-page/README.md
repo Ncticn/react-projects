@@ -43,7 +43,7 @@ Through this project, I practiced:
 
 ## 🔗 Links
 
-- 💻 **Live Demo:** https://25-equalizer-landing-page.vercel.app/
+- 💻 **Live Demo:** https://ncticn.vercel.app/projects/25-equalizer-landing-page
 - 🧠 **Challenge:** https://www.frontendmentor.io/solutions/equalizer-landing-page-react-tailwindcss-typescript-components-F7KKlB4znH
 
 ---

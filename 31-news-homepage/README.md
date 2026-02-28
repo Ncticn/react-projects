@@ -46,7 +46,7 @@ Through this project, I practiced:
 
 ## 🔗 Links
 
-- 💻 **Live Demo:** https://31-news-homepage.vercel.app/
+- 💻 **Live Demo:** https://ncticn.vercel.app/projects/31-news-homepage
 - 🧠 **Challenge:** https://www.frontendmentor.io/solutions/news-homepage-react-typescript-tailwindcss-components-Eez3KEUmlo
 
 ---

@@ -46,7 +46,7 @@ Through this project, I practiced:
 
 ## 🔗 Links
 
-- 💻 **Live Demo:** https://32-sunnyside-agency-landing-page.vercel.app/
+- 💻 **Live Demo:** https://ncticn.vercel.app/projects/32-sunnyside-agency-landing-page
 - 🧠 **Challenge:** https://www.frontendmentor.io/solutions/agency-landing-page-react-typescript-tailwindcss-web-component-wbD7uM-iSr
 
 ---
