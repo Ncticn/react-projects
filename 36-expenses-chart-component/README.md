@@ -41,7 +41,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://ncticn.vercel.app/projects/36-expenses-chart-component
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/contact-form-react-typescript-tailwindcss-components-PqSbrtbBPb
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/expenses-chart-component-react-typescript-tailwindcss-a9nH_VoX5L
 
 ## ⚙️ Installation & Running the Project
 
