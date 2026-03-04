@@ -34,11 +34,11 @@
 
 @layer utilities {
   .text-preset-1 {
-    @apply leading-130% text-5xl font-bold;
+    @apply leading-130% text-3.5xl font-bold md:text-5xl;
   }
 
   .text-preset-2 {
-    @apply text-3.5xl leading-130% font-bold;
+    @apply md:text-3.5xl leading-130% text-2xl font-bold;
   }
 
   .text-preset-3 {
@@ -46,7 +46,7 @@
   }
 
   .text-preset-4 {
-    @apply leading-125% text-lg;
+    @apply md:leading-125% leading-135% text-[0.938rem] md:text-lg;
   }
 
   .text-preset-5 {

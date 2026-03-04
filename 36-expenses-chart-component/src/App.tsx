@@ -1,8 +1,12 @@
+import CardBalance from "./components/CardBalance";
+
 function App() {
   return (
-    <section>
-      <h1>App</h1>
-    </section>
+    <main>
+      <section className="flex h-screen items-center justify-center">
+        <CardBalance currency="$" />
+      </section>
+    </main>
   );
 }
 

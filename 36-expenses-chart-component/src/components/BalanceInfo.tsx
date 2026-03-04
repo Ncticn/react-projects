@@ -6,9 +6,9 @@ interface BalanceInfo {
 export default function BalanceInfo(props: BalanceInfo) {
   return (
     <div className="card-balance">
-      <div className="rounded-[20px] bg-red-500 px-8 py-6">
+      <div className="rounded-[20px] bg-red-500 px-4 py-4 md:px-8 md:py-6">
         <div className="flex flex-row items-center justify-between">
-          <div className="space-y-2">
+          <div className="md:space-y-2">
             <p className="text-preset-4 font-normal text-white">My balance</p>
             <p className="text-preset-2 text-white">
               {props.currency}

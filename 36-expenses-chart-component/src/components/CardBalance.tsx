@@ -16,7 +16,7 @@ interface CardBalanceProps {
 export default function CardBalance({ currency = "$" }: CardBalanceProps) {
   return (
     <article className="card-expenses-chart">
-      <div className="max-w-135 space-y-6">
+      <div className="w-full min-w-86 space-y-4 md:max-w-135 md:space-y-6">
         <BalanceInfo currency={currency} totalBalance={TOTAL_BALANCE} />
 
         <CardSpending />
@@ -31,18 +31,18 @@ function CardSpending() {
 
   return (
     <div aria-label="Card Spending">
-      <div className="rounded-[20px] bg-white px-10 py-8">
-        <div className="card-wrapper flex flex-col items-stretch justify-center gap-16">
+      <div className="rounded-[20px] bg-white px-4 py-6 md:px-10 md:py-8">
+        <div className="card-wrapper flex flex-col items-stretch justify-center gap-14 md:gap-16">
           <h1 className="text-preset-2 text-brown-950">
             Spending - Last 7 days
           </h1>
 
           <div
-            className="flex flex-col items-stretch gap-8"
+            className="flex flex-col items-stretch gap-6 md:gap-8"
             aria-label="Chart Spending"
           >
             <div aria-label="Chart Bars">
-              <div className="flex flex-row items-end gap-4">
+              <div className="flex flex-row items-end justify-center gap-2 md:gap-4">
                 {data.map((item) => (
                   <ChartBar
                     title={item.day}
@@ -53,7 +53,7 @@ function CardSpending() {
                 ))}
               </div>
             </div>
-            <div aria-label="Total Info" className="space-y-8">
+            <div aria-label="Total Info" className="space-y-6 md:space-y-8">
               <div className="block h-0.5 rounded-[1px] bg-red-100"></div>
               <div aria-label="Total Details">
                 <p className="text-brown-400 text-preset-4 font-normal">

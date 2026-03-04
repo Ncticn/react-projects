@@ -15,7 +15,7 @@ export default function ChartBar({ title, value, isBiggest }: ChartBarProps) {
     <div aria-label="Chart Bar">
       <div className="relative flex w-fit flex-col items-stretch gap-2 text-center">
         <div
-          className={`group w-12.5 cursor-pointer rounded-[5px] transition-all delay-75 ease-linear ${barBackgroundColor}`}
+          className={`group w-8.5 cursor-pointer rounded-[5px] transition-all delay-75 ease-linear md:w-12.5 ${barBackgroundColor}`}
           style={{ height: value * HEIGHT_MULTIPLIER }}
         >
           <div className="bg-brown-950 absolute -top-12 -left-2.5 flex h-10 w-fit items-center justify-center rounded-[5px] p-2 opacity-0 transition-opacity delay-75 ease-linear group-hover:opacity-100">
