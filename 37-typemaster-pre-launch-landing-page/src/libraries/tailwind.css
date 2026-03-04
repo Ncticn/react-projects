@@ -1,1 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-neutral-900: #162542;
+  --color-neutral-400: #5d6d8f;
+  --color-neutral-200: #e8eff2;
+  --color-neutral-0: #ffffff;
+  --color-orange-500: #f16718;
+  --color-orange-300: #ff9b62;
+
+  /* Font Family */
+  --font-barlow: "Barlow", sans-serif;
+
+  /* Font Size */
+  --text-5\.5xl: 3.5rem;
+  --text-3\.5xl: 2rem;
+
+  /* Line Height */
+  --leading-100\%: 100%;
+  --leading-120\%: 120%;
+  --leading-150\%: 150%;
+
+  /* Letter Spacing */
+  --tracking-0px: 0px;
+}
+
+@layer base {
+  body {
+    @apply tracking-0px font-barlow bg-neutral-0;
+  }
+}
+
+@layer utilities {
+  .text-preset-1 {
+    @apply md:text-5.5xl leading-100% text-5xl font-black;
+  }
+
+  .text-preset-2 {
+    @apply text-3.5xl leading-100% font-black;
+  }
+
+  .text-preset-3 {
+    @apply leading-120% text-2xl font-black;
+  }
+
+  .text-preset-4 {
+    @apply leading-150% text-lg font-medium;
+  }
+
+  .text-preset-5 {
+    @apply leading-150% text-base font-medium;
+  }
+
+  .text-preset-6 {
+    @apply leading-150% text-base font-bold;
+  }
+}
