@@ -43,7 +43,7 @@ Through this project, I practiced:
 
 ## 🔗 Links
 
-- 💻 **Live Demo:** https://27-testimonials-grid-section.vercel.app/
+- 💻 **Live Demo:** https://ncticn.vercel.app/projects/27-testimonials-grid-section
 - 🧠 **Challenge:** https://www.frontendmentor.io/solutions/testimonials-grid-section-react-typescript-tailwindcss-t5wy7Ftbn1
 
 ---
