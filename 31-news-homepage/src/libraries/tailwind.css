@@ -21,7 +21,7 @@
 
 @layer base {
   body {
-    @apply font-inter relative bg-white px-4 py-7 tracking-[0px] md:px-20 lg:px-42 lg:py-22.5;
+    @apply font-inter bg-white tracking-[0px] px-4 py-7 md:px-20 lg:px-42 lg:py-22.5 relative;
   }
 
   #root {
@@ -29,7 +29,8 @@
     grid-template-areas:
       "header header header"
       "main main aside"
-      "footer footer footer";
+      "footer footer footer"
+    ;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 3;
     gap: 64px 32px;
@@ -57,7 +58,8 @@
         "header"
         "main"
         "aside"
-        "footer";
+        "footer"
+      ;
       grid-template-columns: repeat(1, 1fr);
     }
   }
@@ -65,7 +67,7 @@
 
 @layer components {
   .text-preset-1 {
-    @apply text-4.5xl lg:text-5.5xl leading-10 font-extrabold lg:leading-14;
+    @apply text-4.5xl leading-10 lg:text-5.5xl lg:leading-14 font-extrabold;
   }
 
   .text-preset-2 {

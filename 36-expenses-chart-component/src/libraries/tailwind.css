@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-red-500: #ec755d;
+  --color-red-300: #ffa896;
+  --color-red-100: #f9ece2;
+  --color-brown-950: #382314;
+  --color-brown-400: #92857a;
+  --color-blue-300: #88bfc5;
+  --color-blue-200: #bee4e8;
+
+  /* Font Family */
+  --font-DM-sans: "DM Sans", sans-serif;
+
+  /* Font Size */
+  --text-3\.5xl: 2rem;
+
+  /* Line Height */
+  --leading-135\%: 135%;
+  --leading-130\%: 130%;
+  --leading-125\%: 125%;
+
+  /* Letter Spacing */
+  --tracking-0: 0px;
+}
+
+@layer {
+  body {
+    @apply font-DM-sans tracking-0 bg-red-100;
+  }
+}
+
+@layer utilities {
+  .text-preset-1 {
+    @apply leading-130% text-3.5xl font-bold md:text-5xl;
+  }
+
+  .text-preset-2 {
+    @apply md:text-3.5xl leading-130% text-2xl font-bold;
+  }
+
+  .text-preset-3 {
+    @apply leading-130% text-2xl font-bold;
+  }
+
+  .text-preset-4 {
+    @apply md:leading-125% leading-135% text-[0.938rem] md:text-lg;
+  }
+
+  .text-preset-5 {
+    @apply leading-135% text-[0.938rem];
+  }
+
+  .text-preset-6 {
+    @apply leading-135% text-xs font-normal;
+  }
+}
