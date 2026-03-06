@@ -1,11 +1,7 @@
+import LayoutApp from "./layouts/LayoutApp";
+
 function App() {
-  return (
-    <main>
-      <section>
-        <h1>Hello World !</h1>
-      </section>
-    </main>
-  );
+  return <LayoutApp />;
 }
 
 export default App;
