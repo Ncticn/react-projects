@@ -32,7 +32,7 @@ export default function LandingPage() {
   return (
     <>
       <section
-        className="section-hero space-y-6 md:space-y-10"
+        className="section-hero relative z-10 space-y-6 overflow-hidden md:space-y-10"
         aria-label="Section Hero"
       >
         <div className="mx-auto">
@@ -135,6 +135,25 @@ export default function LandingPage() {
             </div>
           </div>
         </div>
+
+        {window.screen.width > 1024 && (
+          <>
+            <div className="absolute top-0 -right-[10%] -z-50 inline-block">
+              <img
+                src="patterns/pattern-square.svg"
+                alt="Imar Pattern Square"
+                className="object-contain"
+              />
+            </div>
+            <div className="absolute bottom-[3.75%] -left-[10%] -z-50 inline-block">
+              <img
+                src="patterns/pattern-square.svg"
+                alt="Imar Pattern Square"
+                className="object-contain"
+              />
+            </div>
+          </>
+        )}
       </section>
 
       <section className="section-features" aria-label="Section Features">
