@@ -67,18 +67,18 @@ export default function LandingPage() {
                 <picture>
                   <source
                     media="(min-width > 768px)"
-                    srcSet="src/assets/images/desktop/image-keyboard.jpg"
+                    srcSet="images/desktop/image-keyboard.jpg"
                   />
                   <source
                     media="(min-width > 375px)"
-                    srcSet="src/assets/images/tablet/image-keyboard.jpg"
+                    srcSet="images/tablet/image-keyboard.jpg"
                   />
                   <source
                     media="(min-width > 0)"
-                    srcSet="src/assets/images/mobile/image-keyboard.jpg"
+                    srcSet="images/mobile/image-keyboard.jpg"
                   />
                   <img
-                    src="src/assets/images/desktop/image-keyboard.jpg"
+                    src="images/desktop/image-keyboard.jpg"
                     alt="Image Keyboard"
                     className="h-full w-full object-cover object-center md:object-left"
                   />
@@ -96,18 +96,18 @@ export default function LandingPage() {
                   <picture>
                     <source
                       media="(width > 768px)"
-                      srcSet="src/assets/images/desktop/image-phone-and-keyboard.jpg"
+                      srcSet="images/desktop/image-phone-and-keyboard.jpg"
                     />
                     <source
                       media="(width > 375px)"
-                      srcSet="src/assets/images/tablet/image-phone-and-keyboard.jpg"
+                      srcSet="images/tablet/image-phone-and-keyboard.jpg"
                     />
                     <source
                       media="(width >= 0px)"
-                      srcSet="src/assets/images/mobile/image-phone-and-keyboard.jpg"
+                      srcSet="images/mobile/image-phone-and-keyboard.jpg"
                     />
                     <img
-                      src="src/assets/images/desktop/image-phone-and-keyboard.jpg"
+                      src="images/desktop/image-phone-and-keyboard.jpg"
                       alt="Image Phone and Keyboard"
                       className="h-full w-full object-cover opacity-75 mix-blend-multiply"
                     />
@@ -116,7 +116,7 @@ export default function LandingPage() {
               </div>
               <div className="section-img h-48.25 w-2/3 overflow-hidden rounded-[20px] md:h-80 lg:h-120">
                 <img
-                  src="src/assets/images/desktop/image-glass-and-keyboard.jpg"
+                  src="images/desktop/image-glass-and-keyboard.jpg"
                   alt="Image Glass and Keyboard"
                 />
               </div>
