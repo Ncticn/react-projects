@@ -40,7 +40,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://ncticn.vercel.app/projects/37-typemaster-pre-launch-landing-page
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/contact-form-react-typescript-tailwindcss-components-PqSbrtbBPb
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/typemaster-pre-launch-landing-page-react-typescript-tailwindcss-20aaj8U8An
 
 ## ⚙️ Installation & Running the Project
 
