@@ -4,8 +4,8 @@ interface ButtonBaseProps {
 }
 
 export default function ButtonBase({
-  buttonText = "Pre-order now",
-  buttonType = "primary",
+  buttonText,
+  buttonType,
 }: ButtonBaseProps) {
   let currentClass: string;
 
