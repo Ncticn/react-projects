@@ -1,1 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 @import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-grey-200: #d8d8d8;
+  --color-blue-100: #e5eaf1;
+  --color-blue-50: #f6faff;
+
+  /* Font Family */
+  --font-josefin-sans: "Josefin Sans", sans-serif;
+  --font-alata: "Alata", sans-serif;
+
+  /* Font Size */
+  --text-4\.5xl: 2.5rem;
+  --text-3\.5xl: 2rem;
+  --text-md: 0.938rem;
+
+  /* Line Height */
+  --leading-165\%: 165%;
+  --leading-100\%: 100%;
+
+  /* Letter Spacing */
+  --tracking-5px: 5px;
+  --tracking-0px: 0px;
+}
+
+@layer utilities {
+  .text-preset-1 {
+    @apply font-josefin-sans tracking-0px leading-100% text-7xl font-light;
+  }
+
+  .text-preset-2 {
+    @apply font-josefin-sans tracking-0px leading-100% text-5xl font-light;
+  }
+
+  .text-preset-3 {
+    @apply text-4.5xl font-josefin-sans tracking-0px leading-100% font-light;
+  }
+
+  .text-preset-4 {
+    @apply text-3.5xl font-josefin-sans tracking-0px leading-100% font-light;
+  }
+
+  .text-preset-5 {
+    @apply font-josefin-sans tracking-0px leading-100% text-2xl font-light;
+  }
+
+  .text-preset-6 {
+    @apply font-alata leading-165% tracking-0px text-sm font-normal;
+  }
+
+  .text-preset-7 {
+    @apply text-md font-alata leading-100% tracking-5px font-normal;
+  }
+
+  .gradient-1 {
+    @apply bg-linear-to-b from-black/0 from-0% to-black/60 to-100%;
+  }
+}
