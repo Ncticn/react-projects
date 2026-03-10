@@ -54,7 +54,7 @@ export default function FooterApp() {
                       aria-label={`Go to ${socialMediaLink.name}`}
                     >
                       <img
-                        src={`/src/assets/icons/${socialMediaLink.url}`}
+                        src={`/icons/${socialMediaLink.url}`}
                         alt={`Icon ${socialMediaLink.name}`}
                       />
                     </a>

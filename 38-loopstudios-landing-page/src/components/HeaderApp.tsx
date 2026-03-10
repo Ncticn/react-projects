@@ -12,7 +12,7 @@ export default function HeaderApp() {
 
   return (
     <header>
-      <div className="bg-transparent px-6 py-10">
+      <div className="bg-transparent py-10">
         <div className="mx-auto md:max-w-152 lg:max-w-277.5">
           <div className="flex flex-row items-center justify-between">
             <a href="#" className="lg:mb-2">
@@ -61,7 +61,7 @@ export default function HeaderApp() {
 
             {isClickMenu && (
               <div className="mobile-menu absolute inset-0 z-10 h-screen">
-                <div className="h-full bg-black px-6 py-10">
+                <div className="h-full bg-black px-6 py-10 md:px-20">
                   <div className="flex flex-col items-start justify-between gap-40">
                     <a href="#" className="mb-2">
                       <img

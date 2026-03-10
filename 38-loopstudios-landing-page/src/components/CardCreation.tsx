@@ -13,15 +13,15 @@ export default function CardCreation({
         <div className="group bg-grey-200 relative h-full w-full after:absolute after:inset-0 after:bg-linear-to-l after:from-black/0 after:from-0% after:to-black/60 after:to-100% after:bg-blend-multiply after:transition-all after:delay-75 after:ease-linear hover:after:bg-white hover:after:opacity-75 lg:after:bg-linear-to-b">
           <picture>
             <source
-              srcSet={`src/assets/images/desktop/${cardImageUrl}`}
+              srcSet={`/images/desktop/${cardImageUrl}`}
               media="(width > 768px)"
             />
             <source
-              srcSet={`src/assets/images/mobile/${cardImageUrl}`}
+              srcSet={`/images/mobile/${cardImageUrl}`}
               media="(width > 0)"
             />
             <img
-              src={`src/assets/images/desktop/${cardImageUrl}`}
+              src={`/images/desktop/${cardImageUrl}`}
               alt={cardTitle}
               className="h-full w-full object-cover object-top"
             />

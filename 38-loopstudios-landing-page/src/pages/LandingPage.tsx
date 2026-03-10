@@ -48,7 +48,7 @@ export default function LandingPage() {
   return (
     <>
       <section aria-label="Section Hero">
-        <div className="min-h-162.5 bg-[url(src/assets/images/mobile/image-hero.jpg)] bg-cover bg-top bg-no-repeat md:bg-[url(src/assets/images/desktop/image-hero.jpg)]">
+        <div className="min-h-162.5 bg-[url(/images/mobile/image-hero.jpg)] bg-cover bg-top bg-no-repeat md:bg-[url(/images/desktop/image-hero.jpg)]">
           <div className="section-container mx-auto max-w-81.75 md:max-w-152 lg:max-w-277.5">
             <div className="flex flex-col items-stretch justify-start gap-32.5">
               <HeaderApp />
@@ -70,15 +70,15 @@ export default function LandingPage() {
               <div className="section-image w-full md:h-71 lg:h-125 lg:w-182.5">
                 <picture>
                   <source
-                    srcSet="src/assets/images/desktop/image-interactive.jpg"
+                    srcSet="/images/desktop/image-interactive.jpg"
                     media="(width > 768px)"
                   />
                   <source
-                    srcSet="src/assets/images/mobile/image-interactive.jpg"
+                    srcSet="/images/mobile/image-interactive.jpg"
                     media="(width > 0)"
                   />
                   <img
-                    src="src/assets/images/desktop/image-interactive.jpg"
+                    src="/images/desktop/image-interactive.jpg"
                     alt="Image Interactive"
                     className="h-full w-full object-cover object-top"
                   />
