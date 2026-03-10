@@ -27,11 +27,11 @@
 
 @layer utilities {
   .text-preset-1 {
-    @apply font-josefin-sans tracking-0px leading-100% text-7xl font-light;
+    @apply font-josefin-sans tracking-0px leading-100% text-4.5xl font-light md:text-7xl;
   }
 
   .text-preset-2 {
-    @apply font-josefin-sans tracking-0px leading-100% text-5xl font-light;
+    @apply font-josefin-sans tracking-0px leading-100% text-3.5xl font-light md:text-5xl;
   }
 
   .text-preset-3 {
@@ -39,7 +39,7 @@
   }
 
   .text-preset-4 {
-    @apply text-3.5xl font-josefin-sans tracking-0px leading-100% font-light;
+    @apply lg:text-3.5xl font-josefin-sans tracking-0px leading-100% text-2xl font-light;
   }
 
   .text-preset-5 {
