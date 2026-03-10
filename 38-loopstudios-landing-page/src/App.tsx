@@ -1,9 +1,7 @@
+import LayoutApp from "./layouts/LayoutApp";
+
 function App() {
-  return (
-    <section>
-      <h1>App</h1>
-    </section>
-  );
+  return <LayoutApp />;
 }
 
 export default App;
