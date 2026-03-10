@@ -40,7 +40,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://ncticn.vercel.app/projects/38-loopstudios-landing-page
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/typemaster-pre-launch-landing-page-react-typescript-tailwindcss-20aaj8U8An
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/loopstudios-landing-page-react-typescript-tailwindcss-7zrUUrhx0M
 
 ## ⚙️ Installation & Running the Project
 
