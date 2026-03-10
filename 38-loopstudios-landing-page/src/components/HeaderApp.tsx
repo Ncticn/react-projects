@@ -9,6 +9,7 @@ export default function HeaderApp() {
     { id: 4, name: "Products", url: "#" },
     { id: 5, name: "Support", url: "#" },
   ];
+
   return (
     <header>
       <div className="bg-transparent px-6 py-10">
@@ -38,7 +39,7 @@ export default function HeaderApp() {
             </nav>
 
             <button
-              className="relative z-10 inline-block cursor-pointer lg:hidden"
+              className="relative z-20 inline-block cursor-pointer lg:hidden"
               onClick={() => setIsClickMenu(!isClickMenu)}
             >
               {isClickMenu ? (
@@ -59,7 +60,7 @@ export default function HeaderApp() {
             </button>
 
             {isClickMenu && (
-              <div className="mobile-menu absolute inset-0 h-screen">
+              <div className="mobile-menu absolute inset-0 z-10 h-screen">
                 <div className="h-full bg-black px-6 py-10">
                   <div className="flex flex-col items-start justify-between gap-40">
                     <a href="#" className="mb-2">
