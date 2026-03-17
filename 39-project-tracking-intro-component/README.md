@@ -1,73 +1,76 @@
-# React + TypeScript + Vite
+# 📌 Project Tracking Intro Component
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a solution to the "Project Tracking Intro Component" challenge on Frontend Mentor.
+The challenge focuses on building a responsive intro component while recreating custom visual elements such as background patterns using CSS.
 
-Currently, two official plugins are available:
+## 🖼️ Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Project Preview](src/preview/preview.jpg)
 
-## React Compiler
+## 🎯 Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+During the development of this project, the following aspects were implemented:
 
-## Expanding the ESLint configuration
+- Creating a responsive component layout that adapts across different screen sizes
+- Building the layout structure based on the provided design
+- Recreating and positioning background patterns using CSS
+- Implementing a mobile navigation toggle
+- Applying hover and focus states to all interactive elements
+- Reproducing the design as closely as possible based on the provided layout
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧠 What I Learned
 
-```js
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
+Through this project, I practiced:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Creating responsive component-based layouts
+- Reproducing custom background patterns using CSS
+- Positioning decorative elements with precision
+- Implementing mobile navigation behavior
+- Managing hover and focus states for better accessibility and usability
+- Improving attention to detail in layout and visual consistency
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+## 🛠️ Tech Stack & Concepts
+
+- **Framework / Library:** React
+- **Styling:** Tailwind CSS
+- **Architecture:** Component-Based Structure
+- **Markup:** Semantic HTML
+- **Code Formatting:** Prettier
+- **Version Control:** Git & GitHub
+
+## 🔗 Links
+
+- 💻 **Live Demo:** https://ncticn.vercel.app/projects/39-project-tracking-intro-component
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/loopstudios-landing-page-react-typescript-tailwindcss-7zrUUrhx0M
+
+## ⚙️ Installation & Running the Project
+
+To run this project locally, follow these steps:
+
+```bash
+# Clone the repository
+git clone https://github.com/Ncticn/react-projects.git
+
+# Navigate to the project directory
+cd 39-project-tracking-intro-component
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 👤 Author
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
+**Ncticn**  
+Front-End Developer
 
-export default defineConfig([
-  globalIgnores(["dist"]),
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs["recommended-typescript"],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+- GitHub: https://github.com/Ncticn
+- LinkedIn: https://www.linkedin.com/in/ncticn/
+- Frontend Mentor: https://www.frontendmentor.io/profile/Ncticn
+
+## 📝 License
+
+This project is licensed under the MIT License.  
+© 2026 Ncticn.
