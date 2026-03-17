@@ -1,9 +1,7 @@
+import LandingPage from "./pages/LandingPage";
+
 function App() {
-  return (
-    <section>
-      <h1>Hello World !</h1>
-    </section>
-  );
+  return <LandingPage />;
 }
 
 export default App;

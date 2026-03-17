@@ -34,7 +34,7 @@
 
 @layer utilities {
   .text-preset-1 {
-    @apply font-barlow-condensed text-6.5xl leading-100% tracking-0px font-bold;
+    @apply font-barlow-condensed text-4.5xl md:text-6.5xl leading-100% tracking-0px font-bold;
   }
 
   .text-preset-2 {
