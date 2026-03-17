@@ -28,7 +28,7 @@ export default function HeaderApp() {
             <img
               src="/logo.svg"
               alt="Company Logo"
-              className="block object-contain"
+              className="block size-6 object-contain lg:size-8"
             />
           </a>
           {window.screen.width > 768 ? (
@@ -58,7 +58,7 @@ export default function HeaderApp() {
             <>
               <button
                 type="button"
-                className="cursor-pointer lg:hidden"
+                className="z-0 cursor-pointer lg:hidden"
                 onClick={() => setIsOpen(!isOpen)}
               >
                 {isOpen ? (
@@ -86,7 +86,7 @@ export default function HeaderApp() {
                 )}
               </button>
               {isOpen && (
-                <div className="mobile-menu absolute inset-x-0 top-18 drop-shadow-[0px_5px_10px_rgba(0,0,0,15%)] lg:hidden">
+                <div className="mobile-menu absolute inset-x-0 top-18 z-20 drop-shadow-[0px_5px_10px_rgba(0,0,0,15%)] lg:hidden">
                   <div className="rounded-[3px] bg-white px-10 py-5.75">
                     <div className="flex flex-col items-stretch justify-start gap-6">
                       <ul className="flex flex-col items-center justify-start gap-6">
