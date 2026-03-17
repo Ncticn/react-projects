@@ -41,7 +41,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://ncticn.vercel.app/projects/39-project-tracking-intro-component
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/loopstudios-landing-page-react-typescript-tailwindcss-7zrUUrhx0M
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/project-tracking-intro-component-react-tailwindcss-typescript-oJi02doqwV
 
 ## ⚙️ Installation & Running the Project
 
