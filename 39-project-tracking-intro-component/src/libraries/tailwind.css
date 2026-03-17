@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-gray-900: #323334;
+  --color-blue-950: #242942;
+  --color-blue-100: #edf2f6;
+  --color-red-400: #ff5e5e;
+  --color-red-350: #ff8686;
+
+  /* Font Family */
+  --font-barlow: "Barlow", sans-serif;
+  --font-barlow-condensed: "Barlow Condensed", sans-serif;
+
+  /* Font Size */
+  --text-6\.5xl: 4rem;
+  --text-4\.5xl: 2.5rem;
+  --text-md: 0.938rem;
+
+  /* Line Height */
+  --leading-100\%: 100%;
+  --leading-120\%: 120%;
+  --leading-125\%: 125%;
+  --leading-145\%: 145%;
+
+  /* Letter Spacing */
+  --tracking-0px: 0;
+  --tracking-1px: 1px;
+  --tracking-1\.2px: 1.2px;
+  --tracking-2\.5px: 2.5px;
+  --tracking-5px: 5px;
+}
+
+@layer utilities {
+  .text-preset-1 {
+    @apply font-barlow-condensed text-4.5xl md:text-6.5xl leading-100% tracking-0px font-bold;
+  }
+
+  .text-preset-2 {
+    @apply font-barlow-condensed text-4.5xl leading-100% tracking-0px font-bold;
+  }
+
+  .text-preset-3 {
+    @apply font-barlow-condensed leading-125% tracking-1.2px text-lg font-bold;
+  }
+
+  .text-preset-4 {
+    @apply font-barlow-condensed text-md leading-120%;
+  }
+
+  .text-preset-5 {
+    @apply font-barlow leading-145% tracking-0px text-lg font-normal;
+  }
+
+  .text-preset-6 {
+    @apply font-barlow-condensed text-md leading-120% tracking-2.5px font-normal;
+  }
+}
