@@ -1,1 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+
+    /* Colors */
+    --color-grey: #949494;
+    --color-red: #FF6155;
+    --color-blue-800: #242742;
+    --color-blue-900: #36384D;
+
+    /* Font Family */
+    --font-roboto: "Roboto", sans-serif;
+
+    /* Font Size */
+    --text-5\.5xl: 3.5rem;
+    --text-4\.5xl: 2.5rem;
+
+    /* Line Height */
+    --leading-100\%: 100%;
+    --leading-150\%: 150%;
+
+    /* Letter Spacing */
+    --tracking-0px: 0px;
+}
+
+@layer base {
+    body {
+        font-family: var(--font-roboto);
+        letter-spacing: var(--tracking-0px);
+    }
+}
+
+@layer utilities {
+    .text-preset-1 {
+        @apply text-4.5xl md:text-5.5xl leading-100% font-bold;
+    }
+
+    .text-preset-2 {
+        @apply text-base leading-150%;
+    }
+
+    .text-preset-3 {
+        @apply text-xs leading-150% font-bold;
+    }
+}
