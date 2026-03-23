@@ -28,6 +28,17 @@
     body {
         font-family: var(--font-roboto);
         letter-spacing: var(--tracking-0px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        @apply h-full lg:h-screen;
+    }
+
+    section{
+        height: 100%;
+        width: 100%;
     }
 }
 
