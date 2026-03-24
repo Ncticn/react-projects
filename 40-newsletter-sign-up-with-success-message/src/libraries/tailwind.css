@@ -26,6 +26,8 @@
 
 @layer base {
     body {
+        position: relative;
+        background-color: var(--color-blue-800);
         font-family: var(--font-roboto);
         letter-spacing: var(--tracking-0px);
         display: flex;
