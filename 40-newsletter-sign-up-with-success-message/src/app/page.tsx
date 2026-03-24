@@ -1,8 +1,13 @@
 "use client"
-import FormSignUp from "@/components/FormSignUp";
+
+import { useState } from "react";
 import Image from "next/image";
 
-export default function Home() {
+import ButtonSubmit from "@/components/ButtonSubmit";
+import InputEmail from "@/components/InputEmail";
+import ModalSuccess from "@/components/ModalSuccess";
+
+export default function Page() {
 
   const featureList = [
     {
@@ -19,7 +24,37 @@ export default function Home() {
     },
   ];
 
+  const [status, setStatus] = useState("empty");
+  const [email, setEmail] = useState("");
 
+  function handleOnChange(value: string, valid: boolean) {
+    if (value.length > 0) {
+      setStatus("typing");
+      if (valid) {
+        setEmail(value);
+      } else {
+        setStatus("error");
+      }
+
+    } else {
+      setStatus("empty");
+    }
+
+  }
+
+  function handleSubmit(e: any) {
+    e.preventDefault();
+    setStatus("success");
+  }
+
+  function handleClose(){
+    setStatus("empty");
+    setEmail("");
+  }
+
+  if (status === "success") {
+    return (<ModalSuccess email={email} onClose={() => handleClose()} />)
+  }
 
   return (
     <>
@@ -41,7 +76,11 @@ export default function Home() {
                     ))
                   }
                 </ul>
-                <FormSignUp />
+                <form onSubmit={handleSubmit}
+                  className="space-y-6 md:space-y-4 lg:space-y-6 w-full not-md:pb-11 not-md:pt-10 bg-white">
+                  <InputEmail inputID="input-email" inputLabel="Email address" inputName="input-singup-email" placeholder="email@company.com" onChange={handleOnChange} />
+                  <ButtonSubmit text="Subscribe to monthly newsletter" btnDisabled={status === "empty"} />
+                </form>
               </div>
               <div className="article-image">
                 <picture>

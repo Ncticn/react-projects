@@ -1,6 +1,8 @@
 "use client"
-import UtilValidationEmail from "@/utils/UtilValidationEmail";
+
 import { useState } from "react";
+
+import UtilValidationEmail from "@/utils/UtilValidationEmail";
 
 interface InputEmailProps {
     inputID: string;
