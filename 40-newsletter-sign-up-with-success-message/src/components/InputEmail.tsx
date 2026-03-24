@@ -7,9 +7,10 @@ interface InputEmailProps {
     inputName?: string;
     inputLabel: string;
     placeholder?: string;
+    onChange?: ((inputEmail: string, isValid: boolean) => void);
 }
 
-export default function InputEmail({ inputLabel = "Label", placeholder = "example@email.com", inputID, inputName = "input-user-email" }: InputEmailProps) {
+export default function InputEmail({ inputLabel = "Label", placeholder = "example@email.com", inputID, inputName = "input-user-email", onChange }: InputEmailProps) {
     const [inputValue, setInputValue] = useState("");
     const [error, setError] = useState(false);
 
@@ -28,6 +29,7 @@ export default function InputEmail({ inputLabel = "Label", placeholder = "exampl
 
         const result = UtilValidationEmail(value);
         setError(!result.isValid);
+        if (onChange) onChange(value, result.isValid);
     }
 
 
