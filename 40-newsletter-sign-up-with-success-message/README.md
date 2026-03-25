@@ -46,7 +46,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://ncticn.vercel.app/projects/40-newsletter-sign-up-with-success-message
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/project-tracking-intro-component-react-tailwindcss-typescript-oJi02doqwV
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/newsletter-sign-up-form-react-nextjs-typescript-tailwindcss-xWmX2us1Wh
 
 
 ## ⚙️ Installation & Running the Project

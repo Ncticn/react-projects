@@ -60,7 +60,7 @@ export default function Page() {
 
   return (
     <>
-      <section className="h-full flex items-center lg:items-center justify-center">
+      <section aria-label="Sign-Up Form" className="h-full flex items-center lg:items-center justify-center">
         <article className="w-fit h-full md:h-fit">
           <div className="bg-white px-0 py-0 md:px-10 md:py-10 lg:px-8 lg:py-6 md:rounded-[36px] drop-shadow-[0_15px_60px_rgba(0,0,0,25%)]">
             <div className="flex flex-col-reverse lg:flex-row items-center justify-start gap-10 lg:gap-16">
