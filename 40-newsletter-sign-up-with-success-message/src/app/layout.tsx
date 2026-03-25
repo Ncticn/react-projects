@@ -17,7 +17,7 @@ export default function RootLayout({
       className="h-full antialiased"
     >
       <body>
-        <main>
+        <main className="h-full flex items-center lg:items-center justify-center">
           {children}
         </main>
       </body>
