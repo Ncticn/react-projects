@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full antialiased">
-      <body className="flex min-h-full flex-col">
+      <body className="flex min-h-full flex-col items-stretch justify-center">
         <main>{children}</main>
       </body>
     </html>
