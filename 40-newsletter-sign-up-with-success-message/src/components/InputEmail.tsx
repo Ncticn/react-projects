@@ -38,7 +38,7 @@ export default function InputEmail({ inputLabel = "Label", placeholder = "exampl
     return (
         <div className="form-input-item flex flex-col gap-2 items-start justify-start w-full **:w-full">
             <div className="flex flex-row items-center justify-between">
-                <label htmlFor="input-user-email" className="text-preset-3 text-blue-800">{inputLabel}</label>
+                <label htmlFor={inputID} className="text-preset-3 text-blue-800">{inputLabel}</label>
                 <span className={`text-preset-3 text-red text-end ${error && inputValue ? "opacity-100" : "opacity-0"} transition delay-75 ease-linear`}>Valid email required</span>
             </div>
             <input type="email" name={inputName} id={inputID} value={inputValue} onChange={(e) => handleOnChange(e.target.value)} className={`px-6 py-4 rounded-lg outline-0 border text-preset-2 font-normal transition delay-75 ease-linear ${inputClass}`} placeholder={placeholder} />
