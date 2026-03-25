@@ -25,13 +25,17 @@ export default function Page() {
   ];
 
   const [status, setStatus] = useState("empty");
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState({
+    value: "",
+    valid: false,
+  });
 
   function handleOnChange(value: string, valid: boolean) {
+    console.log(value, valid);
     if (value.length > 0) {
       setStatus("typing");
       if (valid) {
-        setEmail(value);
+        setEmail({ value: value, valid: true });
       } else {
         setStatus("error");
       }
@@ -42,18 +46,18 @@ export default function Page() {
 
   }
 
-  function handleSubmit(e: any) {
+  async function handleSubmit(e: any) {
     e.preventDefault();
-    setStatus("success");
+    if (email.valid) setStatus("success");
   }
 
-  function handleClose(){
+  function handleClose() {
     setStatus("empty");
-    setEmail("");
+    setEmail({ value: "", valid: false });
   }
 
   if (status === "success") {
-    return (<ModalSuccess email={email} onClose={() => handleClose()} />)
+    return (<ModalSuccess email={email.value} onClose={() => handleClose()} />)
   }
 
   return (
