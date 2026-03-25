@@ -31,7 +31,6 @@ export default function Page() {
   });
 
   function handleOnChange(value: string, valid: boolean) {
-    console.log(value, valid);
     if (value.length > 0) {
       setStatus("typing");
       if (valid) {
@@ -43,7 +42,6 @@ export default function Page() {
     } else {
       setStatus("empty");
     }
-
   }
 
   async function handleSubmit(e: any) {
