@@ -16,7 +16,11 @@ export default function RootLayout({
       lang="en"
       className="h-full antialiased"
     >
-      <body className="">{children}</body>
+      <body>
+        <main>
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
