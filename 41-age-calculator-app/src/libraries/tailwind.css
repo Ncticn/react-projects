@@ -1,1 +1,65 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@theme {
+
+    /* Colors */
+    --color-red-400: #FF5959;
+    --color-grey-500: #716F6F;
+    --color-grey-200: #DCDCDC;
+    --color-grey-100: #F0F0F0;
+    --color-purple-500: #854DFF;
+
+    /* Font Family */
+    --font-poppins: "Poppins", sans-serif;
+
+    /* Font Size */
+    --text-8\.5xl: 6.5rem;
+    --text-5\.5xl: 3.5rem;
+    --text-3\.5xl: 2rem;
+
+    /* Line Height */
+    --leading-110\%: 110%;
+    --leading-150\%: 150%;
+
+
+    /* Letter Spacing */
+    --tracking-0px: 0px;
+    --tracking-2px: 2px;
+    --tracking-4px: 4px;
+    --tracking-5px: 5px;
+}
+
+@layer base {
+    body {
+        font-family: var(--font-poppins);
+    }
+}
+
+@layer utilities {
+
+    .text-preset-1 {
+        @apply text-8.5xl leading-110% -tracking-2px font-extrabold italic;
+    }
+
+    .text-preset-2 {
+        @apply text-5.5xl leading-110% -tracking-2px font-extrabold italic;
+    }
+
+    .text-preset-3 {
+        @apply text-3.5xl leading-150% tracking-0px font-bold;
+    }
+
+    .text-preset-4 {
+        @apply text-xl leading-150% tracking-0px font-bold;
+    }
+
+    .text-preset-5 {
+        @apply text-sm leading-150%;
+    }
+
+    .text-preset-6 {
+        @apply text-xs leading-150%;
+    }
+
+}
