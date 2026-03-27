@@ -1,18 +1,18 @@
 import { useState } from "react";
 
-interface InputMonthProps {
+interface InputDateProps {
   inputID: string;
   inputName?: string;
   placeholder?: string;
   onChange?: (value: string) => void;
 }
 
-export default function InputMonth({
+export default function InputDate({
   inputID,
-  inputName = "user-input-month",
+  inputName = "user-input-date",
+  placeholder = "DD",
   onChange,
-  placeholder = "MM",
-}: InputMonthProps) {
+}: InputDateProps) {
   const [inputValue, setInputValue] = useState("");
   const [error, setError] = useState(false);
 
@@ -27,7 +27,7 @@ export default function InputMonth({
     }
 
     if (Number(userValue) < 1) userValue = "1";
-    if (Number(userValue) > 12) userValue = "12";
+    if (Number(userValue) > 31) userValue = "31";
 
     setInputValue(userValue);
     setError(false);
@@ -40,7 +40,7 @@ export default function InputMonth({
         htmlFor={inputID}
         className={`text-preset-5 tracking-5px font-bold uppercase ${error ? "text-red-400" : "text-grey-500"}`}
       >
-        MONTH
+        Day
       </label>
       <input
         type="text"
