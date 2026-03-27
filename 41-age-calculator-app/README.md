@@ -49,7 +49,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://ncticn.vercel.app/projects/41-age-calculator-app
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/newsletter-sign-up-form-react-nextjs-typescript-tailwindcss-xWmX2us1Wh
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/age-calculator-app-react-nextjs-typescript-tailwindcss-PUbIlp2HZc
 
 
 ## ⚙️ Installation & Running the Project
