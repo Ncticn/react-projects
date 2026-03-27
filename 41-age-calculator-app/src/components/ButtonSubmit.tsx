@@ -1,4 +1,4 @@
-import IconDown from "@/assets/icons/icon-arrow.svg";
+import IconDown from "../assets/icons/icon-arrow.svg"
 
 export default function ButtonSubmit() {
   return (
