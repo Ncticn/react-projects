@@ -1,69 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import "tailwindcss";
 
 @theme {
+  /* Colors */
+  --color-gray-950: #151515;
+  --color-gray-500: #686868;
+  --color-gray-400: #adadad;
+  --color-gray-200: #d8d8d8;
+  --color-gray-50: #fafafa;
+  --color-blue-400: #4bb1da;
+  --color-violet-500: #726cee;
+  --color-yellow-300: #edd556;
+  --color-purple-600: #8e4cb6;
 
-    /* Colors */
-    --color-gray-950: #151515;
-    --color-gray-500: #686868;
-    --color-gray-400: #ADADAD;
-    --color-gray-200: #D8D8D8;
-    --color-gray-50: #FAFAFA;
-    --color-blue-400: #4BB1DA;
-    --color-violet-500: #726CEE;
-    --color-yellow-300: #EDD556;
-    --color-purple-600: #8E4CB6;
+  /* Font Family */
+  --font-epilogue: "Epilogue", sans-serif;
 
-    /* Font Family */
-    --font-epilogue: "Epilogue", sans-serif;
+  /* Font Size */
+  --text-7\.5xl: 5rem;
+  --text-6\.5xl: 4rem;
 
-    /* Font Size */
-    --text-7\.5xl: 5rem;
-    --text-6\.5xl: 4rem;
+  /* Line Height */
+  --leading-100\%: 100%;
+  --leading-115\%: 115%;
+  --leading-155\%: 155%;
 
-    /* Line Height */
-    --leading-100\%: 100%;
-    --leading-115\%: 115%;
-    --leading-155\%: 155%;
-
-    /* Letter Spacing */
-    --tracking-0px: 0;
-    --tracking-0\.25px: 0.25px;
-    --tracking-1px: 1px;
-
+  /* Letter Spacing */
+  --tracking-0px: 0;
+  --tracking-0\.25px: 0.25px;
+  --tracking-1px: 1px;
 }
 
 @layer base {
-    body {
-        font-family: var(--font-epilogue);
-        font-optical-sizing: auto;
-        font-style: normal;
-    }
+  body {
+    font-family: var(--font-epilogue);
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
 }
 
 @layer utilities {
-    .text-preset-1 {
-        @apply text-7.5xl leading-100% -tracking-1px font-bold;
-    }
+  .text-preset-1 {
+    @apply text-7.5xl leading-100% -tracking-1px font-bold;
+  }
 
-    .text-preset-2 {
-        @apply text-6.5xl leading-100% -tracking-1px font-bold;
-    }
+  .text-preset-2 {
+    @apply text-6.5xl leading-100% -tracking-1px font-bold;
+  }
 
-    .text-preset-3 {
-        @apply text-4xl leading-100% -tracking-1px font-bold;
-    }
+  .text-preset-3 {
+    @apply leading-100% -tracking-1px text-4xl font-bold;
+  }
 
-    .text-preset-4 {
-        @apply text-lg leading-155%;
-    }
+  .text-preset-4 {
+    @apply leading-155% text-lg;
+  }
 
-    .text-preset-5 {
-        @apply text-base leading-155%;
-    }
+  .text-preset-5 {
+    @apply leading-155% text-base;
+  }
 
-    .text-preset-6 {
-        @apply text-sm leading-115% tracking-0px font-medium;
-    }
+  .text-preset-6 {
+    @apply leading-115% tracking-0px text-sm font-medium;
+  }
 }
