@@ -1,1 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-gray-950: #24242c;
+  --color-gray-600: #4c5862;
+  --color-gray-550: #878d92;
+  --color-gray-100: #e7e7e7;
+  --color-purple-950: #2d2e40;
+  --color-purple-900: #3e4062;
+  --color-purple-800: #52526f;
+  --color-red-500: #ff505c;
+  --color-red-400: #ff7b86;
+  --color-red-50: #f9f6f6;
+  --color-blue-900: #1f3e5a;
+
+  /* Font Family */
+  --font-Overpass: "Overpass", sans-serif;
+  --font-Ubuntu: "Ubuntu", sans-serif;
+
+  /* Font Size */
+  --text-6\.5xl: 4rem;
+  --text-4\.5xl: 2.5rem;
+  --text-2\.5xl: 1.75rem;
+
+  /* Line Height */
+  --leading-100\%: 100%;
+  --leading-115\%: 115%;
+  --leading-125\%: 125%;
+  --leading-175\%: 175%;
+  --leading-200\%: 200%;
+
+  /* Letter Spacing */
+  --tracking-0px: 0px;
+  --tracking-0\.6px: 0.6px;
+  --tracking-1\.2px: 1.2px;
+  --tracking-2px: 2px;
+}
+
+@layer base {
+  body {
+    background-color: white;
+  }
+}
+
+@layer utilities {
+  .text-preset-1 {
+    @apply text-6.5xl leading-100% -tracking-2px font-Overpass font-semibold;
+  }
+
+  .text-preset-2 {
+    @apply text-4.5xl leading-125% -tracking-1.2px font-Overpass font-semibold;
+  }
+
+  .text-preset-3 {
+    @apply text-2.5xl leading-100% tracking-0px font-Overpass font-semibold;
+  }
+
+  .text-preset-4 {
+    @apply leading-125% tracking-0px font-Overpass text-xl font-light;
+  }
+
+  .text-preset-5 {
+    @apply leading-175% tracking-0.6px font-Overpass text-base font-light;
+  }
+
+  .text-preset-6 {
+    @apply tracking-0px font-Ubuntu text-base;
+  }
+}
