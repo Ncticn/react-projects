@@ -20,6 +20,7 @@ function ButtonLink({ text = "Button", url = "#", type }: ButtonLinkProps) {
   return (
     <Link
       href={url}
+      aria-label={`Go to ${text}`}
       className={`inline-flex items-center justify-center gap-0 rounded-[28px] px-4 py-3 *:transition *:delay-75 *:ease-linear ${selectedClass}`}
     >
       <span className="text-preset-6 leading-115% font-bold">{text}</span>
