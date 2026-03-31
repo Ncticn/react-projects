@@ -1,3 +1,4 @@
+import HeaderApp from "@/components/HeaderApp";
 import "@/libraries/tailwind.css";
 import type { Metadata } from "next";
 
@@ -14,7 +15,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full antialiased">
-      <body className="flex min-h-full flex-col">{children}</body>
+      <body className="flex min-h-full flex-col items-stretch justify-start gap-8 pt-6 lg:gap-0">
+        <HeaderApp />
+        <main className="my-auto">{children}</main>
+      </body>
     </html>
   );
 }
