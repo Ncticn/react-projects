@@ -23,7 +23,7 @@ function HeaderApp() {
         <div className="hidden flex-row items-center justify-between lg:flex">
           <div className="flex flex-row items-center justify-start gap-16">
             <Link href={"/"} aria-label="Homepage">
-              <Image src={"/logo.svg"} alt="Snap Logo" width={84} height={27} />
+              <Image src={"./logo.svg"} alt="Snap Logo" width={84} height={27} />
             </Link>
 
             <nav aria-label="Main navigation">
@@ -63,13 +63,13 @@ function HeaderMobile() {
   return (
     <div className="flex flex-row items-center justify-between lg:hidden">
       <Link href={"/"} aria-label="Go to homepage">
-        <Image src={"/logo.svg"} alt="Snap Logo" width={87} height={35} />
+        <Image src={"./logo.svg"} alt="Snap Logo" width={87} height={35} />
       </Link>
 
       <button type="button" onClick={() => setIsActive(!isActive)}>
         {isActive ? (
           <Image
-            src={"/assets/icons/icon-close-menu.svg"}
+            src={"./assets/icons/icon-close-menu.svg"}
             alt="Icon Close Hamburger Menu"
             width={24}
             height={24}
@@ -77,7 +77,7 @@ function HeaderMobile() {
           />
         ) : (
           <Image
-            src={"/assets/icons/icon-menu.svg"}
+            src={"./assets/icons/icon-menu.svg"}
             alt="Icon Hamburger Menu"
             width={32}
             height={18}
@@ -90,14 +90,13 @@ function HeaderMobile() {
         <div className="absolute inset-0 before:absolute before:h-screen before:w-full before:bg-black before:opacity-75">
           <div className="relative float-right h-full w-3xs space-y-8 bg-white px-4 py-6 md:w-2xs md:px-10 md:py-7">
             <div className="text-end">
-              <button type="button" className="z-10">
+              <button type="button" className="z-10" onClick={() => setIsActive(!isActive)}>
                 <Image
-                  src={"/assets/icons/icon-close-menu.svg"}
+                  src={"./assets/icons/icon-close-menu.svg"}
                   alt="Icon Close Hamburger Menu"
                   width={24}
                   height={24}
                   className="cursor-pointer"
-                  onClick={() => setIsActive(false)}
                 />
               </button>
             </div>
@@ -115,7 +114,7 @@ function HeaderMobile() {
 
             <div className="space-y-4">
               <Link
-                href={"/login"}
+                href={"/"}
                 className="text-preset-6 block text-center text-gray-500"
               >
                 Login

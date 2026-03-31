@@ -8,25 +8,25 @@
         "id": 1,
         "name": "Todo List",
         "url": "#",
-        "icon": "/assets/icons/icon-todo.svg"
+        "icon": "./assets/icons/icon-todo.svg"
       },
       {
         "id": 2,
         "name": "Calendar",
         "url": "#",
-        "icon": "/assets/icons/icon-calendar.svg"
+        "icon": "./assets/icons/icon-calendar.svg"
       },
       {
         "id": 3,
         "name": "Reminders",
         "url": "#",
-        "icon": "/assets/icons/icon-reminders.svg"
+        "icon": "./assets/icons/icon-reminders.svg"
       },
       {
         "id": 4,
         "name": "Planning",
         "url": "#",
-        "icon": "/assets/icons/icon-planning.svg"
+        "icon": "./assets/icons/icon-planning.svg"
       }
     ]
   },

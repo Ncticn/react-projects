@@ -11,22 +11,22 @@ export default function Home() {
     {
       id: 1,
       name: "Databiz",
-      url: "/assets/logos/client-databiz.svg",
+      url: "./assets/logos/client-databiz.svg",
     },
     {
       id: 2,
       name: "Audiophile",
-      url: "/assets/logos/client-audiophile.svg",
+      url: "./assets/logos/client-audiophile.svg",
     },
     {
       id: 3,
       name: "Meet",
-      url: "/assets/logos/client-meet.svg",
+      url: "./assets/logos/client-meet.svg",
     },
     {
       id: 4,
       name: "Maker",
-      url: "/assets/logos/client-maker.svg",
+      url: "./assets/logos/client-maker.svg",
     },
   ];
 
@@ -60,11 +60,11 @@ export default function Home() {
             <picture>
               <source
                 media="(min-width: 769px)"
-                srcSet="/assets/images/image-hero-desktop.png"
+                srcSet="./assets/images/image-hero-desktop.png"
               />
               <source
                 media="(max-width: 768px)"
-                srcSet="/assets/images/image-hero-mobile.png"
+                srcSet="./assets/images/image-hero-mobile.png"
               />
               <Image
                 src={HeroImageDesktop}
