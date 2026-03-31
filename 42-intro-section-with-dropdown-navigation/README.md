@@ -41,7 +41,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://ncticn.vercel.app/projects/42-intro-section-with-dropdown-navigation
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/age-calculator-app-react-nextjs-typescript-tailwindcss-PUbIlp2HZc
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-nextjs-react-typescript-RIeVWi0g7C
 
 ## ⚙️ Installation & Running the Project
 
