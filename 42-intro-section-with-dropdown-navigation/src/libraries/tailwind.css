@@ -37,12 +37,13 @@
     font-family: var(--font-epilogue);
     font-optical-sizing: auto;
     font-style: normal;
+    background-color: var(--color-gray-50);
   }
 }
 
 @layer utilities {
   .text-preset-1 {
-    @apply text-7.5xl leading-100% -tracking-1px font-bold;
+    @apply md:text-6.5xl lg:text-7.5xl leading-100% -tracking-1px text-4xl font-bold;
   }
 
   .text-preset-2 {
@@ -54,7 +55,7 @@
   }
 
   .text-preset-4 {
-    @apply leading-155% text-lg;
+    @apply leading-155% text-base md:text-lg;
   }
 
   .text-preset-5 {
