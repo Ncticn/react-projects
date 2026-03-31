@@ -1,0 +1,6 @@
+:HL["/projects/42-intro-section-with-dropdown-navigation/_next/static/chunks/0i0_chjp1rtdh.css","style"]
+:HL["./assets/logos/client-databiz.svg","image"]
+:HL["./assets/logos/client-audiophile.svg","image"]
+:HL["./assets/logos/client-meet.svg","image"]
+:HL["./assets/logos/client-maker.svg","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"NjDkF4_D7c2ABlB7Ouch5"}

@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "Features",
+    "url": "#",
+    "subList": [
+      {
+        "id": 1,
+        "name": "Todo List",
+        "url": "#",
+        "icon": "./assets/icons/icon-todo.svg"
+      },
+      {
+        "id": 2,
+        "name": "Calendar",
+        "url": "#",
+        "icon": "./assets/icons/icon-calendar.svg"
+      },
+      {
+        "id": 3,
+        "name": "Reminders",
+        "url": "#",
+        "icon": "./assets/icons/icon-reminders.svg"
+      },
+      {
+        "id": 4,
+        "name": "Planning",
+        "url": "#",
+        "icon": "./assets/icons/icon-planning.svg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Company",
+    "url": "#",
+    "subList": [
+      {
+        "id": 1,
+        "name": "History",
+        "url": "#"
+      },
+      {
+        "id": 2,
+        "name": "Our Team",
+        "url": "#"
+      },
+      {
+        "id": 3,
+        "name": "Blog",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Careers",
+    "url": "#"
+  },
+  {
+    "id": 4,
+    "name": "About",
+    "url": "#"
+  }
+]
