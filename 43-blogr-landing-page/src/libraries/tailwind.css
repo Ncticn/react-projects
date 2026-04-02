@@ -46,11 +46,11 @@
 
 @layer utilities {
   .text-preset-1 {
-    @apply text-6.5xl leading-100% -tracking-2px font-Overpass font-semibold;
+    @apply text-4.5xl leading-125% -tracking-1.2px md:text-6.5xl md:leading-100% md:-tracking-2px font-Overpass font-semibold;
   }
 
   .text-preset-2 {
-    @apply text-4.5xl leading-125% -tracking-1.2px font-Overpass font-semibold;
+    @apply text-2.5xl leading-100% tracking-0px md:text-4.5xl md:leading-125% md:-tracking-1.2px font-Overpass font-semibold;
   }
 
   .text-preset-3 {
