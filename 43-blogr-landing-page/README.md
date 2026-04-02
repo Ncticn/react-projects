@@ -40,7 +40,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://ncticn.vercel.app/projects/43-blogr-landing-page
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-nextjs-react-typescript-RIeVWi0g7C
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/blogr-landing-page-react-nextjs-typescript-tailwindcss-4D0V-WIfJ1
 
 ## ⚙️ Installation & Running the Project
 
