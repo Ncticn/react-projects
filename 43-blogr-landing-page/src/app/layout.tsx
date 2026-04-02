@@ -16,9 +16,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`h-full antialiased`}>
-      <body className="flex min-h-full flex-col">
+      <body className="relative flex min-h-full flex-col gap-20">
         <HeaderApp />
-        <main>{children}</main>
+        <div className="absolute top-0 z-10 min-h-150 w-full overflow-hidden rounded-bl-[100px] bg-linear-to-br from-[#FF8F71] from-0% to-[#FF3E55] to-100%">
+          <div className="h-150 w-full bg-[url(src/assets/patterns/bg-pattern-intro-mobile.svg)] bg-size-[400%] bg-position-[40%_40%] bg-no-repeat md:bg-[url(src/assets/patterns/bg-pattern-intro-desktop.svg)] md:bg-auto md:bg-position-[33%_50%] lg:bg-position-[25%_50%]"></div>
+        </div>
+        <main className="z-20 flex flex-col items-stretch justify-start gap-16">
+          {children}
+        </main>
         <FooterApp />
       </body>
     </html>
