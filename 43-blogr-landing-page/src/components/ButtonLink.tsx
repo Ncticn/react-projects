@@ -11,10 +11,10 @@ function ButtonLink({ text = "Button", url = "#", type }: ButtonLinkProps) {
 
   if (type === "primary") {
     selectedClass =
-      "bg-white border-2 border-white text-red-500 hover:bg-transparent hover:text-white";
+      "bg-white border-2 border-white text-red-500 hover:bg-red-400 hover:border-red-400 hover:text-white";
   } else if (type === "secondary") {
     selectedClass =
-      "bg-red-400 text-white border-2 border-red-400 hover:border-white hover:bg-white hover:text-red-400";
+      "bg-transparent text-white border-2 border-white hover:border-white hover:bg-white hover:text-red-400";
   }
 
   return (
