@@ -22,7 +22,7 @@ function HeaderApp() {
   const [mobileMenu, setMobileMenu] = useState<boolean>(false);
 
   return (
-    <header>
+    <header className="z-50 pt-14">
       <div className="mx-auto max-w-278 not-lg:hidden">
         <div className="flex flex-row items-center justify-between gap-0">
           <div className="flex flex-row items-center justify-start gap-16">
@@ -47,7 +47,7 @@ function HeaderApp() {
                       </button>
 
                       {isActive && (
-                        <div className="absolute top-8 -left-6 min-w-42 rounded-[5px] bg-white p-6 drop-shadow-[0px_10px_40px_rgba(0,0,0,5%)]">
+                        <div className="absolute top-8 -left-6 z-50 min-w-42 rounded-[5px] bg-white p-6 drop-shadow-[0px_10px_40px_rgba(0,0,0,5%)]">
                           <ul className="flex w-full flex-col items-start justify-start gap-0.5">
                             {item.subList.map((subItem) => (
                               <li key={subItem.id}>
@@ -113,7 +113,7 @@ function HeaderApp() {
         </div>
 
         {mobileMenu && (
-          <div className="absolute top-16 z-10 h-max w-full rounded-[5px] bg-white px-6 py-8 drop-shadow-[0px_20px_40px_rgba(0,0,0,5%)]">
+          <div className="absolute top-16 z-50 h-max w-full rounded-[5px] bg-white px-6 py-8 drop-shadow-[0px_20px_40px_rgba(0,0,0,5%)]">
             <div className="flex flex-col items-center justify-start gap-6">
               <ul className="flex w-full flex-col items-center justify-start gap-8">
                 {NavList.map((item) => {
