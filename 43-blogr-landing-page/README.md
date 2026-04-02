@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📌 Blogr Landing Page
 
-## Getting Started
+This project is a solution to the "Blogr Landing Page" challenge on Frontend Mentor.
+The challenge focuses on building a responsive landing page using HTML and CSS, with a small amount of JavaScript for handling the mobile navigation menu.
 
-First, run the development server:
+## 🖼️ Preview
+
+![Project Preview](src/preview/preview.jpg)
+
+## 🎯 Overview
+
+During the development of this project, the following aspects were implemented:
+
+- Creating a responsive landing page that adapts across different screen sizes
+- Structuring page sections based on the provided design
+- Implementing a mobile navigation menu using JavaScript
+- Applying hover states to all interactive elements
+- Ensuring consistent spacing, alignment, and visual hierarchy
+- Reproducing the design as closely as possible based on the provided layout
+
+## 🧠 What I Learned
+
+Through this project, I practiced:
+
+- Building responsive layouts using HTML and CSS
+- Implementing mobile navigation behavior with JavaScript
+- Structuring landing page sections in a clean and maintainable way
+- Applying hover interactions to improve user experience
+- Strengthening layout composition and visual hierarchy skills
+
+## 🛠️ Tech Stack & Concepts
+
+- **Framework / Library:** Next / React
+- **Styling:** Tailwind CSS
+- **Architecture:** Component-Based Structure
+- **Markup:** Semantic HTML
+- **Code Formatting:** Prettier
+- **Version Control:** Git & GitHub
+
+## 🔗 Links
+
+- 💻 **Live Demo:** https://ncticn.vercel.app/projects/43-blogr-landing-page
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/intro-section-with-dropdown-navigation-nextjs-react-typescript-RIeVWi0g7C
+
+## ⚙️ Installation & Running the Project
+
+To run this project locally, follow these steps:
 
 ```bash
+# Clone the repository
+git clone https://github.com/Ncticn/react-projects.git
+
+# Navigate to the project directory
+cd 43-blogr-landing-page
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 👤 Author
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Ncticn**  
+Front-End Developer
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- GitHub: https://github.com/Ncticn
+- LinkedIn: https://www.linkedin.com/in/ncticn/
+- Frontend Mentor: https://www.frontendmentor.io/profile/Ncticn
 
-## Learn More
+## 📝 License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License.  
+© 2026 Ncticn.
