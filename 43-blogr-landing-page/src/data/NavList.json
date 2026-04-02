@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "name": "Product",
+    "subList": [
+      {
+        "id": 1,
+        "name": "Overview",
+        "url": "#"
+      },
+      {
+        "id": 2,
+        "name": "Pricing",
+        "url": "#"
+      },
+      {
+        "id": 3,
+        "name": "Marketplace",
+        "url": "#"
+      },
+      {
+        "id": 4,
+        "name": "Features",
+        "url": "#"
+      },
+      {
+        "id": 5,
+        "name": "Integrations",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Company",
+    "subList": [
+      {
+        "id": 1,
+        "name": "About",
+        "url": "#"
+      },
+      {
+        "id": 2,
+        "name": "Team",
+        "url": "#"
+      },
+      {
+        "id": 3,
+        "name": "Blog",
+        "url": "#"
+      },
+      {
+        "id": 4,
+        "name": "Careers",
+        "url": "#"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Connect",
+    "subList": [
+      {
+        "id": 1,
+        "name": "Contact",
+        "url": "#"
+      },
+      {
+        "id": 2,
+        "name": "Newsletter",
+        "url": "#"
+      },
+      {
+        "id": 3,
+        "name": "LinkedIn",
+        "url": "#"
+      }
+    ]
+  }
+]
