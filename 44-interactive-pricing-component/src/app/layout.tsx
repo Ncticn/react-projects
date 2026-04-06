@@ -1,4 +1,10 @@
 import type { Metadata } from "next";
+import { Manrope } from "next/font/google";
+import "@/libraries/tailwind.css";
+
+const manrope = Manrope({
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Frontend Mentor | Interactive Pricing Component",
@@ -12,8 +18,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full antialiased">
-      <body className="flex min-h-full flex-col">{children}</body>
+    <html lang="en" className={`h-full antialiased ${manrope.className}`}>
+      <body className="relative flex min-h-full flex-col items-center justify-center">
+        <div className="absolute inset-x-0 top-0 h-112.25 bg-[url(src/assets/patterns/bg-pattern.svg)] bg-cover bg-no-repeat"></div>
+        {children}
+      </body>
     </html>
   );
 }
