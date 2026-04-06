@@ -1,5 +1,13 @@
+import "@/libraries/tailwind.css";
+
 import type { Metadata } from "next";
-import "@/libraries/tailwind.css"; 
+
+import { Manrope } from "next/font/google";
+
+const manropeSans = Manrope({
+  variable: "--font-manrope-sans",
+  subsets: ['latin']
+})
 
 export const metadata: Metadata = {
   title: "Frontend Mentor | Maker Pre-Launch Landing Page",
@@ -14,7 +22,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`h-full antialiased`}
+      className={`${manropeSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

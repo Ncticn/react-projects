@@ -1,1 +1,75 @@
 @import "tailwindcss";
+
+
+@theme {
+
+    /* Colors */
+    --color-neutral-900: #080C20;
+    --color-neutral-400: #777F98;
+    --color-neutral-0: #FFFFFF;
+    --color-cyan-400: #3EE9E5;
+    --color-red-400: #FF2965;
+    --color-blue-800: #093F68;
+    --color-blue-gray-500: #6B8CA4;
+
+    /* Radius */
+    --radius-0: 0;
+    --radius-4: 4px;
+    --radius-6: 6px;
+    --radius-8: 8px;
+    --radius-10: 10px;
+    --radius-12: 12px;
+    --radius-16: 16px;
+    --radius-20: 20px;
+    --radius-24: 24px;
+
+    /* Font Size */
+    --text-3\.25xl: 2rem;
+    --text-4\.5xl: 2.5rem;
+
+    /* Line Height */
+    --leading-120: 120%;
+    --leading-140: 140%;
+    --leading-160: 160%;
+
+}
+
+:root {
+    font-family: var(--font-manrope-sans);
+}
+
+@layer base {
+    body {
+        letter-spacing: 0;
+    }
+}
+
+@layer utilities {
+    .text-preset-1 {
+        @apply font-extrabold text-3.25xl md:text-5xl leading-120;
+    }
+
+    .text-preset-2 {
+        @apply font-extrabold text-4.5xl leading-140;
+    }
+
+    .text-preset-3 {
+        @apply font-extrabold text-3.25xl leading-140;
+    }
+
+    .text-preset-4 {
+        @apply font-extrabold text-lg leading-140;
+    }
+
+    .text-preset-5 {
+        @apply font-medium text-[15px] leading-160;
+    }
+
+    .text-preset-6 {
+        @apply font-extrabold text-[15px] leading-140;
+    }
+
+    .text-preset-7 {
+        @apply font-medium text-xs leading-160;
+    }
+}
