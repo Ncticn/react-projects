@@ -1,0 +1,13 @@
+@reference "tailwindcss";
+
+.formInputItem {
+  @apply flex flex-col items-start justify-start gap-1.5;
+}
+
+.inputEmail {
+  @apply rounded-full border border-blue-800 bg-blue-800 px-5 py-3 text-white outline-0 placeholder:text-blue-500 invalid:outline-2 invalid:outline-red-400 focus:border-cyan-400;
+}
+
+.inputEmailError {
+  @apply text-red-400;
+}
