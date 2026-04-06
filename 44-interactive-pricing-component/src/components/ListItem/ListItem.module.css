@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+.listItem {
+  @apply flex flex-row items-center justify-start gap-4 text-[12px] font-semibold tracking-normal text-[#848EAD];
+}
