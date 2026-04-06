@@ -1,0 +1,37 @@
+@reference "tailwindcss";
+
+.input_range {
+  appearance: none;
+  width: 100%;
+}
+
+.input_range::-moz-range-progress {
+  height: 8px;
+  border-radius: 5px;
+  background-color: #a4f3eb;
+}
+
+.input_range::-moz-range-thumb {
+  width: 40px;
+  height: 40px;
+  background-color: #24aea1;
+  border-radius: 100%;
+  border-color: #24aea1;
+  background-image: url(src/assets/icons/icon-slider.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  cursor: pointer;
+  @apply drop-shadow-[0px_15px_30px_rgba(0,255,231,60%)] transition delay-75 ease-linear;
+}
+
+.input_range:hover::-moz-range-thumb {
+  background-color: #7aeadf;
+  border-color: #7aeadf;
+}
+
+.input_range::-moz-range-track {
+  height: 8px;
+  background-color: #ecf0fb;
+  border-radius: 5px;
+}

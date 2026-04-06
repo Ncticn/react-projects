@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+.divider {
+  @apply mt-10 mb-8 h-px w-full bg-[#ECF0FB];
+}
