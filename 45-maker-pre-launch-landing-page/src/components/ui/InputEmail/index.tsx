@@ -1,4 +1,11 @@
+"use client";
+
+// React
+import { useState } from "react";
+
+// Component Style
 import styles from "@/components/ui/InputEmail/inputemail.module.css";
+import ValidationEmail from "@/utils/ValidationEmail";
 
 interface InputEmailProps {
   inputId: string;
@@ -13,6 +20,21 @@ function InputEmail({
   placeholder = "Email address",
   onChange,
 }: InputEmailProps) {
+  const [email, setEmail] = useState<string>("");
+  const [err, setErr] = useState<boolean>(false);
+  const [message, setMessage] = useState<string>("");
+
+  function handleChange(value: string) {
+    const result = ValidationEmail(value);
+    const isValid = result.isValid;
+
+    setErr(!isValid);
+    setMessage(result.error);
+    setEmail(value);
+
+    onChange?.(isValid);
+  }
+
   return (
     <div className={`${styles.formInputItem}`}>
       <input
@@ -20,10 +42,14 @@ function InputEmail({
         name={inputName}
         id={inputId}
         placeholder={placeholder}
-        className={`${styles.inputEmail} text-preset-6`}
+        className={`${styles.inputEmail} text-preset-6 ${err ? "outline-2 outline-red-400" : ""}`}
+        value={email}
+        onChange={(e) => handleChange(e.target.value)}
       />
-      <span className={`${styles.inputEmailError} text-preset-7`}>
-        Oops! That doesn’t look like an email address
+      <span
+        className={`${styles.inputEmailError} text-preset-7 ${err ? "opacity-100" : "opacity-0"}`}
+      >
+        {message}
       </span>
     </div>
   );
