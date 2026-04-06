@@ -38,6 +38,8 @@
 @layer base {
   body {
     letter-spacing: 0;
+    background-color: var(--color-neutral-900);
+    color: var(--color-neutral-0);
   }
 }
 
