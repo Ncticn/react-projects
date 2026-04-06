@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+.btn {
+  @apply cursor-pointer rounded-full border-2 border-cyan-400 bg-cyan-400 px-6 py-3 text-blue-800 transition delay-75 ease-linear hover:bg-transparent hover:text-white focus:outline-2 focus:outline-red-400;
+}
