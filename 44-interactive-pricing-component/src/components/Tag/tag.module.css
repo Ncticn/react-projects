@@ -1,0 +1,9 @@
+@reference "tailwindcss";
+
+.tag {
+  @apply inline-flex flex-col items-center justify-center gap-0 rounded-[9.5px] bg-[#FEEDE8] px-1.75 py-0.5;
+}
+
+.tag_text {
+  @apply text-[10px] font-extrabold tracking-normal text-[#FF8D68];
+}
