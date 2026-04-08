@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[97367,["/projects/45-maker-pre-launch-landing-page/_next/static/chunks/0dbhjjzl8qfwv.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","section",null,{"children":[["$","h1",null,{"children":"Lorem, ipsum."}],["$","p",null,{"children":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fuga enim ea a inventore? Est possimus doloribus iste quis, maxime, impedit nostrum cumque odio amet aspernatur autem animi minus in."}]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"iSFBgbWq0X5CcrM-P7BOF"}
+4:null
