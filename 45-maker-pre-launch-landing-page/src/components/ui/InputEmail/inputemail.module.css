@@ -1,0 +1,13 @@
+@reference "tailwindcss";
+
+.formInputItem {
+  @apply flex w-full flex-col items-start justify-start gap-1.5;
+}
+
+.inputEmail {
+  @apply w-full rounded-full border border-[#093F68] bg-[#093F68] px-5 py-3 text-white transition delay-75 ease-linear placeholder:text-[#6B8CA4] focus:border-[#3EE9E5];
+}
+
+.inputEmailError {
+  @apply h-5 w-full text-center text-red-400 transition delay-75 ease-linear md:text-start;
+}
