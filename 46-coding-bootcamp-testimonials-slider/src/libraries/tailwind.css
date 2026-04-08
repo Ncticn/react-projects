@@ -1,1 +1,38 @@
 @import "tailwindcss";
+
+@theme {
+
+    /* Colors */
+    --color-gray-400: #B9B9CE;
+    --color-gray-100: #EBEBEB;
+    --color-gray-50: #F4F4FC;
+    --color-purple-500: #CF6BCB;
+    --color-pink-500: #D3629D;
+    --color-blue-950: #202047;
+
+    /* Font Size */
+    --text-3\.5xl: 2rem;
+
+    /* Line Height */
+    --leading-190\%: 190%;
+    --leading-137\.5\%: 137.5%;
+    --leading-135\%: 135%;
+
+}
+
+@layer base{
+    html{
+        @apply tracking-normal;
+    }
+}
+
+@layer utilities {
+    .text-preset-1 {
+        @apply text-lg font-light md:text-3.5xl leading-137.5%;
+    }
+
+    .text-preset-2{
+        @apply text-[15px] md:text-xl leading-190%;
+    }
+
+}
