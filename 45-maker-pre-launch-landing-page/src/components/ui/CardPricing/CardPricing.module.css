@@ -1,0 +1,21 @@
+@reference "tailwindcss";
+
+.cardPricing {
+  @apply relative h-full w-full rounded-lg px-8 py-12;
+}
+
+.cardPricingWrapper {
+  @apply flex h-full flex-col items-start justify-center gap-6;
+}
+
+.cardPricingHeader {
+  @apply space-y-4 md:space-y-5;
+}
+
+.cardPricingList {
+  @apply space-y-3;
+}
+
+.cardPricingListItem {
+  @apply flex flex-row items-center justify-start gap-3 md:gap-4;
+}
