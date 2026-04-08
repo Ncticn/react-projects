@@ -22,7 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${manropeSans.variable} h-full antialiased`}>
-      <body className="flex min-h-full flex-col">{children}</body>
+      <body className="flex min-h-full flex-col gap-20 pb-16 md:gap-24 lg:gap-40 lg:pb-24">
+        <main className="space-y-40">{children}</main>
+      </body>
     </html>
   );
 }
