@@ -1,3 +1,4 @@
-:HL["/projects/45-maker-pre-launch-landing-page/_next/static/chunks/0clrrxovrmhtv.css","style"]
+:HL["/projects/45-maker-pre-launch-landing-page/_next/static/chunks/09hv663k_k7b4.css","style"]
 :HL["/projects/45-maker-pre-launch-landing-page/_next/static/media/a343f882a40d2cc9-s.p.0kho-wj7-y-w1.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"iSFBgbWq0X5CcrM-P7BOF"}
+:HL["/projects/45-maker-pre-launch-landing-page/_next/static/chunks/0eg~oiz78ixjj.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"ofUtBvYQt_Qv9IPitZM4w"}
