@@ -41,7 +41,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://ncticn.vercel.app/projects/45-maker-pre-launch-landing-page
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/interactive-pricing-component-nextjs-typescript-tailwindcss-q1k8eiM73s
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/maker-pre-launch-landing-page-nextjs-typescript-tailwindcss-YHhvVUHs5U
 
 ## ⚙️ Installation & Running the Project
 
