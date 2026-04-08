@@ -25,11 +25,11 @@ function CardPricing({
   price,
 }: CardPricingProps) {
   return (
-    <article aria-label="Article Card Pricing">
+    <article aria-label="Article Card Pricing" className="h-full w-full">
       <div
         className={
           styles.cardPricing +
-          (price !== undefined ? " bg-cyan-400 lg:scale-105" : " bg-blue-800")
+          (price !== undefined ? " bg-cyan-400" : " bg-blue-800")
         }
       >
         <div className={styles.cardPricingWrapper}>
