@@ -39,7 +39,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://ncticn.vercel.app/projects/30-bento-grid
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/blogr-landing-page-react-nextjs-typescript-tailwindcss-4D0V-WIfJ1
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/bento-grid-react-tailwindcss-typescript-components-dey0HZFJQl
 
 ## ⚙️ Installation & Running the Project
 
