@@ -1,0 +1,45 @@
+@reference "tailwindcss";
+
+.slider_container{
+    @apply max-w-82 md:max-w-158 lg:max-w-full mx-auto relative;
+}
+
+.slider_wrapper{
+    @apply flex flex-col lg:flex-row items-center justify-center gap-8 md:gap-16;
+}
+.slider_img_wrapper{
+    background-image: url(../../assets/patterns/pattern-bg.svg);
+    @apply w-full md:max-w-130 h-auto px-9 md:px-14.5 py-8 md:py-10.75 lg:w-174.25! lg:max-w-full lg:h-164.25 order-1 lg:order-2 relative bg-no-repeat bg-center bg-contain;
+}
+
+.slider_content_wrapper {
+    @apply h-fit order-2 lg:order-1 lg:w-xl lg:relative lg:left-48 lg:z-30;
+}
+
+.slider_content_img_wrapper {
+    @apply relative w-15 md:w-30 md:h-25 h-12.5 not-lg:mx-auto top-6.5 lg:left-24 inset-x-0 z-10;
+}
+
+.slider_content_author{
+    @apply flex flex-col items-center lg:items-start justify-center gap-4 md:gap-8;
+}
+
+.slider_content_author_comment {
+    @apply text-center lg:text-start not-lg:mx-5;
+}
+
+.slider_content_author_info {
+    @apply flex flex-col md:flex-row md:gap-2 items-center justify-center gap-0;
+}
+
+.slider_image_wrapper{
+    @apply w-full h-full flex flex-col items-center justify-center gap-0;
+}
+
+.slider_controls_wrapper{
+    @apply inline-flex flex-row items-center justify-center absolute not-lg:inset-x-0 bottom-4 lg:bottom-6.5 lg:left-32;
+}
+
+.slider_controls_btn{
+    @apply bg-white px-4.25 py-3.75 rounded-none md:px-5.5 md:py-4.75 cursor-pointer drop-shadow-[0px_15px_20px_rgba(36,36,113,10%)];
+}
