@@ -17,88 +17,128 @@ import IconNext from "@/assets/icons/icon-next.svg";
 import IconPrev from "@/assets/icons/icon-prev.svg";
 
 type SlideList = {
-    id: number,
-    author: string,
-    job?: string,
-    comment: string,
-    img: string,
-}
+  id: number;
+  author: string;
+  job?: string;
+  comment: string;
+  img: string;
+};
 
 interface SliderProps {
-    slideList: SlideList[];
+  slideList: SlideList[];
 }
 
 export default function Slider({ slideList }: SliderProps) {
-    const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
 
-    const activeSlide = slideList[activeIndex];
+  const activeSlide = slideList[activeIndex];
 
-    function handleSliderClick(type: "next" | "prev") {
-        if (type === "next") {
-            setActiveIndex(
-                (prev) => (prev + 1) % slideList.length
-            );
-        } else {
-            setActiveIndex(
-                (prev) => prev === 0 ? slideList.length - 1 : prev - 1
-            )
-        }
+  function handleSliderClick(type: "next" | "prev") {
+    if (type === "next") {
+      setActiveIndex((prev) => (prev + 1) % slideList.length);
+    } else {
+      setActiveIndex((prev) => (prev === 0 ? slideList.length - 1 : prev - 1));
     }
+  }
 
-    if (!activeSlide) return null;
+  if (!activeSlide) return null;
 
-    return (
-        <div className={styles.slider_container}>
-            <div className={styles.slider_wrapper} key={activeSlide.id}>
-                <div className={styles.slider_img_wrapper}>
-                    <SliderImage img={activeSlide.img} author={activeSlide.author} />
-                    <SliderControls onClick={handleSliderClick} />
-                </div>
-
-                <div className={styles.slider_content_wrapper}>
-                    <SliderContent author={activeSlide.author} job={activeSlide.job} comment={activeSlide.comment} />
-                </div>
-            </div>
+  return (
+    <div className={styles.slider_container}>
+      <div className={styles.slider_wrapper} key={activeSlide.id}>
+        <div className={styles.slider_img_wrapper}>
+          <SliderImage img={activeSlide.img} author={activeSlide.author} />
+          <SliderControls onClick={handleSliderClick} />
         </div>
-    );
+
+        <div className={styles.slider_content_wrapper}>
+          <SliderContent
+            author={activeSlide.author}
+            job={activeSlide.job}
+            comment={activeSlide.comment}
+          />
+        </div>
+      </div>
+    </div>
+  );
 }
 
-
-function SliderContent({ author, comment, job }: { author: string, comment: string, job?: string }) {
-    return (
-        <>
-            <div className={styles.slider_content_img_wrapper}>
-                <Image src={PatternQuotes} alt="" />
-            </div>
-            <div className={styles.slider_content_author}>
-                <p className={`text-preset-1 text-blue-950 ${styles.slider_content_author_comment}`}>“ {comment} ”</p>
-                <div className={styles.slider_content_author_info}>
-                    <span className="text-preset-2 text-blue-950 font-bold">{author}</span>
-                    <span className="text-preset-2 text-gray-400">{job}</span>
-                </div>
-            </div>
-        </>
-    );
+function SliderContent({
+  author,
+  comment,
+  job,
+}: {
+  author: string;
+  comment: string;
+  job?: string;
+}) {
+  return (
+    <>
+      <div className={styles.slider_content_img_wrapper}>
+        <Image src={PatternQuotes} alt="" />
+      </div>
+      <div className={styles.slider_content_author}>
+        <p
+          className={`text-preset-1 text-blue-950 ${styles.slider_content_author_comment}`}
+        >
+          “ {comment} ”
+        </p>
+        <div className={styles.slider_content_author_info}>
+          <span className="text-preset-2 font-bold text-blue-950">
+            {author}
+          </span>
+          <span className="text-preset-2 text-gray-400">{job}</span>
+        </div>
+      </div>
+    </>
+  );
 }
 
-function SliderImage({ img, author }: { img: string, author: string }) {
-    return (
-        <div className={styles.slider_image_wrapper}>
-            <Image src={img} alt={`Image ${author}`} width={540} height={540} className="drop-shadow-[0px_40px_50px_rgba(36,36,113,50%)]" />
-        </div>
-    );
+function SliderImage({ img, author }: { img: string; author: string }) {
+  return (
+    <div className={styles.slider_image_wrapper}>
+      <Image
+        src={img}
+        alt={`Image ${author}`}
+        width={540}
+        height={540}
+        className="drop-shadow-[0px_40px_50px_rgba(36,36,113,50%)]"
+      />
+    </div>
+  );
 }
 
-function SliderControls({ onClick }: { onClick: (type: "next" | "prev") => void }) {
-
-    return (
-        <div className={styles.slider_controls_wrapper}>
-            <button type="button" aria-label="Previous Slide" className={`${styles.slider_controls_btn} rounded-s-[28px]!`} onClick={() => onClick("next")}>
-                <Image src={IconPrev} alt="" className="object-contain w-1.5 h-2.75 md:w-fit md:h-auto" />
-            </button>
-            <button type="button" aria-label="Next Slide" className={`${styles.slider_controls_btn} rounded-e-[28px]!`} onClick={() => onClick("prev")}>
-                <Image src={IconNext} alt="" className="object-contain w-1.5 h-2.75 md:w-fit md:h-auto" />
-            </button>
-        </div>
-    );
+function SliderControls({
+  onClick,
+}: {
+  onClick: (type: "next" | "prev") => void;
+}) {
+  return (
+    <div className={styles.slider_controls_wrapper}>
+      <button
+        type="button"
+        aria-label="Previous Slide"
+        className={`${styles.slider_controls_btn} rounded-s-[28px]!`}
+        onClick={() => onClick("next")}
+      >
+        <Image
+          src={IconPrev}
+          alt=""
+          className="h-2.75 w-1.5 object-contain md:h-auto md:w-fit"
+        />
+      </button>
+      <button
+        type="button"
+        aria-label="Next Slide"
+        className={`${styles.slider_controls_btn} rounded-e-[28px]!`}
+        onClick={() => onClick("prev")}
+      >
+        <Image
+          src={IconNext}
+          alt=""
+          className="h-2.75 w-1.5 object-contain md:h-auto md:w-fit"
+        />
+      </button>
+    </div>
+  );
 }
