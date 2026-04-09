@@ -6,6 +6,9 @@ import { useState } from "react";
 // NextJS
 import Image from "next/image";
 
+// Motion
+import { motion } from "motion/react"
+
 // Component Styles
 import styles from "@/components/Slider/Slider.module.css";
 
@@ -44,8 +47,11 @@ export default function Slider({ slideList }: SliderProps) {
   if (!activeSlide) return null;
 
   return (
-    <div className={styles.slider_container}>
-      <div className={styles.slider_wrapper} key={activeSlide.id}>
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} className={styles.slider_container}>
+      <motion.div initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.75 }} className={styles.slider_wrapper} key={activeIndex}>
         <div className={styles.slider_img_wrapper}>
           <SliderImage img={activeSlide.img} author={activeSlide.author} />
           <SliderControls onClick={handleSliderClick} />
@@ -58,8 +64,8 @@ export default function Slider({ slideList }: SliderProps) {
             comment={activeSlide.comment}
           />
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 
