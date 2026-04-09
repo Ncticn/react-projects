@@ -22,7 +22,7 @@
 
 @layer base{
     html{
-        @apply tracking-normal;
+        @apply tracking-normal bg-white;
     }
 }
 
@@ -32,7 +32,7 @@
     }
 
     .text-preset-2{
-        @apply text-[15px] md:text-xl leading-190%;
+        @apply text-[15px] leading-135% md:text-xl md:leading-190%;
     }
 
 }

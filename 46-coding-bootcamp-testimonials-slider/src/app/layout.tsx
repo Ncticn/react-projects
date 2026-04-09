@@ -1,6 +1,8 @@
 import "@/libraries/tailwind.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import PatternCurve from "@/assets/patterns/pattern-curve.svg";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Frontend Mentor | Coding Bootcamp Testimonials Slider",
@@ -22,7 +24,14 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col items-center justify-center relative">
+        <main className="relative z-20">
+          {children}
+        </main>
+        <div className="absolute left-0 bottom-0 z-10 inset-x-0">
+          <Image src={PatternCurve} alt="" className="object-contain" />
+        </div>
+      </body>
     </html>
   );
 }
