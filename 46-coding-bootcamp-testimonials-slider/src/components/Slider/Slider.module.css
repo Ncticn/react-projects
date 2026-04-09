@@ -1,0 +1,45 @@
+@reference "tailwindcss";
+
+.slider_container {
+  @apply relative mx-auto max-w-82 md:max-w-158 lg:max-w-full;
+}
+
+.slider_wrapper {
+  @apply flex flex-col items-center justify-center gap-8 md:gap-16 lg:flex-row;
+}
+.slider_img_wrapper {
+  background-image: url(../../assets/patterns/pattern-bg.svg);
+  @apply relative order-1 h-auto w-full bg-contain bg-center bg-no-repeat px-9 py-8 md:max-w-130 md:px-14.5 md:py-10.75 lg:order-2 lg:h-164.25 lg:w-174.25! lg:max-w-full;
+}
+
+.slider_content_wrapper {
+  @apply order-2 h-fit lg:relative lg:left-48 lg:z-30 lg:order-1 lg:w-xl;
+}
+
+.slider_content_img_wrapper {
+  @apply relative inset-x-0 top-6.5 z-10 h-12.5 w-15 not-lg:mx-auto md:h-25 md:w-30 lg:left-24;
+}
+
+.slider_content_author {
+  @apply flex flex-col items-center justify-center gap-4 md:gap-8 lg:items-start;
+}
+
+.slider_content_author_comment {
+  @apply text-center not-lg:mx-5 lg:text-start;
+}
+
+.slider_content_author_info {
+  @apply flex flex-col items-center justify-center gap-0 md:flex-row md:gap-2;
+}
+
+.slider_image_wrapper {
+  @apply flex h-full w-full flex-col items-center justify-center gap-0;
+}
+
+.slider_controls_wrapper {
+  @apply absolute bottom-4 inline-flex flex-row items-center justify-center not-lg:inset-x-0 lg:bottom-6.5 lg:left-32;
+}
+
+.slider_controls_btn {
+  @apply cursor-pointer rounded-none bg-white px-4.25 py-3.75 drop-shadow-[0px_15px_20px_rgba(36,36,113,10%)] md:px-5.5 md:py-4.75;
+}
