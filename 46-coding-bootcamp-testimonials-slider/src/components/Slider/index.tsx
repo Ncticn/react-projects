@@ -7,7 +7,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 // Motion
-import { motion } from "motion/react"
+import { motion } from "motion/react";
 
 // Component Styles
 import styles from "@/components/Slider/Slider.module.css";
@@ -80,10 +80,13 @@ function SliderContent({
       <div className={styles.slider_content_img_wrapper}>
         <Image src={PatternQuotes} alt="" />
       </div>
-      <motion.div initial={{ opacity: 0 }}
+      <motion.div
+        initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 0.75 }} className={styles.slider_content_author}>
+        transition={{ duration: 0.75 }}
+        className={styles.slider_content_author}
+      >
         <p
           className={`text-preset-1 text-blue-950 ${styles.slider_content_author_comment}`}
         >
@@ -102,10 +105,13 @@ function SliderContent({
 
 function SliderImage({ img, author }: { img: string; author: string }) {
   return (
-    <motion.div initial={{ opacity: 0 }}
+    <motion.div
+      initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 0.75 }} className={styles.slider_image_wrapper}>
+      transition={{ duration: 0.75 }}
+      className={styles.slider_image_wrapper}
+    >
       <img
         src={img}
         alt={`Image ${author}`}
