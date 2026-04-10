@@ -47,11 +47,8 @@ export default function Slider({ slideList }: SliderProps) {
   if (!activeSlide) return null;
 
   return (
-    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} className={styles.slider_container}>
-      <motion.div initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.75 }} className={styles.slider_wrapper} key={activeIndex}>
+    <div className={styles.slider_container}>
+      <div className={styles.slider_wrapper} key={activeIndex}>
         <div className={styles.slider_img_wrapper}>
           <SliderImage img={activeSlide.img} author={activeSlide.author} />
           <SliderControls onClick={handleSliderClick} />
@@ -64,8 +61,8 @@ export default function Slider({ slideList }: SliderProps) {
             comment={activeSlide.comment}
           />
         </div>
-      </motion.div>
-    </motion.div>
+      </div>
+    </div>
   );
 }
 
@@ -83,7 +80,10 @@ function SliderContent({
       <div className={styles.slider_content_img_wrapper}>
         <Image src={PatternQuotes} alt="" />
       </div>
-      <div className={styles.slider_content_author}>
+      <motion.div initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.75 }} className={styles.slider_content_author}>
         <p
           className={`text-preset-1 text-blue-950 ${styles.slider_content_author_comment}`}
         >
@@ -95,22 +95,25 @@ function SliderContent({
           </span>
           <span className="text-preset-2 text-gray-400">{job}</span>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }
 
 function SliderImage({ img, author }: { img: string; author: string }) {
   return (
-    <div className={styles.slider_image_wrapper}>
-      <Image
+    <motion.div initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.75 }} className={styles.slider_image_wrapper}>
+      <img
         src={img}
         alt={`Image ${author}`}
         width={540}
         height={540}
         className="drop-shadow-[0px_40px_50px_rgba(36,36,113,50%)]"
       />
-    </div>
+    </motion.div>
   );
 }
 
@@ -123,9 +126,14 @@ function SliderControls({
     <div className={styles.slider_controls_wrapper}>
       <button
         type="button"
-        aria-label="Previous Slide"
+        aria-label="Next Slide"
         className={`${styles.slider_controls_btn} rounded-s-[28px]!`}
         onClick={() => onClick("next")}
+        onKeyDown={(e) => {
+          if (e.key === "ArrowRight") {
+            onClick("next");
+          }
+        }}
       >
         <Image
           src={IconPrev}
@@ -135,7 +143,7 @@ function SliderControls({
       </button>
       <button
         type="button"
-        aria-label="Next Slide"
+        aria-label="Previous Slide"
         className={`${styles.slider_controls_btn} rounded-e-[28px]!`}
         onClick={() => onClick("prev")}
       >
