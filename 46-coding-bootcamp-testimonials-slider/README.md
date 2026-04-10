@@ -41,7 +41,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://ncticn.vercel.app/projects/46-coding-bootcamp-testimonials-slider
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/maker-pre-launch-landing-page-nextjs-typescript-tailwindcss-YHhvVUHs5U
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/coding-bootcamp-testimonials-slider-nextjs-typescript-tailwindcss-cI2q_u44_4
 
 ## ⚙️ Installation & Running the Project
 
