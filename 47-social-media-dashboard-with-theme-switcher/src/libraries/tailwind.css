@@ -1,1 +1,72 @@
 @import "tailwindcss";
+
+@theme {
+    /* Colors */
+    --color-gray-950: #1D1F29;
+    --color-gray-900: #20222F;
+    --color-gray-650: #63687D;
+    --color-gray-600: #848BAB;
+    --color-gray-400: #AEB3CB;
+    --color-gray-200: #E1E4F0;
+    --color-navy-950: #252B42;
+    --color-navy-900: #333A55;
+    --color-navy-50: #F1F3FA;
+    --color-blue-600: #178FF5;
+    --color-blue-500: #1DA1F2;
+    --color-blue-50: #F7F9FF;
+    --color-red-700: #C4032B;
+    --color-red-500: #DC414C;
+    --color-green-500: #1EB589;
+
+    /* Font Size */
+    --text-5\.5xl: 3.5rem;
+    --text-3\.5xl: 2rem;
+    --text-2\.5xl: 1.75rem;
+
+    /* Line Height */
+    --leading-85\%: 85%;
+    --leading-125\%: 125%;
+
+    /* Letter Spacing */
+    --tracking-0: 0;
+    --tracking-2px: 2px;
+    --tracking-5px: 5px;
+}
+
+@layer utilities {
+    .text-preset-1 {
+        @apply font-bold text-5.5xl leading-85% -tracking-2px
+    }
+
+    .text-preset-2 {
+        @apply font-bold text-3.5xl leading-125% tracking-0;
+    }
+
+    .text-preset-3 {
+        @apply font-bold text-2.5xl leading-125% tracking-0;
+    }
+
+    .text-preset-4 {
+        @apply font-bold text-2xl leading-125% tracking-0;
+    }
+
+    .text-preset-5 {
+        @apply font-bold text-sm leading-125% tracking-0;
+    }
+
+    .text-preset-6 {
+        @apply font-bold text-xs leading-125% tracking-0;
+    }
+
+    .text-preset-6-regular {
+        @apply font-normal text-xs leading-125% tracking-5px;
+    }
+
+    .gradient-1 {
+        @apply from-0% from-[##FDC366] via-50% via-[##EE877E] to-100% to-[##696EDD] bg-linear-to-tr;
+    }
+
+    .gradient-2 {
+        @apply bg-linear-to-tr from-0% from-[#388FE7] to-100% to-[#696EDD];
+    }
+}
