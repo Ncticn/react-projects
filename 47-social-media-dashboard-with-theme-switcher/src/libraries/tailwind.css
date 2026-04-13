@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
     /* Colors */
     --color-gray-950: #1D1F29;
@@ -33,6 +35,13 @@
     --tracking-5px: 5px;
 }
 
+@layer base{
+    body {
+        font-size: 14px;
+        @apply bg-white dark:bg-gray-950
+    }
+}
+
 @layer utilities {
     .text-preset-1 {
         @apply font-bold text-5.5xl leading-85% -tracking-2px
@@ -63,7 +72,7 @@
     }
 
     .gradient-1 {
-        @apply from-0% from-[##FDC366] via-50% via-[##EE877E] to-100% to-[##696EDD] bg-linear-to-tr;
+        @apply before:from-0% before:from-[#DF4896] before:via-50% before:via-[#EE877E] before:to-100% before:to-[#FDC366] before:bg-linear-to-tr;
     }
 
     .gradient-2 {
