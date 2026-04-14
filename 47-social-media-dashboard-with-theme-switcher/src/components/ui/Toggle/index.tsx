@@ -13,20 +13,20 @@ import { motion } from "motion/react"
 function Toggle() {
     const [isDark, setIsDark] = useState<boolean>(false);
 
-    useEffect(()=> {
+    useEffect(() => {
         const theme = localStorage.getItem("theme");
 
-        if(theme === "dark"){
+        if (theme === "dark") {
             setIsDark(true);
             document.documentElement.classList.add("dark");
         }
     }, []);
 
     useEffect(() => {
-        if(isDark){
+        if (isDark) {
             document.documentElement.classList.add("dark");
             localStorage.setItem("theme", "dark");
-        }else{
+        } else {
             document.documentElement.classList.remove("dark");
             localStorage.setItem("theme", "light");
         }
@@ -38,7 +38,7 @@ function Toggle() {
             onClick={() => setIsDark((prev) => !prev)}
         >
             <motion.div
-                className={`${styles.toggle_Slider} dark:bg-navy-950  ${isDark ? "right-0.75" : "left-0.75"}`}
+                className={`${styles.toggle_Slider} bg-navy-50 dark:bg-navy-950  ${!isDark ? "right-0.75" : "left-0.75"}`}
                 layout
                 transition={{
                     type: "spring",

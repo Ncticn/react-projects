@@ -5,5 +5,5 @@
 }
 
 .toggle_Slider {
-    @apply size-4.5 absolute bg-[#F1F3FA] rounded-full;
+    @apply size-4.5 absolute rounded-full;
 }
