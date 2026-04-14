@@ -42,7 +42,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://ncticn.vercel.app/projects/47-social-media-dashboard-with-theme-switcher
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/coding-bootcamp-testimonials-slider-nextjs-typescript-tailwindcss-cI2q_u44_4
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/social-media-dashboard-nextjs-tailwindcss-typescript-motion-ixANQFKPw_
 
 ## ⚙️ Installation & Running the Project
 
