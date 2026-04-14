@@ -8,7 +8,7 @@ import IconUp from "@/src/assets/icons/icon-up.svg";
 import IconDown from "@/src/assets/icons/icon-down.svg";
 
 // Utility Function
-import PercentageDifference from "@/src/utils/PercentageDifference ";
+import PercentageDifference from "@/src/utils/PercentageDifference";
 
 // Props
 interface CardValueComparisonProps {
