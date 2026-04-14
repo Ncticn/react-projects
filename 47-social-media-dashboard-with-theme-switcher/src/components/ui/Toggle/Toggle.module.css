@@ -1,0 +1,9 @@
+@reference "tailwindcss";
+
+.toggle_Button {
+  @apply relative flex h-6 w-12.5 cursor-pointer gap-2 overflow-hidden rounded-xl bg-gray-400 px-1 py-0.75;
+}
+
+.toggle_Slider {
+  @apply absolute size-4.5 rounded-full;
+}

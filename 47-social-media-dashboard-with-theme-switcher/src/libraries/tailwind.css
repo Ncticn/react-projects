@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Colors */
+  --color-gray-950: #1d1f29;
+  --color-gray-900: #20222f;
+  --color-gray-650: #63687d;
+  --color-gray-600: #848bab;
+  --color-gray-400: #aeb3cb;
+  --color-gray-200: #e1e4f0;
+  --color-navy-950: #252b42;
+  --color-navy-900: #333a55;
+  --color-navy-50: #f1f3fa;
+  --color-blue-600: #178ff5;
+  --color-blue-500: #1da1f2;
+  --color-blue-50: #f7f9ff;
+  --color-red-700: #c4032b;
+  --color-red-500: #dc414c;
+  --color-green-500: #1eb589;
+
+  /* Font Size */
+  --text-5\.5xl: 3.5rem;
+  --text-3\.5xl: 2rem;
+  --text-2\.5xl: 1.75rem;
+
+  /* Line Height */
+  --leading-85\%: 85%;
+  --leading-125\%: 125%;
+
+  /* Letter Spacing */
+  --tracking-0: 0;
+  --tracking-2px: 2px;
+  --tracking-5px: 5px;
+}
+
+@layer base {
+  body {
+    font-size: 14px;
+    @apply bg-white dark:bg-gray-950;
+  }
+}
+
+@layer utilities {
+  .text-preset-1 {
+    @apply text-5.5xl leading-85% -tracking-2px font-bold;
+  }
+
+  .text-preset-2 {
+    @apply text-3.5xl leading-125% tracking-0 font-bold;
+  }
+
+  .text-preset-3 {
+    @apply text-2.5xl leading-125% tracking-0 font-bold;
+  }
+
+  .text-preset-4 {
+    @apply leading-125% tracking-0 text-2xl font-bold;
+  }
+
+  .text-preset-5 {
+    @apply leading-125% tracking-0 text-sm font-bold;
+  }
+
+  .text-preset-6 {
+    @apply leading-125% tracking-0 text-xs font-bold;
+  }
+
+  .text-preset-6-regular {
+    @apply leading-125% tracking-5px text-xs font-normal;
+  }
+
+  .gradient-1 {
+    @apply before:bg-linear-to-tr before:from-[#DF4896] before:from-0% before:via-[#EE877E] before:via-50% before:to-[#FDC366] before:to-100%;
+  }
+
+  .gradient-2 {
+    @apply bg-linear-to-tr from-[#388FE7] from-0% to-[#696EDD] to-100%;
+  }
+}
