@@ -1,0 +1,1 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,57830,t=>{t.q("/projects/47-social-media-dashboard-with-theme-switcher/_next/static/media/icon-up.07j2y.yletuat.svg")},17225,t=>{t.q("/projects/47-social-media-dashboard-with-theme-switcher/_next/static/media/icon-down.0ayq6j23v2iek.svg")}]);
