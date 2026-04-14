@@ -19,7 +19,7 @@ interface CardValueComparisonProps {
 }
 
 function CardValueComparison({ newValue, oldValue, description, type }: CardValueComparisonProps) {
-    let result: number = newValue - oldValue;;
+    let result: number = newValue - oldValue;
 
     if (type === "percent") {
         result = PercentageDifference(newValue, oldValue);
