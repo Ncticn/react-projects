@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+.divider{
+    @apply w-full h-px bg-[#6E728E] opacity-25;
+}
