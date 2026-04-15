@@ -30,8 +30,10 @@
 
 @layer base{
     body{
+        font-size: 15px;
         font-weight: 700;
-        font-size: var(--font-montserrat);
+        font-family: var(--font-montserrat);
+        background-color: var(--color-blue-50);
     }
 }
 
