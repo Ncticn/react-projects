@@ -2,7 +2,7 @@
 
 
 .card_pricing {
-    @apply px-8 py-6 rounded-[10px] bg-white flex flex-col items-center justify-center gap-6;
+    @apply px-8 py-6 rounded-[10px] bg-white drop-shadow-[0_20px_40px_rgba(212,210,244,50%)] flex flex-col items-stretch lg:items-center justify-center gap-6;
 }
 
 .card_pricing_title {
