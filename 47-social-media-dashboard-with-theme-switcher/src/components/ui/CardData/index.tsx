@@ -39,7 +39,7 @@ export default function CardData({
       break;
   }
   return (
-    <article>
+    <article aria-label="Card Data">
       <div
         className={`bg-navy-50 dark:bg-navy-950 relative w-full overflow-hidden rounded-[5px] px-16 py-8 before:absolute before:inset-x-0 before:top-0 before:h-1 before:w-full ${socialMediaClass}`}
       >

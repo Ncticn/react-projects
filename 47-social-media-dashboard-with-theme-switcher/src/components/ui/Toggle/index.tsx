@@ -33,10 +33,11 @@ function Toggle() {
 
   return (
     <button
+      type="button"
       className={`dark:bg-linear-to-tr dark:from-[#388FE7] dark:from-0% dark:to-[#40DB82] dark:to-100% ${styles.toggle_Button}`}
       onClick={() => setIsDark((prev) => !prev)}
     >
-      <motion.div
+      <motion.span
         className={`${styles.toggle_Slider} bg-navy-50 dark:bg-navy-950 ${!isDark ? "right-0.75" : "left-0.75"}`}
         layout
         transition={{
@@ -44,7 +45,7 @@ function Toggle() {
           visualDuration: 0.2,
           bounce: 0.2,
         }}
-      ></motion.div>
+      ></motion.span>
     </button>
   );
 }
