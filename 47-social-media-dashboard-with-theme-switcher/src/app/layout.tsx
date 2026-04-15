@@ -20,8 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
-      <body className="relative flex min-h-full flex-col items-stretch justify-center overflow-hidden before:absolute before:inset-x-0 before:top-0 before:z-10 before:h-58.75 before:w-full before:rounded-b-[20px] before:bg-blue-50 before:md:h-61 dark:before:bg-gray-900">
-        {children}
+      <body className="relative flex min-h-full flex-col items-stretch justify-center before:absolute before:inset-x-0 before:top-0 before:z-10 before:h-58.75 before:w-full before:rounded-b-[20px] before:bg-blue-50 before:md:h-61 dark:before:bg-gray-900">
+        <main>{children}</main>
       </body>
     </html>
   );
