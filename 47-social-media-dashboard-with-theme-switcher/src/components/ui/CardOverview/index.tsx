@@ -18,7 +18,7 @@ function CardOverview({ socialMedia, title, views, stats }: CardOverviewProps) {
   const selectedMedia = SelectedSocialMedia(socialMedia);
 
   return (
-    <article>
+    <article aria-label="Card Overview">
       <div className="bg-navy-50 dark:bg-navy-950 w-full rounded-[5px] px-6 py-6">
         <div className="flex flex-row items-stretch justify-between">
           <div className="card-overview-title flex flex-col items-start justify-start gap-6">
