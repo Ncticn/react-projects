@@ -1,21 +1,22 @@
 @reference "tailwindcss";
 
 
-.card_pricing{
-    @apply px-8 py-6 rounded-[10px] bg-white space-y-6;
+.card_pricing {
+    @apply px-8 py-6 rounded-[10px] bg-white flex flex-col items-center justify-center gap-6;
 }
 
-.card_pricing_title{
+.card_pricing_title {
     @apply text-[#6E728E] text-center;
 }
 
-.card_pricing_features_list{
+.card_pricing_features_list {
     @apply flex flex-col items-center justify-start gap-4;
 }
 
-.card_pricing_features_list_item{
+.card_pricing_features_list_item {
     @apply w-full;
 }
-.card_pricing_features_list_item_text{
+
+.card_pricing_features_list_item_text {
     @apply text-[#6E728E] text-center;
 }
