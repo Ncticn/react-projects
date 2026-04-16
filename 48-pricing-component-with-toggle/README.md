@@ -42,7 +42,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://ncticn.vercel.app/projects/48-pricing-component-with-toggle
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/social-media-dashboard-nextjs-tailwindcss-typescript-motion-ixANQFKPw_
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/pricing-component-with-toggle-nextjs-typescript-tailwindcss-BiEZcyoZum
 
 ## ⚙️ Installation & Running the Project
 
