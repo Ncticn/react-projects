@@ -1,0 +1,18 @@
+@reference "tailwindcss";
+
+
+.toggleContainer{
+    @apply flex flex-row items-center justify-center gap-6;
+}
+
+.toggleTitles{
+    @apply text-[#6e728e] opacity-50;
+}
+
+.toggle{
+    @apply h-8 w-14 bg-linear-to-br cursor-pointer transition delay-75 ease-linear from-0% from-[#A2A7F0] to-100% to-[#696EDD] rounded-2xl flex items-center px-1 py-1 hover:opacity-50;
+}
+
+.toggleHandle {
+    @apply size-6 inline-block bg-white rounded-full;
+}

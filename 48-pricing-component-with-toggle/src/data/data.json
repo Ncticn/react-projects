@@ -1,0 +1,35 @@
+[
+    {
+      "campaign": "Basic",
+      "annually": "199.99",
+      "monthly": "19.99",
+      "highlighted": false,
+      "features": [
+            "500 GB Storage",
+            "2 Users Allowed",
+            "Send up to 3 GB"
+        ]
+    },
+    {
+      "campaign": "Professional",
+      "annually": "249.99",
+      "monthly": "24.99",
+      "highlighted": true,
+      "features": [
+            "1 TB Storage",
+            "5 Users Allowed",
+            "Send up to 10 GB"
+        ]
+    },
+    {
+      "campaign": "Professional",
+      "annually": "399.99",
+      "monthly": "39.99",
+      "highlighted": false,
+      "features": [
+            "2 TB Storage",
+            "10 Users Allowed",
+            "Send up to 20 GB"
+        ]
+    }
+]
