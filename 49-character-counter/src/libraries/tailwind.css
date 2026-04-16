@@ -1,1 +1,53 @@
 @import "tailwindcss";
+
+@theme {
+    /* Colors */
+    --color-neutral-900: #12131A;
+    --color-neutral-800: #21222C;
+    --color-neutral-700: #2A2B37;
+    --color-neutral-600: #404254;
+    --color-neutral-200: #E4E4EF;
+    --color-neutral-100: #F2F2F7;
+    --color-purple-500: #C27CF8;
+    --color-purple-400: #D3A0FA;
+    --color-yellow-500: #FF9F00;
+    --color-orange-500: #FE8159;
+    --color-orange-800: #DA3701;
+
+    /* Font Size */
+    --text-6\.5xl: 4rem;
+    --text-4\.5xl: 2.5rem;
+
+    /* Line Height */
+    --leading-100\%: 100%;
+    --leading-130\%: 130%;
+    --leading-140\%: 140%;
+
+    /* Letter Spacing */
+    --tracking-1px: 1px;
+    --tracking-0\.6px: 0.6px;
+}
+
+@layer base {
+    html {
+        font-family: var(--font-dm_sans);
+    }
+}
+
+@layer utilities {
+    .text-preset-1 {
+        @apply text-4.5xl md:text-6.5xl font-bold leading-100% -tracking-1px;
+    }
+
+    .text-preset-2 {
+        @apply text-2xl font-semibold leading-130% -tracking-1px;
+    }
+
+    .text-preset-3 {
+        @apply text-xl font-normal leading-140% -tracking-0.6px;
+    }
+
+    .text-preset-4 {
+        @apply text-base font-normal leading-130% -tracking-0.6px;
+    }
+}
