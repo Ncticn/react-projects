@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+.btn{
+    @apply w-full border cursor-pointer transition delay-75 ease-linear rounded-md py-3.25 px-16 inline-flex flex-col items-center justify-center gap-0;
+}
