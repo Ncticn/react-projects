@@ -26,19 +26,21 @@ export default function InputCheckbox({ inputId, inputName, labelText, onChange,
 
     const handleChange = (value: boolean) => {
         setChecked(value);
-        onChange?.(!checked);
+        onChange?.(value);
     }
     return (
-        <div className="flex flex-row items-center justify-start gap-2.5">
-            <input type="checkbox" name={inputName} id={inputId} checked={checked} onChange={(e) => handleChange(e.target.checked)} hidden />
-            <div className={`inline-flex items-center justify-center cursor-pointer transition-all delay-75 ease-linear size-4 rounded-sm  ${checked ? "bg-purple-400 shadow-[0_0_0_4px_#D3A0FA] outline-2 outline-white" : "border dark:border-neutral-200 dark:hover:border-white border-neutral-900 hover:border-neutral-600 focus:bg-white focus:border-neutral-200 focus:shadow-[0_0_0_4px_#D3A0FA] focus:outline-2 focus:outline-white"}`}
-                onClick={() => handleChange(!checked)}
-            >
-                {
-                    checked && <Image src={IconCheck} alt="Icon Check" />
-                }
-            </div>
-            <label htmlFor={inputId} className="text-preset-4 text-neutral-900 dark:text-neutral-200">{labelText}</label>
+        <div className="">
+            <input type="checkbox" name={inputName} id={inputId} checked={checked} onChange={(e) => handleChange(e.target.checked)} className="sr-only" />
+
+            <label htmlFor={inputId} className="text-preset-4 text-neutral-900 dark:text-neutral-200 flex flex-row items-center justify-start gap-2.5">
+                <span className={`inline-flex items-center justify-center cursor-pointer transition-all delay-75 ease-linear size-4 rounded-sm  ${checked ? "bg-purple-400 shadow-[0_0_0_4px_#D3A0FA] outline-2 outline-white" : "border dark:border-neutral-200 dark:hover:border-white border-neutral-900 hover:border-neutral-600 focus:bg-white focus:border-neutral-200 focus:shadow-[0_0_0_4px_#D3A0FA] focus:outline-2 focus:outline-white"}`}
+                >
+                    {
+                        checked && <Image src={IconCheck} alt="Icon Check" />
+                    }
+                </span>
+                {labelText}
+            </label>
         </div>
     );
 }

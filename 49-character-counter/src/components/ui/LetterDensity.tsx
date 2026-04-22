@@ -34,7 +34,7 @@ function LetterDensity({ text }: { text: string }) {
     return (
         <div className="flex flex-col items-stretch justify-center gap-5">
             <h2 className="text-preset-2 text-neutral-900 dark:text-neutral-200">Letter Density</h2>
-            <ul className="flex flex-col items-start justify-start gap-3">
+            {lettersArray.length > 0 && <ul className="flex flex-col items-start justify-start gap-3">
                 {
                     lettersArray.slice(0, showAll ? lettersArray.length : 5)
                         .map(([key, value]) => <li className="flex flex-row items-center justify-start gap-3.5 w-full" key={key}>
@@ -51,7 +51,7 @@ function LetterDensity({ text }: { text: string }) {
                             </div>
                         </li>)
                 }
-            </ul>
+            </ul>}
             {
                 lettersArray.length > 5 ? <button
                     type="button"
