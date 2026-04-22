@@ -68,7 +68,7 @@ export default function TextAnalyzer({ text }: TextAnalyzerProps) {
         }
 
     }, [userValue, characterLimit, characterLimitValue, excludeSpace])
-    
+
 
     return (
         <div className="space-y-4">
@@ -94,7 +94,7 @@ export default function TextAnalyzer({ text }: TextAnalyzerProps) {
                     <InputCheckbox inputId="input-checkbox-character-limit" inputName="input-character-limit" labelText="Set Character Limit" value={characterLimit} onChange={handlecharacterLimit} />
                     {
                         characterLimit &&
-                        <input type="text" name="input-text_max-lenght" id="input-text_maxLength" className="px-3 py-1 rounded-md outline-0 border border-neutral-600 bg-white text-preset-4 text-neutral-900 w-14" value={characterLimitValue} onChange={(e) => handlecharacterLimitValue(e.target.value)} />
+                        <input type="text" name="input-text_max-lenght" id="input-text_maxLength" className="px-3 py-1 rounded-md outline-0 border border-neutral-600 dark:border-neutral-600 dark:bg-neutral-800 dark:text-neutral-200 bg-white text-preset-4 text-neutral-900 w-14" value={characterLimitValue} onChange={(e) => handlecharacterLimitValue(e.target.value)} />
                     }
                 </div>
                 <p className="text-preset-4 text-neutral-900 dark:text-neutral-200 md:ms-auto">Approx. reading time: {"<"}1 minute</p>
