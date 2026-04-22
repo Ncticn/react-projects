@@ -47,7 +47,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://ncticn.vercel.app/projects/49-character-counter
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/pricing-component-with-toggle-nextjs-typescript-tailwindcss-BiEZcyoZum
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/character-counter-react-nextjs-typescript-tailwindcss-RvoR6pUPh9
 
 ## ⚙️ Installation & Running the Project
 
