@@ -42,7 +42,7 @@ export default function Home() {
         <TextAnalyzer text={handleTextarea} />
         <div className="space-y-6">
           <Stats totalCharactersValue={totalCharacters} wordCountValue={wordCount} sentenceCountValue={sentenceCount} />
-          <LetterDensity text={maxLength ? userValue.slice(0, maxLength) : userValue} />
+          <LetterDensity text={maxLength ? userValue.slice(0, maxLength + 1) : userValue} />
         </div>
       </div>
     </section>
