@@ -1,9 +1,12 @@
 "use client";
 
-import ButtonTheme from "@/components/ui/ButtonTheme";
-import LogoDark from "../LogoDark";
-import LogoLight from "../LogoLight";
+// React
 import { useEffect, useState } from "react";
+
+// Components
+import LogoDark from "@/components/ui/LogoDark";
+import LogoLight from "@/components/ui/LogoLight";
+import ButtonTheme from "@/components/ui/ButtonTheme";
 
 export default function Header() {
     const [theme, setTheme] = useState<"dark" | "light">("light");
@@ -26,7 +29,7 @@ export default function Header() {
         if (localStorage.getItem("theme") === "dark") {
             setTheme("dark");
             root.add("dark");
-        }else {
+        } else {
             localStorage.setItem("theme", "light");
             setTheme("light");
         }
