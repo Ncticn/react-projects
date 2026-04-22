@@ -1,1 +1,57 @@
 @import "tailwindcss";
+
+@theme {
+
+    /* Colors */
+    --color-lime: #D8DB2F;
+    --color-slate-900: #133041;
+    --color-slate-700: #4E6E7E;
+    --color-slate-500: #6B94A8;
+    --color-slate-300: #9ABED5;
+    --color-slate-100: #E4F4FD;
+    --color-red: #D73328;
+
+    /* Font Size */
+    --text-5\.5xl: 3.5rem;
+
+    /* Line Height */
+    --leading-125\%: 125%;
+    --leading-150\%: 150%;
+
+    /* Letter Spacing */
+    --tracking-0px: 0;
+    --tracking-1px: 1px;
+}
+
+@layer base {
+    html {
+        font-family: var(--font-jakarta_sans);
+    }
+
+    body {
+        background-color: var(--color-slate-100);
+        font-size: 16px;
+    }
+}
+
+@layer utilities {
+    .text-preset-1 {
+        @apply font-bold text-5.5xl leading-125% -tracking-1px;
+    }
+
+    .text-preset-2 {
+        @apply font-bold text-2xl leading-125% -tracking-1px;
+    }
+
+    .text-preset-3 {
+        @apply font-bold text-lg leading-125% -tracking-1px;
+    }
+
+    .text-preset-4 {
+        @apply font-medium text-base leading-150% tracking-0px;
+    }
+
+    .text-preset-5 {
+        @apply font-medium text-sm leading-150% tracking-0px;
+    }
+}
