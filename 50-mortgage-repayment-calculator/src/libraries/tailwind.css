@@ -13,6 +13,7 @@
 
     /* Font Size */
     --text-5\.5xl: 3.5rem;
+    --text-4\.5xl: 2.5rem;
 
     /* Line Height */
     --leading-125\%: 125%;
@@ -24,10 +25,6 @@
 }
 
 @layer base {
-    html {
-        font-family: var(--font-jakarta_sans);
-    }
-
     body {
         background-color: var(--color-slate-100);
         font-size: 16px;
@@ -36,7 +33,7 @@
 
 @layer utilities {
     .text-preset-1 {
-        @apply font-bold text-5.5xl leading-125% -tracking-1px;
+        @apply font-bold text-4.5xl md:text-5.5xl leading-[auto] md:leading-125% tracking-0px md:-tracking-1px;
     }
 
     .text-preset-2 {
