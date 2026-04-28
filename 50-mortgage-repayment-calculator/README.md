@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📌 Mortgage Repayment Calculator
 
-## Getting Started
+This project is a solution to the "Mortgage Repayment Calculator" challenge on Frontend Mentor.
+The challenge focuses on building an interactive and accessible form-based application that calculates monthly and total mortgage repayments using client-side logic.
 
-First, run the development server:
+## 🖼️ Preview
+
+![Project Preview](src/preview/preview.jpg)
+
+## 🎯 Overview
+
+During the development of this project, the following aspects were implemented:
+
+- Creating a responsive mortgage calculator interface
+- Handling user input to calculate monthly and total repayment amounts
+- Implementing client-side validation for required form fields
+- Displaying validation messages for incomplete or incorrect inputs
+- Ensuring the form can be completed using only keyboard navigation
+- Updating the UI dynamically based on submitted data
+- Applying hover and focus states to all interactive elements
+- Reproducing the design as closely as possible based on the provided layout
+
+## 🧠 What I Learned
+
+Through this project, I practiced:
+
+- Building form-based applications using JavaScript
+- Implementing client-side validation and error handling
+- Performing financial calculations based on user input
+- Updating the DOM dynamically based on form submission
+- Improving accessibility with keyboard navigation support
+- Enhancing user experience through validation feedback and interaction states
+- Strengthening responsive design for interactive interfaces
+
+## 🛠️ Tech Stack & Concepts
+
+- **Framework / Library:** Next / React
+- **Styling:** Tailwind CSS
+- **Architecture:** Component-Based Structure
+- **Markup:** Semantic HTML
+- **Code Formatting:** Prettier
+- **Version Control:** Git & GitHub
+
+## 🔗 Links
+
+- 💻 **Live Demo:** https://ncticn.vercel.app/projects/50-mortgage-repayment-calculator
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/character-counter-react-nextjs-typescript-tailwindcss-RvoR6pUPh9
+
+## ⚙️ Installation & Running the Project
+
+To run this project locally, follow these steps:
 
 ```bash
+# Clone the repository
+git clone https://github.com/Ncticn/react-projects.git
+
+# Navigate to the project directory
+cd 50-mortgage-repayment-calculator
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 👤 Author
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Ncticn**  
+Front-End Developer
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- GitHub: https://github.com/Ncticn
+- LinkedIn: https://www.linkedin.com/in/ncticn/
+- Frontend Mentor: https://www.frontendmentor.io/profile/Ncticn
 
-## Learn More
+## 📝 License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed under the MIT License.  
+© 2026 Ncticn.
