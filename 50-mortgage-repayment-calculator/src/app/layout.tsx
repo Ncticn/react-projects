@@ -9,8 +9,7 @@ export const metadata: Metadata = {
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  display: "swap",
-  variable: "--font-jakarta_sans"
+  display: "swap"
 });
 
 export default function RootLayout({
@@ -21,9 +20,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${jakarta.variable} h-full antialiased`}
+      className={`${jakarta.className} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col items-center justify-center">{children}</body>
     </html>
   );
 }

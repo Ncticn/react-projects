@@ -147,7 +147,7 @@ export default function FormMortgageCalculator({ calculatedResult }: FormMortgag
                 </div>
 
                 <div className="flex flex-col items-stretch justify-start gap-3">
-                    <label htmlFor="asdasdas" className="text-preset-4 text-slate-700">Mortgage Type</label>
+                    <label htmlFor="input-radio-repayment" className="text-preset-4 text-slate-700">Mortgage Type</label>
 
                     <InputRadio text="Repayment" inputId="input-radio-repayment" inputName="input-mortgage-type" value="repayment" selected={selected} setSelected={setSelected} />
                     <InputRadio text="Interest Only" inputId="input-radio-interest-only" inputName="input-mortgage-type" value="interestOnly" selected={selected} setSelected={setSelected} />

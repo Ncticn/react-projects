@@ -27,7 +27,7 @@ export default function InputText({
     }
 
     return (
-        <div className="flex flex-col items-stretch justify-center lg:justify-start gap-3">
+        <div className="flex flex-col items-stretch justify-start gap-3">
 
             <label htmlFor={id} className="text-preset-4 text-slate-700">{label}</label>
             <div className={`flex items-stretch h-fit *:h-full justify-start gap-0 border-2 group focus-within:border-lime transition delay-150 ease-linear hover:border-slate-900 rounded-sm overflow-hidden relative ${error ? "border-red" : "border-slate-500"} ${addonPosition === "prefix" ? "flex-row" : "flex-row-reverse"}`}>
