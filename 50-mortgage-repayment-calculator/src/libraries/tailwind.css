@@ -1,54 +1,53 @@
 @import "tailwindcss";
 
 @theme {
+  /* Colors */
+  --color-lime: #d8db2f;
+  --color-slate-900: #133041;
+  --color-slate-700: #4e6e7e;
+  --color-slate-500: #6b94a8;
+  --color-slate-300: #9abed5;
+  --color-slate-100: #e4f4fd;
+  --color-red: #d73328;
 
-    /* Colors */
-    --color-lime: #D8DB2F;
-    --color-slate-900: #133041;
-    --color-slate-700: #4E6E7E;
-    --color-slate-500: #6B94A8;
-    --color-slate-300: #9ABED5;
-    --color-slate-100: #E4F4FD;
-    --color-red: #D73328;
+  /* Font Size */
+  --text-5\.5xl: 3.5rem;
+  --text-4\.5xl: 2.5rem;
 
-    /* Font Size */
-    --text-5\.5xl: 3.5rem;
-    --text-4\.5xl: 2.5rem;
+  /* Line Height */
+  --leading-125\%: 125%;
+  --leading-150\%: 150%;
 
-    /* Line Height */
-    --leading-125\%: 125%;
-    --leading-150\%: 150%;
-
-    /* Letter Spacing */
-    --tracking-0px: 0;
-    --tracking-1px: 1px;
+  /* Letter Spacing */
+  --tracking-0px: 0;
+  --tracking-1px: 1px;
 }
 
 @layer base {
-    body {
-        background-color: var(--color-slate-100);
-        font-size: 16px;
-    }
+  body {
+    background-color: var(--color-slate-100);
+    font-size: 16px;
+  }
 }
 
 @layer utilities {
-    .text-preset-1 {
-        @apply font-bold text-4.5xl md:text-5.5xl leading-[auto] md:leading-125% tracking-0px md:-tracking-1px;
-    }
+  .text-preset-1 {
+    @apply text-4.5xl md:text-5.5xl md:leading-125% tracking-0px md:-tracking-1px leading-[auto] font-bold;
+  }
 
-    .text-preset-2 {
-        @apply font-bold text-2xl leading-125% -tracking-1px;
-    }
+  .text-preset-2 {
+    @apply leading-125% -tracking-1px text-2xl font-bold;
+  }
 
-    .text-preset-3 {
-        @apply font-bold text-lg leading-125% -tracking-1px;
-    }
+  .text-preset-3 {
+    @apply leading-125% -tracking-1px text-lg font-bold;
+  }
 
-    .text-preset-4 {
-        @apply font-medium text-base leading-150% tracking-0px;
-    }
+  .text-preset-4 {
+    @apply leading-150% tracking-0px text-base font-medium;
+  }
 
-    .text-preset-5 {
-        @apply font-medium text-sm leading-150% tracking-0px;
-    }
+  .text-preset-5 {
+    @apply leading-150% tracking-0px text-sm font-medium;
+  }
 }

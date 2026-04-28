@@ -1,10 +1,9 @@
-
 // Components
 import SectionMortgageCalculator from "@/components/ui/SectionMortgageCalculator";
 
 export default function Home() {
   return (
-    <main className="max-w-full md:max-w-172 lg:max-w-252 mx-auto not-lg:md:py-10 py-0">
+    <main className="mx-auto max-w-full py-0 md:max-w-172 not-lg:md:py-10 lg:max-w-252">
       <SectionMortgageCalculator />
     </main>
   );
