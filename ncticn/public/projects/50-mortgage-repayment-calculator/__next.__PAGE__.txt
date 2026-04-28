@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[82747,["/projects/50-mortgage-repayment-calculator/_next/static/chunks/0fsi8lw5utejl.js","/projects/50-mortgage-repayment-calculator/_next/static/chunks/0d3tkj33oycf2.js","/projects/50-mortgage-repayment-calculator/_next/static/chunks/0caenjczx-xbu.js"],"default"]
+3:I[97367,["/projects/50-mortgage-repayment-calculator/_next/static/chunks/0fsi8lw5utejl.js","/projects/50-mortgage-repayment-calculator/_next/static/chunks/0d3tkj33oycf2.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"max-w-full md:max-w-172 lg:max-w-252 mx-auto not-lg:md:py-10 py-0","children":["$","$L2",null,{}]}],[["$","script","script-0",{"src":"/projects/50-mortgage-repayment-calculator/_next/static/chunks/0caenjczx-xbu.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"2wiJU7GF2xt1O7ia1ubJj"}
+5:null
