@@ -44,7 +44,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://ncticn.vercel.app/projects/50-mortgage-repayment-calculator
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/character-counter-react-nextjs-typescript-tailwindcss-RvoR6pUPh9
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/mortgage-repayment-calculator-react-nextjs-typescript-tailwind-y89VPnZCju
 
 ## ⚙️ Installation & Running the Project
 
