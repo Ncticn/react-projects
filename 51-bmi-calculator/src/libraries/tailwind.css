@@ -1,1 +1,66 @@
 @import "tailwindcss";
+
+
+@theme {
+
+    /* Colors */
+    --color-grey-500: #5E6E85;
+    --color-grey-300: #ACC1DE;
+    --color-blue-900: #253347;
+    --color-blue-500: #345FF6;
+    --color-blue-300: #B3D3F1;
+    --color-blue-100: #E1E7FE;
+
+    /* Font Family */
+    --font-inter: var(--font-Inter);
+
+    /* Font Size */
+    --text-6\.25xl: 4rem;
+    --text-3\.25xl: 2rem;
+
+    /* Line Height */
+    --leading-110\%: 110%;
+    --leading-120\%: 120%;
+    --leading-150\%: 150%;
+
+    /* Letter Spacing */
+    --tracking-0\%: 0%;
+    --tracking-5\%: 5%;
+
+}
+
+@layer base {
+    html {
+        @apply font-inter;
+    }
+}
+
+@layer utilities {
+    .text-preset-1 {
+        @apply text-6.25xl font-semibold leading-110% -tracking-5%;
+    }
+
+    .text-preset-2 {
+        @apply text-5xl font-semibold leading-110% -tracking-5%;
+    }
+
+    .text-preset-3 {
+        @apply text-3.25xl font-semibold leading-110% -tracking-5%;
+    }
+
+    .text-preset-4 {
+        @apply text-2xl font-semibold leading-120% -tracking-5%;
+    }
+
+    .text-preset-5 {
+        @apply text-xl font-semibold leading-120% -tracking-5%;
+    }
+
+    .text-preset-6 {
+        @apply text-base leading-150% tracking-0%;
+    }
+
+    .text-preset-7 {
+        @apply text-sm leading-150% tracking-0%;
+    }
+}
