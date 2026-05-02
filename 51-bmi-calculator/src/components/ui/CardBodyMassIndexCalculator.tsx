@@ -13,13 +13,13 @@ export default function CardBodyMassIndexCalculator() {
     const [selected, setSelected] = useState("metric");
 
     return (
-        <div className="bg-white rounded-2xl drop-shadow-[16px_32px_56px_rgba(143,174,207,25%)] px-8 py-8">
-            <div className="space-y-8">
+        <div className="bg-white rounded-2xl drop-shadow-[16px_32px_56px_rgba(143,174,207,25%)] px-6 py-6 md:px-8 md:py-8">
+            <div className="space-y-6 md:space-y-8">
                 <h3 className="text-preset-4 text-blue-900">Enter your details below</h3>
 
                 <form onSubmit={(e) => e.preventDefault()}>
-                    <div className="flex flex-col items-stretch justify-center gap-8">
-                        <div className="grid grid-cols-2 items-center justify-center gap-4">
+                    <div className="flex flex-col items-stretch justify-center gap-6 md:gap-8">
+                        <div className="grid grid-cols-2 items-center justify-center gap-6">
                             <InputRadio
                                 id="input-radio-metric"
                                 name="input-metric"
@@ -38,7 +38,7 @@ export default function CardBodyMassIndexCalculator() {
                             />
                         </div>
 
-                        <div className="grid grid-cols-2 items-end justify-center gap-4">
+                        <div className="grid grid-cols-1 md:grid-cols-2 items-end justify-center gap-4 md:gap-6">
                             {selected === "metric" &&
                                 <>
                                     <InputNumber
@@ -102,7 +102,7 @@ export default function CardBodyMassIndexCalculator() {
                             }
                         </div>
 
-                        <BarInformation bmi={23.4}>
+                        <BarInformation >
                             Your BMI suggests you’re a healthy weight. Your ideal weight is between <b>63.3kgs - 85.2kgs.</b>
                         </BarInformation>
                     </div>

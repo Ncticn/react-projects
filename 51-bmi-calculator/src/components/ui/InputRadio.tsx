@@ -19,7 +19,7 @@ export default function InputRadio({ id, name, label, value, selected, setSelect
                     value={value}
                     checked={isChecked}
                     onChange={() => setSelected(value)}
-                    className=""
+                    className="sr-only"
                 />
                 <div className={`
                     inline-flex items-center justify-center size-7.75 border rounded-full transition delay-150 ease-linear ${isChecked ? "bg-blue-100 border-blue-100" : "bg-white border-grey-500 group-hover:border-blue-500"}

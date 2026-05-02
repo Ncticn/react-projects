@@ -1,7 +1,7 @@
 interface InputNumberProps {
     id: string;
     name: string;
-    label: string;
+    label?: string;
     suffix: string;
     value: string;
     placeholder?: string;
