@@ -37,11 +37,11 @@
 
 @layer utilities {
     .text-preset-1 {
-        @apply text-6.25xl font-semibold leading-110% -tracking-5%;
+        @apply text-5xl lg:text-6.25xl font-semibold leading-110% -tracking-5%;
     }
 
     .text-preset-2 {
-        @apply text-5xl font-semibold leading-110% -tracking-5%;
+        @apply text-3.25xl lg:text-5xl font-semibold leading-110% -tracking-5%;
     }
 
     .text-preset-3 {
