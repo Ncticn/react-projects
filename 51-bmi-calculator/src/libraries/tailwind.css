@@ -1,66 +1,63 @@
 @import "tailwindcss";
 
-
 @theme {
+  /* Colors */
+  --color-grey-500: #5e6e85;
+  --color-grey-300: #acc1de;
+  --color-blue-900: #253347;
+  --color-blue-500: #345ff6;
+  --color-blue-300: #b3d3f1;
+  --color-blue-100: #e1e7fe;
 
-    /* Colors */
-    --color-grey-500: #5E6E85;
-    --color-grey-300: #ACC1DE;
-    --color-blue-900: #253347;
-    --color-blue-500: #345FF6;
-    --color-blue-300: #B3D3F1;
-    --color-blue-100: #E1E7FE;
+  /* Font Family */
+  --font-inter: var(--font-Inter);
 
-    /* Font Family */
-    --font-inter: var(--font-Inter);
+  /* Font Size */
+  --text-6\.25xl: 4rem;
+  --text-3\.25xl: 2rem;
 
-    /* Font Size */
-    --text-6\.25xl: 4rem;
-    --text-3\.25xl: 2rem;
+  /* Line Height */
+  --leading-110\%: 110%;
+  --leading-120\%: 120%;
+  --leading-150\%: 150%;
 
-    /* Line Height */
-    --leading-110\%: 110%;
-    --leading-120\%: 120%;
-    --leading-150\%: 150%;
-
-    /* Letter Spacing */
-    --tracking-0\%: 0%;
-    --tracking-5\%: 5%;
-
+  /* Letter Spacing */
+  --tracking-0\%: 0%;
+  --tracking-5\%: 5%;
 }
 
 @layer base {
-    html {
-        @apply font-inter;
-    }
+  html {
+    @apply font-inter;
+  }
 }
 
 @layer utilities {
-    .text-preset-1 {
-        @apply text-5xl lg:text-6.25xl font-semibold leading-110% -tracking-5%;
-    }
+  .text-preset-1 {
+    @apply lg:text-6.25xl leading-110% -tracking-5% text-5xl font-semibold;
+  }
 
-    .text-preset-2 {
-        @apply text-3.25xl lg:text-5xl font-semibold leading-110% -tracking-5%;
-    }
+  .text-preset-2 {
+    @apply text-3.25xl leading-110% -tracking-5% font-semibold lg:text-5xl;
+  }
 
-    .text-preset-3 {
-        @apply text-3.25xl font-semibold leading-110% -tracking-5%;
-    }
+  .text-preset-3 {
+    @apply text-3.25xl leading-110% -tracking-5% font-semibold;
+  }
 
-    .text-preset-4 {
-        @apply text-2xl font-semibold leading-120% -tracking-5%;
-    }
+  .text-preset-4 {
+    @apply leading-120% -tracking-5% text-2xl font-semibold;
+  }
 
-    .text-preset-5 {
-        @apply text-xl font-semibold leading-120% -tracking-5%;
-    }
+  .text-preset-5 {
+    @apply leading-120% -tracking-5% text-xl font-semibold;
+  }
 
-    .text-preset-6 {
-        @apply text-base leading-150% tracking-0%;
-    }
+  .text-preset-6 {
+    @apply leading-150% tracking-0% text-base;
+  }
 
-    .text-preset-7 {
-        @apply text-sm leading-150% tracking-0%;
-    }
+  .text-preset-7 {
+    @apply leading-150% tracking-0% text-sm;
+  }
 }

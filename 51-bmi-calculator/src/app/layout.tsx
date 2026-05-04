@@ -5,13 +5,14 @@ import { Inter } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "Frontend Mentor | Body Mass Index Calculator",
-  description: "This body mass index (BMI) tool will be fun to build, testing your layout, JS and HTML form skills.",
+  description:
+    "This body mass index (BMI) tool will be fun to build, testing your layout, JS and HTML form skills.",
 };
 
 const inter = Inter({
   display: "swap",
   subsets: ["latin"],
-  variable: "--font-Inter"
+  variable: "--font-Inter",
 });
 
 export default function RootLayout({
@@ -20,11 +21,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col items-center justify-center gap-0 relative overflow-x-hidden">{children}</body>
+    <html lang="en" className={`${inter.variable} h-full antialiased`}>
+      <body className="relative flex min-h-full flex-col items-center justify-center gap-0 overflow-x-hidden">
+        {children}
+      </body>
     </html>
   );
 }
