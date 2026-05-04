@@ -1,10 +1,12 @@
+"use client";
+
 // React
 import { ReactNode } from "react";
 
 // Props
 interface BarInformationProps {
     bmi?: number;
-    children?: ReactNode
+    children: ReactNode
 }
 
 export default function BarInformation({ bmi, children }: BarInformationProps) {
@@ -17,7 +19,7 @@ export default function BarInformation({ bmi, children }: BarInformationProps) {
                             <h6 className="text-preset-6 font-semibold text-white">
                                 Your BMI is...
                             </h6>
-                            <p className="text-preset-1 text-white">{bmi}</p>
+                            <p className="text-preset-1 text-white">{bmi.toFixed(1)}</p>
                         </div>
                         <p className="text-preset-7 font-normal text-white text-start text-pretty md:max-w-1/2">
                             {children}
