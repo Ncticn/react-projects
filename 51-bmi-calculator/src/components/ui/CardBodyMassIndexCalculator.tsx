@@ -1,16 +1,93 @@
 "use client";
 
 // React
-import { useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
 // Components
 import BarInformation from "./BarInformation";
-import InputNumber from "./InputNumber";
+import InputText from "./InputText";
 import InputRadio from "./InputRadio";
+
+// Utility Functions
+import bmiCalculateMetric from "@/src/utils/calculate/bmiCalculateMetric";
+import bmiCalculateImperial from "@/src/utils/calculate/bmiCalculateImperial";
 
 
 export default function CardBodyMassIndexCalculator() {
-    const [selected, setSelected] = useState("metric");
+    const [calculationType, setCalculationType] = useState("metric");
+    const [result, setResult] = useState({
+        bmi: "",
+        message: "",
+        minWeight: "",
+        maxWeight: "",
+    })
+
+    const [height, setHeight] = useState("");
+    const [weight, setWeight] = useState("");
+
+    const [heightFt, setHeightFt] = useState("");
+    const [heightIn, setHeightIn] = useState("");
+    const [weightSt, setweightSt] = useState("");
+    const [weightLbs, setweightLbs] = useState("");
+
+    const handleFields = (value: string, maxLength: number, setState: Dispatch<SetStateAction<string>>) => {
+        const cleanValue = value.trim();
+        const onlyNumberValue = cleanValue.replaceAll(/[^0-9]/g, "");
+
+        if (onlyNumberValue[0] === "0") setState("1");
+        if (onlyNumberValue.length <= maxLength) setState(onlyNumberValue)
+    }
+
+
+    useEffect(() => {
+        
+        const bmi = bmiCalculateImperial(Number(heightFt), Number(heightIn), Number(weightSt), Number(weightLbs));
+
+        setResult(
+            {
+                bmi: bmi.bmi.toString(),
+                message: bmi.message,
+                minWeight: bmi.minWeight,
+                maxWeight: bmi.maxWeight
+            }
+        );
+
+    }, [heightFt, heightIn, weightSt, weightLbs]);
+
+    useEffect(() => {
+
+        const numberHeight = Number(height) / 100;
+        const numberWeight = Number(weight);
+        const bmi = bmiCalculateMetric(numberHeight, numberWeight);
+
+        setResult(
+            {
+                bmi: bmi.bmi.toString(),
+                message: bmi.message,
+                minWeight: bmi.minWeight + "kgs",
+                maxWeight: bmi.maxWeight + "kgs"
+            }
+        );
+    }, [weight, height]);
+
+    useEffect(() => {
+
+        setHeight("");
+        setWeight("");
+        setHeightFt("");
+        setHeightIn("");
+        setweightLbs("");
+        setweightSt("");
+        setResult(
+            {
+                bmi: "",
+                message: "",
+                minWeight: "",
+                maxWeight: ""
+            }
+        );
+
+    }, [calculationType]);
 
     return (
         <div className="bg-white rounded-2xl drop-shadow-[16px_32px_56px_rgba(143,174,207,25%)] px-6 py-6 md:px-8 md:py-8">
@@ -25,85 +102,90 @@ export default function CardBodyMassIndexCalculator() {
                                 name="input-metric"
                                 label="Metric"
                                 value="metric"
-                                selected={selected}
-                                setSelected={setSelected}
+                                selected={calculationType}
+                                setSelected={setCalculationType}
                             />
                             <InputRadio
                                 id="input-radio-imperial"
                                 name="input-imperial"
                                 label="Imperial"
                                 value="imperial"
-                                selected={selected}
-                                setSelected={setSelected}
+                                selected={calculationType}
+                                setSelected={setCalculationType}
                             />
                         </div>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 items-end justify-center gap-4 md:gap-6">
-                            {selected === "metric" &&
+                            {calculationType === "metric" &&
                                 <>
-                                    <InputNumber
-                                        id="input-number-height-cm"
+                                    <InputText
+                                        id="input-text-height-cm"
                                         name="input-height-cm"
                                         label="Height"
                                         suffix="cm"
                                         placeholder="0"
-                                        value={selected}
-                                        onChange={setSelected}
+                                        value={height}
+                                        onChange={(value) => handleFields(value, 3, setHeight)}
                                     />
-                                    <InputNumber
-                                        id="input-number-weight-kg"
+                                    <InputText
+                                        id="input-text-weight-kg"
                                         name="input-weight-kg"
                                         label="Weight"
                                         suffix="kg"
                                         placeholder="0"
-                                        value={selected}
-                                        onChange={setSelected}
+                                        value={weight}
+                                        onChange={(value) => handleFields(value, 3, setWeight)}
+
                                     />
                                 </>
                             }
                             {
-                                selected === "imperial" &&
+                                calculationType === "imperial" &&
                                 <>
-                                    <InputNumber
-                                        id="input-number-height-ft"
+                                    <InputText
+                                        id="input-text-height-ft"
                                         name="input-height-ft"
                                         label="Height"
                                         suffix="ft"
                                         placeholder="0"
-                                        value={selected}
-                                        onChange={setSelected}
+                                        value={heightFt}
+                                        onChange={(value) => handleFields(value, 2, setHeightFt)}
+
                                     />
-                                    <InputNumber
-                                        id="input-number-height-in"
+                                    <InputText
+                                        id="input-text-height-in"
                                         name="input-height-in"
                                         suffix="in"
                                         placeholder="0"
-                                        value={selected}
-                                        onChange={setSelected}
+                                        value={heightIn}
+                                        onChange={(value) => handleFields(value, 2, setHeightIn)}
+
                                     />
-                                    <InputNumber
-                                        id="input-number-weight-st"
+                                    <InputText
+                                        id="input-text-weight-st"
                                         name="input-weight-st"
                                         label="Weight"
                                         suffix="st"
                                         placeholder="0"
-                                        value={selected}
-                                        onChange={setSelected}
+                                        value={weightSt}
+                                        onChange={(value) => handleFields(value, 2, setweightSt)}
+
                                     />
-                                    <InputNumber
-                                        id="input-number-weight-lbs"
+                                    <InputText
+                                        id="input-text-weight-lbs"
                                         name="input-weight-lbs"
                                         suffix="lbs"
                                         placeholder="0"
-                                        value={selected}
-                                        onChange={setSelected}
+                                        value={weightLbs}
+                                        onChange={(value) => handleFields(value, 2, setweightLbs)}
+
                                     />
                                 </>
                             }
                         </div>
 
-                        <BarInformation >
-                            Your BMI suggests you’re a healthy weight. Your ideal weight is between <b>63.3kgs - 85.2kgs.</b>
+                        <BarInformation bmi={Number(result.bmi)} >
+                            {result.message} Your ideal weight is between <b>{result.minWeight} - {result.maxWeight}.</b>
                         </BarInformation>
                     </div>
                 </form>
