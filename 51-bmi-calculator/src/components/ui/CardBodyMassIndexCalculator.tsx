@@ -3,6 +3,7 @@
 // React
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
+
 // Components
 import BarInformation from "./BarInformation";
 import InputText from "./InputText";
@@ -11,6 +12,7 @@ import InputRadio from "./InputRadio";
 // Utility Functions
 import bmiCalculateMetric from "@/src/utils/calculate/bmiCalculateMetric";
 import bmiCalculateImperial from "@/src/utils/calculate/bmiCalculateImperial";
+import { motion } from "motion/react";
 
 
 export default function CardBodyMassIndexCalculator() {
@@ -40,7 +42,7 @@ export default function CardBodyMassIndexCalculator() {
 
 
     useEffect(() => {
-        
+
         const bmi = bmiCalculateImperial(Number(heightFt), Number(heightIn), Number(weightSt), Number(weightLbs));
 
         setResult(
@@ -90,7 +92,12 @@ export default function CardBodyMassIndexCalculator() {
     }, [calculationType]);
 
     return (
-        <div className="bg-white rounded-2xl drop-shadow-[16px_32px_56px_rgba(143,174,207,25%)] px-6 py-6 md:px-8 md:py-8">
+        <motion.div
+            initial={{ x: 100, opacity:0 }}
+            whileInView= {{x: 0, opacity: 1}}
+            transition={{ type: "spring" , bounce: 0, visualDuration: 0.75}}
+
+            className="bg-white rounded-2xl drop-shadow-[16px_32px_56px_rgba(143,174,207,25%)] px-6 py-6 md:px-8 md:py-8">
             <div className="space-y-6 md:space-y-8">
                 <h3 className="text-preset-4 text-blue-900">Enter your details below</h3>
 
@@ -190,6 +197,6 @@ export default function CardBodyMassIndexCalculator() {
                     </div>
                 </form>
             </div>
-        </div>
+        </motion.div>
     );
 }

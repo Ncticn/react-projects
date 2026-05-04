@@ -1,3 +1,5 @@
+"use client";
+
 // NextJS
 import Image from "next/image";
 
@@ -5,7 +7,7 @@ import Image from "next/image";
 import Eating from "@/src/assets/icons/icon-eating.svg";
 import Exercise from "@/src/assets/icons/icon-exercise.svg";
 import Sleep from "@/src/assets/icons/icon-sleep.svg";
-
+import { motion } from "motion/react";
 
 export default function SectionTips() {
     const tips = [
@@ -42,7 +44,11 @@ export default function SectionTips() {
 
 function CardTip({ title, description, image }: { title: string; description: string; image: string }) {
     return (
-        <div className="card-tip flex flex-col md:not-lg:flex-row items-start md:not-lg:items-center justify-start gap-8 md:gap-10 lg:gap-12 col-span-1">
+        <motion.div
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{delay: .5, type:"spring", bounce: 0.2, visualDuration: .5}}
+            className="card-tip flex flex-col md:not-lg:flex-row items-start md:not-lg:items-center justify-start gap-8 md:gap-10 lg:gap-12 col-span-1">
             <div className="card-image inline-block max-w-fit w-full">
                 <Image src={image} alt="" loading="eager" />
             </div>
@@ -51,6 +57,6 @@ function CardTip({ title, description, image }: { title: string; description: st
                 <h3 className="text-preset-4 text-blue-900">{title}</h3>
                 <p className="text-preset-6 font-normal text-grey-500">{description}</p>
             </div>
-        </div>
+        </motion.div>
     );
 }

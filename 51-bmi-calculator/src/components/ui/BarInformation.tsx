@@ -3,6 +3,10 @@
 // React
 import { ReactNode } from "react";
 
+// Motion
+import { motion } from "motion/react"
+
+
 // Props
 interface BarInformationProps {
     bmi?: number;
@@ -11,7 +15,14 @@ interface BarInformationProps {
 
 export default function BarInformation({ bmi, children }: BarInformationProps) {
     return (
-        <div className="bg-blue-500 px-8 py-8 rounded-l-2xl rounded-r-2xl md:rounded-r-[100px] w-full h-full overflow-hidden relative">
+        <motion.div 
+        layout
+        transition={{
+            type: "spring",
+            visualDuration: 0.2,
+            bounce: 0.2
+        }}
+        className="bg-blue-500 px-8 py-8 rounded-l-2xl rounded-r-2xl md:rounded-r-[100px] w-full h-full overflow-hidden relative">
             {
                 bmi && children ?
                     <div className="flex flex-col md:flex-row items-start justify-center md:items-center md:justify-between gap-6 md:gap-0">
@@ -31,6 +42,6 @@ export default function BarInformation({ bmi, children }: BarInformationProps) {
                         <p className="text-preset-7 font-normal text-white">Enter your height and weight and you’ll see your BMI result here</p>
                     </div>
             }
-        </div>
+        </motion.div>
     );
 }
