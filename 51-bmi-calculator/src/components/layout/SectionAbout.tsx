@@ -4,7 +4,7 @@
 import Image from "next/image";
 
 // Images
-import SectionImage from "@/src/assets/images/image-man-eating.webp";
+import ImageManEating from "../../assets/images/image-man-eating.webp";
 import PatternCurvedLineLeft from "@/src/assets/patterns/pattern-curved-line-left.svg";
 import { motion } from "motion/react";
 
@@ -23,8 +23,8 @@ export default function SectionAbout() {
             className="min-w-full shrink md:min-w-108.75 lg:min-w-141"
           >
             <Image
-              src={SectionImage}
-              alt=""
+              src={ImageManEating}
+              alt="Image Man Eating"
               loading="eager"
               placeholder="blur"
             />
