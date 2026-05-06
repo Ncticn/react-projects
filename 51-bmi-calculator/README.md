@@ -44,7 +44,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://ncticn.vercel.app/projects/51-bmi-calculator
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/mortgage-repayment-calculator-react-nextjs-typescript-tailwind-y89VPnZCju
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/bmi-calculator-react-nextjs-typescript-tailwindcss-motion-6PO_Oeuc9J
 
 ## ⚙️ Installation & Running the Project
 
