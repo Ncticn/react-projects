@@ -1,7 +1,10 @@
-
+// Components
+import CardAdvice from "../components/ui/CardAdvice";
 
 export default function Home() {
   return (
-    <h1>Lorem, ipsum.</h1>
+    <div className="mx-auto max-w-85.75 md:max-w-135">
+      <CardAdvice />
+    </div>
   );
 }
