@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[97367,["/projects/61-advice-generator-app/_next/static/chunks/0dbhjjzl8qfwv.js"],"ViewportBoundary"]
+3:I[97367,["/projects/61-advice-generator-app/_next/static/chunks/0dbhjjzl8qfwv.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+5:I[27201,["/projects/61-advice-generator-app/_next/static/chunks/0dbhjjzl8qfwv.js"],"IconMark"]
+0:{"rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Frontend Mentor | Advice Generator App"}],["$","meta","1",{"name":"description","content":"The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice."}],["$","link","2",{"rel":"icon","href":"/projects/61-advice-generator-app/favicon.ico?favicon.0o603a_5rmm7n.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L5","3",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"dZYFGiFUlJVXdr1eHoefR"}
