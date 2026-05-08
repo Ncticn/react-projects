@@ -41,7 +41,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://ncticn.vercel.app/projects/61-advice-generator-app
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/bmi-calculator-react-nextjs-typescript-tailwindcss-motion-6PO_Oeuc9J
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/advice-generator-app-nextjs-typescript-tailwindcss-components-Vg0eB_29gH
 
 ## ⚙️ Installation & Running the Project
 
