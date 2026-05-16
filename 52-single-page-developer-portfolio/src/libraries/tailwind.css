@@ -14,6 +14,7 @@
 
     /* Font Size */
     --text-7\.5xl: 5.5rem;
+    --text-4\.5xl: 2.5rem;
 
     /* Letter Spacing */
     --tracking-2\.5px: 2.5px;
@@ -33,11 +34,11 @@
 
 @layer utilities {
     .text-heading-xl {
-        @apply text-7.5xl leading-22 font-bold -tracking-2.5px;
+        @apply text-4.5xl leading-10 tracking-[-1.14px] md:text-7xl md:leading-18 md:tracking-[-2.05px] lg:text-7.5xl lg:leading-22 font-bold lg:-tracking-2.5px;
     }
 
     .text-heading-l {
-        @apply text-5xl leading-14 font-bold -tracking-1.5px;
+        @apply text-[2rem] leading-10 tracking-[-1px] md:text-5xl md:leading-14 font-bold md:-tracking-1.5px;
     }
 
     .text-heading-m {
@@ -45,6 +46,6 @@
     }
 
     .text-body {
-        @apply text-lg leading-7 font-medium;
+        @apply text-base leading-6.5 tracking-normal font-medium md:text-lg md:leading-7 md:font-medium;
     }
 }
