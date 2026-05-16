@@ -36,7 +36,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <img src={PatternRings.src} alt="Pattern Image" className="absolute top-[52%] left-[-50%] md:top-[70%] md:left-[-45%] lg:top-[50%] lg:left-[-15%] w-fit h-auto"/>
+            <img src={PatternRings.src} alt="Pattern Image" className="absolute top-[52%] left-[-50%] md:top-[70%] md:left-[-45%] lg:top-[50%] lg:left-[-15%] 2xl:top-[45%] 2xl:left-[-10%] w-fit h-auto"/>
         </footer>
     );
 }
