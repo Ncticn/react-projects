@@ -2,29 +2,84 @@
 // React
 import { ViewTransition } from "react";
 
-// NextJS
-import { StaticImageData } from "next/image";
-
 // Components
 import ButtonLink from "../ui/ButtonLink";
 import CardProject from "../ui/CardProject";
 
-// Props
-interface SectionProjectsProps {
-    projectsList: {
-        title: string,
-        skills: string[],
-        codeURL: string,
-        demoURL: string,
-        thumbnail: {
-            name: string,
-            src: string | StaticImageData
+// Images
+import ThumbnailDesignPortfolio from "@/src/assets/images/thumbnail-project-1-large.webp";
+import ThumbnailELearning from "@/src/assets/images/thumbnail-project-2-large.webp";
+import ThumbnailTODOWebApp from "@/src/assets/images/thumbnail-project-3-large.webp";
+import ThumbnailEntertainmentWebApp from "@/src/assets/images/thumbnail-project-4-large.webp";
+import ThumbnailMemoryGame from "@/src/assets/images/thumbnail-project-5-large.webp";
+import ThumbnailArtGalleryShowcase from "@/src/assets/images/thumbnail-project-6-large.webp";
+
+
+export default function SectionProjects() {
+
+    const projects = [
+        {
+            title: "DESIGN PORTFOLIO",
+            skills: ["HTML", "CSS"],
+            codeURL: "#",
+            demoURL: "#",
+            thumbnail: {
+                name: "Project Design Portfolio Thumbnail",
+                src: ThumbnailDesignPortfolio
+            }
+        },
+        {
+            title: "E-LEARNING LANDING PAGE",
+            skills: ["HTML", "CSS"],
+            codeURL: "#",
+            demoURL: "#",
+            thumbnail: {
+                name: "Project E-Learning Landing Page Thumbnail",
+                src: ThumbnailELearning
+            }
+        },
+        {
+            title: "TODO WEB APP",
+            skills: ["HTML", "CSS", "JavaScript"],
+            codeURL: "#",
+            demoURL: "#",
+            thumbnail: {
+                name: "Project TODO Web App Thumbnail",
+                src: ThumbnailTODOWebApp
+            }
+        },
+        {
+            title: "ENTERTAINMENT WEB APP",
+            skills: ["HTML", "CSS", "JavaScript"],
+            codeURL: "#",
+            demoURL: "#",
+            thumbnail: {
+                name: "Project Entertainment Web App Thumbnail",
+                src: ThumbnailEntertainmentWebApp
+            }
+        },
+        {
+            title: "MEMORY GAME",
+            skills: ["HTML", "CSS", "JavaScript"],
+            codeURL: "#",
+            demoURL: "#",
+            thumbnail: {
+                name: "Project Memory Game Thumbnail",
+                src: ThumbnailMemoryGame
+            }
+        },
+        {
+            title: "ART GALLERY SHOWCASE",
+            skills: ["HTML", "CSS", "JavaScript"],
+            codeURL: "#sectionmyprojects",
+            demoURL: "#sectionmyprojects",
+            thumbnail: {
+                name: "Project Art Gallery Showcase Thumbnail",
+                src: ThumbnailArtGalleryShowcase
+            }
         }
-    }[]
-}
+    ];
 
-
-export default function SectionProjects({ projectsList }: SectionProjectsProps) {
     return (
         <ViewTransition>
             <section aria-label="section-projects" id="sectionmyprojects">
@@ -37,7 +92,7 @@ export default function SectionProjects({ projectsList }: SectionProjectsProps) 
 
                         <div className="grid grid-cols-1 md:grid-cols-[repeat(2,342px)] lg:grid-cols-[repeat(2,540px)] gap-x-0 gap-y-10 md:gap-x-5.5 md:gap-y-15 lg:gap-x-7.5 lg:gap-y-17.25">
                             {
-                                projectsList.map((project, index) => <CardProject key={index} {...project} />)
+                                projects.map((p, index) => <CardProject key={index} {...p} />)
                             }
                         </div>
                     </div>
