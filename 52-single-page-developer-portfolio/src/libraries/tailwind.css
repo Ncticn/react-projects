@@ -1,51 +1,49 @@
 @import "tailwindcss";
 
 @theme inline {
+  /* Colors */
+  --color-base-black: #151515;
+  --color-base-green: #4ee1a0;
+  --color-base-grey: #d9d9d9;
+  --color-base-white: #ffffff;
+  --color-base-dark-grey: #242424;
 
-    /* Colors */
-    --color-base-black: #151515;
-    --color-base-green: #4EE1A0;
-    --color-base-grey: #D9D9D9;
-    --color-base-white: #FFFFFF;
-    --color-base-dark-grey: #242424;
+  /* Font Family */
+  --font-sans: var(--font-space_grotesk);
 
-    /* Font Family */
-    --font-sans: var(--font-space_grotesk);
+  /* Font Size */
+  --text-7\.5xl: 5.5rem;
+  --text-4\.5xl: 2.5rem;
 
-    /* Font Size */
-    --text-7\.5xl: 5.5rem;
-    --text-4\.5xl: 2.5rem;
-
-    /* Letter Spacing */
-    --tracking-2\.5px: 2.5px;
-    --tracking-1\.5px: 1.5px;
-
+  /* Letter Spacing */
+  --tracking-2\.5px: 2.5px;
+  --tracking-1\.5px: 1.5px;
 }
 
 @layer base {
-    html {
-        font-family: var(--font-sans);
-    }
+  html {
+    font-family: var(--font-sans);
+  }
 
-    body {
-        background-color: var(--color-base-black);
-    }
+  body {
+    background-color: var(--color-base-black);
+  }
 }
 
 @layer utilities {
-    .text-heading-xl {
-        @apply text-4.5xl leading-10 tracking-[-1.14px] md:text-7xl md:leading-18 md:tracking-[-2.05px] lg:text-7.5xl lg:leading-22 font-bold lg:-tracking-2.5px;
-    }
+  .text-heading-xl {
+    @apply text-4.5xl lg:text-7.5xl lg:-tracking-2.5px leading-10 font-bold tracking-[-1.14px] md:text-7xl md:leading-18 md:tracking-[-2.05px] lg:leading-22;
+  }
 
-    .text-heading-l {
-        @apply text-[2rem] leading-10 tracking-[-1px] md:text-5xl md:leading-14 font-bold md:-tracking-1.5px;
-    }
+  .text-heading-l {
+    @apply md:-tracking-1.5px text-[2rem] leading-10 font-bold tracking-[-1px] md:text-5xl md:leading-14;
+  }
 
-    .text-heading-m {
-        @apply text-2xl leading-8 font-bold;
-    }
+  .text-heading-m {
+    @apply text-2xl leading-8 font-bold;
+  }
 
-    .text-body {
-        @apply text-base leading-6.5 tracking-normal font-medium md:text-lg md:leading-7 md:font-medium;
-    }
+  .text-body {
+    @apply text-base leading-6.5 font-medium tracking-normal md:text-lg md:leading-7 md:font-medium;
+  }
 }

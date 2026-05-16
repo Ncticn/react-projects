@@ -1,13 +1,10 @@
-
 // Props
 interface TagProps {
-    text: string
+  text: string;
 }
 
 export default function Tag({ text }: TagProps) {
-    return (
-        <p className="tag text-base-grey text-body uppercase text-start">
-            {text}
-        </p>
-    );
+  return (
+    <p className="tag text-base-grey text-body text-start uppercase">{text}</p>
+  );
 }
