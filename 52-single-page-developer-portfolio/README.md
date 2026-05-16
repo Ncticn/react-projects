@@ -42,7 +42,7 @@ Through this project, I practiced:
 ## 🔗 Links
 
 - 💻 **Live Demo:** https://ncticn.vercel.app/projects/52-single-page-developer-portfolio
-- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/bmi-calculator-react-nextjs-typescript-tailwindcss-motion-6PO_Oeuc9J
+- 🧠 **Challenge:** https://www.frontendmentor.io/solutions/single-page-developer-portfolio-nextjs-typescript-tailwindcss-RsqTc8jPxW
 
 ## ⚙️ Installation & Running the Project
 
