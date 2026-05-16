@@ -2,6 +2,9 @@ import "@/src/libraries/tailwind.css";
 import { Space_Grotesk } from "next/font/google";
 import type { Metadata } from "next";
 
+// Components
+import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
 
 const space_Grotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -24,10 +27,12 @@ export default function RootLayout({
       lang="en"
       className={`${space_Grotesk.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col items-center justify-start gap-0">
-        <main className="mx-auto lg:max-w-277.5 md:max-w-177 max-w-86.25">
+      <body className="min-h-full flex flex-col items-stretch justify-start gap-35 relative overflow-x-hidden">
+        <Header />
+        <main className="relative overflow-hidden">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
