@@ -5,11 +5,14 @@ import Divider from "../ui/Divider";
 import SocialMedia from "../ui/SocialMedia";
 import FormContact from "../ui/FormContact";
 
+// Pattern Image
+import PatternRings from "@/src/assets/patterns/pattern-rings.svg";
+
 export default function Footer() {
 
     return (
-        <footer className=" md:pt-15 md:pb-10 pt-15 pb-15 lg:pt-21 lg:pb-23 bg-base-dark-grey">
-            <div className="mx-auto max-w-85.75 md:max-w-177 lg:max-w-277.5">
+        <footer className=" md:pt-15 md:pb-10 pt-15 pb-15 lg:pt-21 lg:pb-23 bg-base-dark-grey relative overflow-hidden">
+            <div className="mx-auto max-w-85.75 md:max-w-177 lg:max-w-277.5 relative z-20">
                 <div className="flex flex-col items-stretch justify-center gap-10 md:gap-7.5 lg:gap-12">
 
                     <div aria-label="footer-contact_me" className="pb-14 md:pb-15.5 lg:pb-11">
@@ -33,6 +36,7 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
+            <img src={PatternRings.src} alt="Pattern Image" className="absolute top-[52%] left-[-50%] md:top-[70%] md:left-[-45%] lg:top-[50%] lg:left-[-15%] w-fit h-auto"/>
         </footer>
     );
 }
