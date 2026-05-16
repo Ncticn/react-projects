@@ -1,0 +1,7 @@
+:HL["/projects/52-single-page-developer-portfolio/_next/static/chunks/0i7ydactmrj80.css","style"]
+:HL["/projects/52-single-page-developer-portfolio/_next/static/media/icon-github.08e7m09lsoyo..svg","image"]
+:HL["/projects/52-single-page-developer-portfolio/_next/static/media/icon-frontend-mentor.0jeubz9dv1pra.svg","image"]
+:HL["/projects/52-single-page-developer-portfolio/_next/static/media/icon-linkedin.0bweok8va6wyy.svg","image"]
+:HL["/projects/52-single-page-developer-portfolio/_next/static/media/icon-twitter.06cs8tp6g77yo.svg","image"]
+:HL["/projects/52-single-page-developer-portfolio/_next/static/media/pattern-rings.15ao-ne7.e51_.svg","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"tl9q6HUiZFQW7uFMGLGa-"}
