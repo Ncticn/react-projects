@@ -114,7 +114,7 @@ export default function FormContact() {
     }
 
     return (
-        <form onSubmit={(e) => formSubmit(e)} className="flex flex-col items-stretch justify-center gap-8">
+        <form onSubmit={(e) => formSubmit(e)} className="flex flex-col items-stretch justify-center gap-8" id="formcontact">
             <InputText
                 id="input-user-name"
                 name="input-name"

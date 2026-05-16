@@ -1,3 +1,7 @@
+
+// React
+import { ViewTransition } from "react";
+
 // Components
 import CardSkill from "../ui/CardSkill";
 
@@ -30,14 +34,16 @@ export default function SectionSkills() {
     ]
 
     return (
-        <section aria-label="section-skills" id="sectionmyskills">
-            <div className="mx-auto max-w-85.75 md:max-w-177 lg:max-w-277.5">
-                <div className="md:pt-13 lg:pt-18 not-md:border-b not-md:py-10 border-t border-base-white">
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-0 md:gap-x-2.25 md:gap-y-13 lg:gap-x-8.75 lg:gap-y-14.5 items-center justify-center">
-                        {skills.map((skill, index) => (<CardSkill key={index} {...skill} />))}
+        <ViewTransition>
+            <section aria-label="section-skills" id="sectionmyskills">
+                <div className="mx-auto max-w-85.75 md:max-w-177 lg:max-w-277.5">
+                    <div className="md:pt-13 lg:pt-18 not-md:border-b not-md:py-10 border-t border-base-white">
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-0 md:gap-x-2.25 md:gap-y-13 lg:gap-x-8.75 lg:gap-y-14.5 items-center justify-center">
+                            {skills.map((skill, index) => (<CardSkill key={index} {...skill} />))}
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </ViewTransition>
     );
 }
