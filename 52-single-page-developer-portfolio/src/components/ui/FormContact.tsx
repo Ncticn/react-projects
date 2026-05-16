@@ -38,6 +38,8 @@ export default function FormContact() {
 
     const handleInputName = (v: string) => {
         const userValue = v;
+
+        if (userValue.length === 0) return setInputName({ value: userValue, error: false, success: false });
         if (userValue.length < 3) return setInputName({ value: userValue, error: true, success: false });
 
         if (/[0-9]/g.test(userValue)) return setInputName({ value: userValue, error: true, success: false });
@@ -52,7 +54,7 @@ export default function FormContact() {
     const handleInputEmail = (v: string) => {
         const userValue = v;
         const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
-
+        if (userValue.length === 0) return setInputEmail({ value: userValue, error: false, success: false });
         if (!emailRegex.test(userValue.trim())) return setInputEmail({ value: userValue, error: true, success: false });
 
         setInputEmail({
@@ -64,6 +66,7 @@ export default function FormContact() {
 
     const handleInputMessage = (v: string) => {
         const userValue = v;
+        if (userValue.length === 0) return setInputMessage({ value: userValue, error: false, success: false });
         if (userValue.length < 50) return setInputMessage({ value: userValue, error: true, success: false });
 
         setInputMessage({
