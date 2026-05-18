@@ -1,5 +1,12 @@
 import "@/libraries/tailwind.css";
 import type { Metadata } from "next";
+import { Epilogue } from "next/font/google"
+
+const epilogue = Epilogue({
+  display: "swap",
+  subsets: ["latin"],
+  variable: "--font-epilogue"
+});
 
 export const metadata: Metadata = {
   title: "Frontend Mentor | Suite Landing Page",
@@ -14,7 +21,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`h-full antialiased`}
+      className={`${epilogue.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
